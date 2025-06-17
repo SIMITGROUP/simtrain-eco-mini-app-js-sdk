@@ -1,0 +1,23 @@
+{
+  "name": "simtrain-eco-js-sdk",
+  "private": false,
+  "version": "0.0.1",
+  "author": "simitgroup",
+  "main": "build/index.js",
+  "type": "module",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "description": "Simtrain Eco JS SDK for Simtrain Mini App",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
