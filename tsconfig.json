@@ -11,6 +11,7 @@
     "skipLibCheck": true,
     "strict": true,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "rootDir": "src"
   }
 }
