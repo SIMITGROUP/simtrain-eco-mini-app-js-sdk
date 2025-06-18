@@ -1,34 +1,114 @@
 {
   "name": "@simitgroup/simtrain-eco-mini-app-js-sdk",
-  "version": "0.0.1g",
-  "description": "Simtrain Eco JavaScript SDK for Simtrain Mini App integration.",
-  "author": "SIMIT Group",
-  "license": "MIT",
-  "private": false,
-  "main": "build/index.js",
-  "type": "module",
-  "types": "build/index.d.ts",
+  "version": "0.0.1-i",
+  "description": "A Javascript SDK For Simtrain Eco Mini App",
+  "main": "./lib/index.js",
   "files": [
-    "build",
-    "README.md"
+    "lib/**/*"
   ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "clean": "rm -rf ./lib/",
+    "cm": "cz",
+    "lint": "eslint ./src/ --fix",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release",
+    "test:watch": "jest --watch",
+    "test": "jest --coverage",
+    "typecheck": "tsc --noEmit"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SIMITGROUP/simtrain-eco-mini-app-js-sdk#"
+    "url": "https://github.com/SIMITGROUP/simtrain-eco-mini-app-js-sdk"
   },
-  "scripts": {
-    "build": "npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "license": "MIT",
+  "author": {
+    "name": "SIMIT Group"
+  },
+  "engines": {
+    "node": ">=12.0"
   },
   "keywords": [
-    "simtrain",
     "sdk",
-    "javascript",
-    "typescript",
-    "mini-app",
-    "simit"
+    "simtrain",
+    "miniapp"
   ],
+  "bugs": {
+    "url": "https://github.com/SIMITGROUP/simtrain-eco-mini-app-js-sdk/issues"
+  },
+  "homepage": "https://github.com/SIMITGROUP/simtrain-eco-mini-app-js-sdk",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@ryansonshine/commitizen": "^4.2.8",
+    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^12.20.11",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "jest": "^27.2.0",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.2.1",
+    "semantic-release": "^21.0.1",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.2.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --cache-location .eslintcache --fix"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "type": "build",
+              "scope": "deps",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "build",
+                "section": "Dependencies and Other Build Updates",
+                "hidden": false
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
   }
 }
