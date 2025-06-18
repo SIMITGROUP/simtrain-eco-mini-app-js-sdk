@@ -1,0 +1,55 @@
+import { MiniAppBridgeService } from "../bridge.service";
+
+export class MiniAppStudentBridgeService {
+  private bridge: MiniAppBridgeService;
+
+  private resourceName = "student";
+
+  constructor(bridge: MiniAppBridgeService) {
+    this.bridge = bridge;
+  }
+
+  async list() {
+    return this.bridge.callApi(this.resourceName, "list");
+  }
+
+  async detail(id: string) {
+    return this.bridge.callApi(this.resourceName, "detail", { id });
+  }
+
+  async create(data: any) {
+    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  }
+
+  async update(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "update", { id, body: data });
+  }
+
+  async patch(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
+  }
+
+  async delete(id: string) {
+    return this.bridge.callApi(this.resourceName, "delete", { id });
+  }
+
+  async autocomplete(query: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "autoComplete", {
+      query,
+      body: data,
+    });
+  }
+
+  async getStudentSummary(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "getStudentSummary", {
+      id,
+      body: data,
+    });
+  }
+
+  openOnScreenForm(id?: string) {
+    this.bridge.openOnScreenResourceForm(this.resourceName, {
+      id,
+    });
+  }
+}

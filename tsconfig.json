@@ -4,6 +4,7 @@
     "lib": ["ESNext", "DOM"],
     "module": "esnext",
     "target": "esnext",
+    "moduleResolution": "node",
     "moduleDetection": "force",
     "outDir": "build",
     "skipLibCheck": true,

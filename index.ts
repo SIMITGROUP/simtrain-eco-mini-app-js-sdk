@@ -1,1 +1,1 @@
-export { SimtrainEcoJsSdk } from "./src/simtrain-eco-js-sdk";
+export { SimtrainEcoMiniAppJsSdk } from "./src/sdk";

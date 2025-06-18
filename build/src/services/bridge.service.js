@@ -1,10 +1,12 @@
-export class SdkResourceCoreService {
+import { MINI_APP_BRIDGE_MESSAGES } from "../constants/common.constant";
+export class MiniAppBridgeService {
     pendingRequests = {};
     constructor() {
         if (typeof window !== "undefined") {
             window.addEventListener("message", (event) => {
                 const message = event.data;
-                if (message.type === "API_RESPONSE" && message.requestId) {
+                if (message.type === MINI_APP_BRIDGE_MESSAGES.API_RESPONSE &&
+                    message.requestId) {
                     const handler = this.pendingRequests[message.requestId];
                     if (!handler)
                         return;
@@ -21,8 +23,9 @@ export class SdkResourceCoreService {
     }
     async callApi(resource, action, params = {}) {
         const requestId = crypto.randomUUID();
+        // TODO: Type
         const requestMessage = {
-            type: "API",
+            type: MINI_APP_BRIDGE_MESSAGES.API,
             requestId,
             params: {
                 resource: { name: resource, id: params.id },
@@ -37,13 +40,14 @@ export class SdkResourceCoreService {
         window.parent.postMessage(requestMessage, "*");
         return promise;
     }
-    openOnScreenForm(resource, params = {}) {
-        window.parent.postMessage({
-            type: "ON_SCREEN_FORM",
+    openOnScreenResourceForm(resource, params = {}) {
+        const message = {
+            type: MINI_APP_BRIDGE_MESSAGES.OPEN_ON_SCREEN_RESOURCE_FORM,
             params: {
                 resource: { name: resource, id: params.id },
-                body: params.body,
+                data: params.data,
             },
-        }, "*");
+        };
+        window.parent.postMessage(message, "*");
     }
 }
