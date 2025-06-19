@@ -3,6 +3,10 @@
 ## How to use
 
 ```
+npm i @simitgroup/simtrain-eco-mini-app-js-sdk
+```
+
+```
 import { SimtrainEcoMiniAppJsSdk } from "@simitgroup/simtrain-eco-mini-app-js-sdk";
 
 const sdk = new SimtrainEcoMiniAppJsSdk();
