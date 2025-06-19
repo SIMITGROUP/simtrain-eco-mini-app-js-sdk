@@ -31,6 +31,18 @@ export class MiniAppTeacherBridgeService {
     });
   }
 
+  async getTeacherCommissionResult(period: string) {
+    return this.bridge.callApi(
+      this.resourceName,
+      "getTeacherCommissionResult",
+      {
+        queryParams: {
+          period: period,
+        },
+      },
+    );
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,
