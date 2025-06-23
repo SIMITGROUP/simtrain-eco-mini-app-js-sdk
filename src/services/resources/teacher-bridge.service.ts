@@ -39,7 +39,7 @@ export class MiniAppTeacherBridgeService {
         queryParams: {
           period: period,
         },
-      },
+      }
     );
   }
 

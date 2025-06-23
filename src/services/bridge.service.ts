@@ -24,7 +24,7 @@ export class MiniAppBridgeService {
 
   constructor() {
     if (typeof window !== "undefined") {
-      window.addEventListener("message", (event) => {
+      window.addEventListener("message", event => {
         const message: MiniAppBridgeMessageApiResponse<any> = event.data;
 
         if (
@@ -49,7 +49,7 @@ export class MiniAppBridgeService {
   async callApi(
     resource: string,
     action: string,
-    params: MiniAppResourceServiceApiParam = {},
+    params: MiniAppResourceServiceApiParam = {}
   ) {
     const requestId = crypto.randomUUID();
 
@@ -76,7 +76,7 @@ export class MiniAppBridgeService {
 
   openOnScreenResourceForm(
     resource: string,
-    params: MiniAppResourceServiceOpenOnScreenResourceFormParam = {},
+    params: MiniAppResourceServiceOpenOnScreenResourceFormParam = {}
   ) {
     const message: MiniAppBridgeMessageOpenOnScreenResourceForm = {
       type: MINI_APP_BRIDGE_MESSAGES.OPEN_ON_SCREEN_RESOURCE_FORM,

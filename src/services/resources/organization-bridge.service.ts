@@ -16,6 +16,10 @@ export class MiniAppOrganizationBridgeService {
     this.bridge = bridge;
   }
 
+  async current() {
+    return this.bridge.callApi(this.resourceName, "current");
+  }
+
   async list() {
     return this.bridge.callApi(this.resourceName, "list");
   }

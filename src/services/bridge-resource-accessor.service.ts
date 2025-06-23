@@ -72,7 +72,7 @@ export class MiniAppBridgeResourceAccessor {
   get organization() {
     if (!this.instances.organization) {
       this.instances.organization = new MiniAppOrganizationBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.organization;
@@ -86,7 +86,7 @@ export class MiniAppBridgeResourceAccessor {
   get academySession() {
     if (!this.instances.academySession) {
       this.instances.academySession = new MiniAppAcademySessionBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.academySession;
@@ -107,7 +107,7 @@ export class MiniAppBridgeResourceAccessor {
   get announcement() {
     if (!this.instances.announcement) {
       this.instances.announcement = new MiniAppAnnouncementBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.announcement;
@@ -122,7 +122,7 @@ export class MiniAppBridgeResourceAccessor {
   get appMessage() {
     if (!this.instances.appMessage) {
       this.instances.appMessage = new MiniAppAppMessageBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.appMessage;
@@ -149,7 +149,7 @@ export class MiniAppBridgeResourceAccessor {
   get attendance() {
     if (!this.instances.attendance) {
       this.instances.attendance = new MiniAppAttendanceBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.attendance;
@@ -163,7 +163,7 @@ export class MiniAppBridgeResourceAccessor {
   get creditNote() {
     if (!this.instances.creditNote) {
       this.instances.creditNote = new MiniAppCreditNoteBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.creditNote;
@@ -171,7 +171,7 @@ export class MiniAppBridgeResourceAccessor {
   get enrollment() {
     if (!this.instances.enrollment) {
       this.instances.enrollment = new MiniAppEnrollmentBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.enrollment;
@@ -216,7 +216,7 @@ export class MiniAppBridgeResourceAccessor {
   get paymentMethod() {
     if (!this.instances.paymentMethod) {
       this.instances.paymentMethod = new MiniAppPaymentMethodBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.paymentMethod;
@@ -237,7 +237,7 @@ export class MiniAppBridgeResourceAccessor {
   get productPackage() {
     if (!this.instances.productPackage) {
       this.instances.productPackage = new MiniAppProductPackageBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.productPackage;
@@ -263,7 +263,7 @@ export class MiniAppBridgeResourceAccessor {
   get refundType() {
     if (!this.instances.refundType) {
       this.instances.refundType = new MiniAppRefundTypeBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.refundType;
@@ -301,7 +301,7 @@ export class MiniAppBridgeResourceAccessor {
   get stopEnroll() {
     if (!this.instances.stopEnroll) {
       this.instances.stopEnroll = new MiniAppStopEnrollBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.stopEnroll;
@@ -309,7 +309,7 @@ export class MiniAppBridgeResourceAccessor {
   get stopReason() {
     if (!this.instances.stopReason) {
       this.instances.stopReason = new MiniAppStopReasonBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.stopReason;
@@ -330,7 +330,7 @@ export class MiniAppBridgeResourceAccessor {
   get studentGroup() {
     if (!this.instances.studentGroup) {
       this.instances.studentGroup = new MiniAppStudentGroupBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.studentGroup;
@@ -338,7 +338,7 @@ export class MiniAppBridgeResourceAccessor {
   get studentSource() {
     if (!this.instances.studentSource) {
       this.instances.studentSource = new MiniAppStudentSourceBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.studentSource;
@@ -346,7 +346,7 @@ export class MiniAppBridgeResourceAccessor {
   get studentSummary() {
     if (!this.instances.studentSummary) {
       this.instances.studentSummary = new MiniAppStudentSummaryBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.studentSummary;
@@ -360,7 +360,7 @@ export class MiniAppBridgeResourceAccessor {
   get teacherGroup() {
     if (!this.instances.teacherGroup) {
       this.instances.teacherGroup = new MiniAppTeacherGroupBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.teacherGroup;
@@ -368,7 +368,7 @@ export class MiniAppBridgeResourceAccessor {
   get tuitionClass() {
     if (!this.instances.tuitionClass) {
       this.instances.tuitionClass = new MiniAppTuitionClassBridgeService(
-        this.bridge,
+        this.bridge
       );
     }
     return this.instances.tuitionClass;

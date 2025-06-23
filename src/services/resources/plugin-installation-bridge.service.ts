@@ -16,6 +16,10 @@ export class MiniAppPluginInstallationBridgeService {
     this.bridge = bridge;
   }
 
+  async current() {
+    return this.bridge.callApi(this.resourceName, "current");
+  }
+
   async detail(id: string) {
     return this.bridge.callApi(this.resourceName, "detail", { id });
   }
