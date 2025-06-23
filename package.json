@@ -3,6 +3,7 @@
   "version": "0.0.1-j",
   "description": "A Javascript SDK For Simtrain Eco Mini App",
   "main": "./lib/index.js",
+  "type": "module",
   "files": [
     "lib/**/*"
   ],
