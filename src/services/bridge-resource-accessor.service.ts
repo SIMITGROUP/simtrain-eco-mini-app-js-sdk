@@ -8,7 +8,6 @@
 import { MiniAppResourceMap } from "../types/resource-mapper.type";
 import { MiniAppBridgeService } from "./bridge.service";
 
-import { MiniAppTenantBridgeService } from "../services/resources/tenant-bridge.service";
 import { MiniAppOrganizationBridgeService } from "../services/resources/organization-bridge.service";
 import { MiniAppBranchBridgeService } from "../services/resources/branch-bridge.service";
 import { MiniAppAcademySessionBridgeService } from "../services/resources/academy-session-bridge.service";
@@ -28,10 +27,10 @@ import { MiniAppEnrollmentTransactionBridgeService } from "../services/resources
 import { MiniAppHolidayBridgeService } from "../services/resources/holiday-bridge.service";
 import { MiniAppInvoiceBridgeService } from "../services/resources/invoice-bridge.service";
 import { MiniAppLevelBridgeService } from "../services/resources/level-bridge.service";
+import { MiniAppMiniAppInstallationBridgeService } from "../services/resources/mini-app-installation-bridge.service";
 import { MiniAppParentBridgeService } from "../services/resources/parent-bridge.service";
 import { MiniAppPaymentBridgeService } from "../services/resources/payment-bridge.service";
 import { MiniAppPaymentMethodBridgeService } from "../services/resources/payment-method-bridge.service";
-import { MiniAppPluginInstallationBridgeService } from "../services/resources/plugin-installation-bridge.service";
 import { MiniAppProductBridgeService } from "../services/resources/product-bridge.service";
 import { MiniAppProductPackageBridgeService } from "../services/resources/product-package-bridge.service";
 import { MiniAppPunchCardBridgeService } from "../services/resources/punch-card-bridge.service";
@@ -63,12 +62,6 @@ export class MiniAppBridgeResourceAccessor {
     this.bridge = new MiniAppBridgeService();
   }
 
-  get tenant() {
-    if (!this.instances.tenant) {
-      this.instances.tenant = new MiniAppTenantBridgeService(this.bridge);
-    }
-    return this.instances.tenant;
-  }
   get organization() {
     if (!this.instances.organization) {
       this.instances.organization = new MiniAppOrganizationBridgeService(
@@ -201,6 +194,13 @@ export class MiniAppBridgeResourceAccessor {
     }
     return this.instances.level;
   }
+  get miniAppInstallation() {
+    if (!this.instances.miniAppInstallation) {
+      this.instances.miniAppInstallation =
+        new MiniAppMiniAppInstallationBridgeService(this.bridge);
+    }
+    return this.instances.miniAppInstallation;
+  }
   get parent() {
     if (!this.instances.parent) {
       this.instances.parent = new MiniAppParentBridgeService(this.bridge);
@@ -220,13 +220,6 @@ export class MiniAppBridgeResourceAccessor {
       );
     }
     return this.instances.paymentMethod;
-  }
-  get pluginInstallation() {
-    if (!this.instances.pluginInstallation) {
-      this.instances.pluginInstallation =
-        new MiniAppPluginInstallationBridgeService(this.bridge);
-    }
-    return this.instances.pluginInstallation;
   }
   get product() {
     if (!this.instances.product) {

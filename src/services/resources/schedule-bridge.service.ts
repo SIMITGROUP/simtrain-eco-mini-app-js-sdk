@@ -31,6 +31,18 @@ export class MiniAppScheduleBridgeService {
     });
   }
 
+  async create(data: any) {
+    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  }
+
+  async update(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "update", { id, body: data });
+  }
+
+  async patch(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,

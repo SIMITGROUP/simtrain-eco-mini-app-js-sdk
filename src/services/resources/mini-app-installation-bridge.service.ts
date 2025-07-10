@@ -7,13 +7,17 @@
 
 import { MiniAppBridgeService } from "../bridge.service";
 
-export class MiniAppTenantBridgeService {
+export class MiniAppMiniAppInstallationBridgeService {
   private bridge: MiniAppBridgeService;
 
-  private resourceName = "tenant";
+  private resourceName = "miniAppInstallation";
 
   constructor(bridge: MiniAppBridgeService) {
     this.bridge = bridge;
+  }
+
+  async detail(id: string) {
+    return this.bridge.callApi(this.resourceName, "detail", { id });
   }
 
   openOnScreenForm(id?: string) {

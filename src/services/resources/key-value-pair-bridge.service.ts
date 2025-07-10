@@ -7,10 +7,10 @@
 
 import { MiniAppBridgeService } from "../bridge.service";
 
-export class MiniAppTenantBridgeService {
+export class MiniAppKeyValuePairBridgeService {
   private bridge: MiniAppBridgeService;
 
-  private resourceName = "tenant";
+  private resourceName = "keyValuePair";
 
   constructor(bridge: MiniAppBridgeService) {
     this.bridge = bridge;
