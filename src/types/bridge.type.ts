@@ -18,7 +18,8 @@ export type MiniAppBridgeMessage<TAction> =
   | MiniAppBridgeMessageNavigate
   | MiniAppBridgeMessageNavigateCurrentMiniApp
   | MiniAppBridgeMessageOpenOnScreenResourceForm
-  | MiniAppBridgeMessageApi<TAction>;
+  | MiniAppBridgeMessageApi<TAction>
+  | MiniAppBridgeMessageInitResponse;
 
 export type MiniAppBridgeMessageNavigate = {
   type: typeof MINI_APP_BRIDGE_MESSAGES.NAVIGATE;
@@ -73,4 +74,8 @@ export type MiniAppBridgeMessageApiResponse<TData> = {
   success: boolean;
   data?: TData;
   error?: any;
+};
+
+export type MiniAppBridgeMessageInitResponse = {
+  type: typeof MINI_APP_BRIDGE_MESSAGES.INIT_RESPONSE;
 };

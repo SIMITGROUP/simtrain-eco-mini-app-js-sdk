@@ -6,7 +6,6 @@
  */
 
 export const MINI_APP_API_RESOURCES = [
-  "tenant",
   "organization",
   "branch",
   "academySession",
@@ -26,10 +25,10 @@ export const MINI_APP_API_RESOURCES = [
   "holiday",
   "invoice",
   "level",
+  "miniAppInstallation",
   "parent",
   "payment",
   "paymentMethod",
-  "pluginInstallation",
   "product",
   "productPackage",
   "punchCard",

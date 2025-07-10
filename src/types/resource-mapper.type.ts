@@ -5,7 +5,6 @@
  * Author: --
  */
 
-import { MiniAppTenantBridgeService } from "../services/resources/tenant-bridge.service";
 import { MiniAppOrganizationBridgeService } from "../services/resources/organization-bridge.service";
 import { MiniAppBranchBridgeService } from "../services/resources/branch-bridge.service";
 import { MiniAppAcademySessionBridgeService } from "../services/resources/academy-session-bridge.service";
@@ -25,10 +24,10 @@ import { MiniAppEnrollmentTransactionBridgeService } from "../services/resources
 import { MiniAppHolidayBridgeService } from "../services/resources/holiday-bridge.service";
 import { MiniAppInvoiceBridgeService } from "../services/resources/invoice-bridge.service";
 import { MiniAppLevelBridgeService } from "../services/resources/level-bridge.service";
+import { MiniAppMiniAppInstallationBridgeService } from "../services/resources/mini-app-installation-bridge.service";
 import { MiniAppParentBridgeService } from "../services/resources/parent-bridge.service";
 import { MiniAppPaymentBridgeService } from "../services/resources/payment-bridge.service";
 import { MiniAppPaymentMethodBridgeService } from "../services/resources/payment-method-bridge.service";
-import { MiniAppPluginInstallationBridgeService } from "../services/resources/plugin-installation-bridge.service";
 import { MiniAppProductBridgeService } from "../services/resources/product-bridge.service";
 import { MiniAppProductPackageBridgeService } from "../services/resources/product-package-bridge.service";
 import { MiniAppPunchCardBridgeService } from "../services/resources/punch-card-bridge.service";
@@ -51,10 +50,8 @@ import { MiniAppTeacherBridgeService } from "../services/resources/teacher-bridg
 import { MiniAppTeacherGroupBridgeService } from "../services/resources/teacher-group-bridge.service";
 import { MiniAppTuitionClassBridgeService } from "../services/resources/tuition-class-bridge.service";
 import { MiniAppUserBridgeService } from "../services/resources/user-bridge.service";
-import { MiniAppMiniAppInstallationBridgeService } from "../services/resources/mini-app-installation-bridge.service";
 
 export type MiniAppResourceMap = {
-  tenant: MiniAppTenantBridgeService;
   organization: MiniAppOrganizationBridgeService;
   branch: MiniAppBranchBridgeService;
   academySession: MiniAppAcademySessionBridgeService;
@@ -74,10 +71,10 @@ export type MiniAppResourceMap = {
   holiday: MiniAppHolidayBridgeService;
   invoice: MiniAppInvoiceBridgeService;
   level: MiniAppLevelBridgeService;
+  miniAppInstallation: MiniAppMiniAppInstallationBridgeService;
   parent: MiniAppParentBridgeService;
   payment: MiniAppPaymentBridgeService;
   paymentMethod: MiniAppPaymentMethodBridgeService;
-  miniAppInstallation: MiniAppMiniAppInstallationBridgeService;
   product: MiniAppProductBridgeService;
   productPackage: MiniAppProductPackageBridgeService;
   punchCard: MiniAppPunchCardBridgeService;
