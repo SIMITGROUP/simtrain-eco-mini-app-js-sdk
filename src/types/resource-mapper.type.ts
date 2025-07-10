@@ -51,6 +51,7 @@ import { MiniAppTeacherBridgeService } from "../services/resources/teacher-bridg
 import { MiniAppTeacherGroupBridgeService } from "../services/resources/teacher-group-bridge.service";
 import { MiniAppTuitionClassBridgeService } from "../services/resources/tuition-class-bridge.service";
 import { MiniAppUserBridgeService } from "../services/resources/user-bridge.service";
+import { MiniAppMiniAppInstallationBridgeService } from "../services/resources/mini-app-installation-bridge.service";
 
 export type MiniAppResourceMap = {
   tenant: MiniAppTenantBridgeService;
@@ -76,7 +77,7 @@ export type MiniAppResourceMap = {
   parent: MiniAppParentBridgeService;
   payment: MiniAppPaymentBridgeService;
   paymentMethod: MiniAppPaymentMethodBridgeService;
-  pluginInstallation: MiniAppPluginInstallationBridgeService;
+  miniAppInstallation: MiniAppMiniAppInstallationBridgeService;
   product: MiniAppProductBridgeService;
   productPackage: MiniAppProductPackageBridgeService;
   punchCard: MiniAppPunchCardBridgeService;
