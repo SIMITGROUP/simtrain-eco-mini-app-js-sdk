@@ -17,7 +17,7 @@ export class MiniAppRefundBridgeService {
     this.bridge = bridge;
   }
 
-  async list(params: MiniAppApiListParam) {
+  async list(params: MiniAppApiListParam | undefined) {
     return this.bridge.callApi(this.resourceName, "list", { body: params });
   }
 
