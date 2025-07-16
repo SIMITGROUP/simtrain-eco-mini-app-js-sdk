@@ -21,7 +21,7 @@ export class MiniAppBranchBridgeService {
     return this.bridge.callApi(this.resourceName, "current");
   }
 
-  async list(params: MiniAppApiListParam | undefined) {
+  async list(params?: MiniAppApiListParam | undefined) {
     return this.bridge.callApi(this.resourceName, "list", { body: params });
   }
 

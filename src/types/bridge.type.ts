@@ -81,19 +81,19 @@ export type MiniAppBridgeMessageInitResponse = {
 };
 
 export type MiniAppApiListParam = {
-  fields: string[];
+  fields?: string[];
 
   /**
    * Same as Mongo DB filter
    */
-  filters: {
+  filters?: {
     [key: string]: any;
   };
 
   /**
    * Same as Mongo DB sort
    */
-  sorts:
+  sorts?:
     | {
         [key: string]: any;
       }

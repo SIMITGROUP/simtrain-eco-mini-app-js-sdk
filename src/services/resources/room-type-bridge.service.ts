@@ -17,7 +17,7 @@ export class MiniAppRoomTypeBridgeService {
     this.bridge = bridge;
   }
 
-  async list(params: MiniAppApiListParam | undefined) {
+  async list(params?: MiniAppApiListParam | undefined) {
     return this.bridge.callApi(this.resourceName, "list", { body: params });
   }
 

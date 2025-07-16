@@ -1,6 +1,6 @@
 {
   "name": "@simitgroup/simtrain-eco-mini-app-js-sdk",
-  "version": "0.0.1-p",
+  "version": "0.0.1-q",
   "description": "A Javascript SDK For Simtrain Eco Mini App",
   "main": "./lib/index.js",
   "files": [
