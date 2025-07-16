@@ -5,6 +5,7 @@
  * Author: --
  */
 
+import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
 
 export class MiniAppBranchBridgeService {
@@ -20,8 +21,8 @@ export class MiniAppBranchBridgeService {
     return this.bridge.callApi(this.resourceName, "current");
   }
 
-  async list() {
-    return this.bridge.callApi(this.resourceName, "list");
+  async list(params: MiniAppApiListParam) {
+    return this.bridge.callApi(this.resourceName, "list", { body: params });
   }
 
   async detail(id: string) {

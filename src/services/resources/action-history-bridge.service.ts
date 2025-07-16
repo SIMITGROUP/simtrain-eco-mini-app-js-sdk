@@ -5,6 +5,7 @@
  * Author: --
  */
 
+import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
 
 export class MiniAppActionHistoryBridgeService {
