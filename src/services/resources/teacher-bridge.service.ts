@@ -25,6 +25,22 @@ export class MiniAppTeacherBridgeService {
     return this.bridge.callApi(this.resourceName, "detail", { id });
   }
 
+  async create(data: any) {
+    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  }
+
+  async update(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "update", { id, body: data });
+  }
+
+  async patch(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
+  }
+
+  async delete(id: string) {
+    return this.bridge.callApi(this.resourceName, "delete", { id });
+  }
+
   async autoComplete(query: string, data: any) {
     return this.bridge.callApi(this.resourceName, "autoComplete", {
       query,
