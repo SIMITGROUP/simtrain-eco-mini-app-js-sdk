@@ -37,6 +37,6 @@ export class SimtrainEcoMiniAppJsSdk extends MiniAppBridgeResourceAccessor {
 
   constructor() {
     super();
-    console.log("Hello from SimtrainEcoMiniAppJsSdk !!!");
+    // console.log("Hello from SimtrainEcoMiniAppJsSdk !!!");
   }
 }
