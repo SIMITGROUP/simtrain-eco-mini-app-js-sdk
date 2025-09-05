@@ -19,11 +19,9 @@ import { MiniAppAppMessageBridgeService } from "../services/resources/app-messag
 import { MiniAppAppUserBridgeService } from "../services/resources/app-user-bridge.service";
 import { MiniAppAppUserAnnouncementViewBridgeService } from "../services/resources/app-user-announcement-view-bridge.service";
 import { MiniAppAreaBridgeService } from "../services/resources/area-bridge.service";
-import { MiniAppAttendanceBridgeService } from "../services/resources/attendance-bridge.service";
 import { MiniAppCategoryBridgeService } from "../services/resources/category-bridge.service";
 import { MiniAppCreditNoteBridgeService } from "../services/resources/credit-note-bridge.service";
 import { MiniAppEnrollmentBridgeService } from "../services/resources/enrollment-bridge.service";
-import { MiniAppEnrollmentTransactionBridgeService } from "../services/resources/enrollment-transaction-bridge.service";
 import { MiniAppHolidayBridgeService } from "../services/resources/holiday-bridge.service";
 import { MiniAppInvoiceBridgeService } from "../services/resources/invoice-bridge.service";
 import { MiniAppLevelBridgeService } from "../services/resources/level-bridge.service";
@@ -41,6 +39,7 @@ import { MiniAppReligionBridgeService } from "../services/resources/religion-bri
 import { MiniAppRoomBridgeService } from "../services/resources/room-bridge.service";
 import { MiniAppRoomTypeBridgeService } from "../services/resources/room-type-bridge.service";
 import { MiniAppScheduleBridgeService } from "../services/resources/schedule-bridge.service";
+import { MiniAppScheduleAttendanceBridgeService } from "../services/resources/schedule-attendance-bridge.service";
 import { MiniAppSchoolBridgeService } from "../services/resources/school-bridge.service";
 import { MiniAppStopEnrollBridgeService } from "../services/resources/stop-enroll-bridge.service";
 import { MiniAppStopReasonBridgeService } from "../services/resources/stop-reason-bridge.service";
@@ -139,14 +138,6 @@ export class MiniAppBridgeResourceAccessor {
     }
     return this.instances.area;
   }
-  get attendance() {
-    if (!this.instances.attendance) {
-      this.instances.attendance = new MiniAppAttendanceBridgeService(
-        this.bridge
-      );
-    }
-    return this.instances.attendance;
-  }
   get category() {
     if (!this.instances.category) {
       this.instances.category = new MiniAppCategoryBridgeService(this.bridge);
@@ -168,13 +159,6 @@ export class MiniAppBridgeResourceAccessor {
       );
     }
     return this.instances.enrollment;
-  }
-  get enrollmentTransaction() {
-    if (!this.instances.enrollmentTransaction) {
-      this.instances.enrollmentTransaction =
-        new MiniAppEnrollmentTransactionBridgeService(this.bridge);
-    }
-    return this.instances.enrollmentTransaction;
   }
   get holiday() {
     if (!this.instances.holiday) {
@@ -284,6 +268,13 @@ export class MiniAppBridgeResourceAccessor {
       this.instances.schedule = new MiniAppScheduleBridgeService(this.bridge);
     }
     return this.instances.schedule;
+  }
+  get scheduleAttendance() {
+    if (!this.instances.scheduleAttendance) {
+      this.instances.scheduleAttendance =
+        new MiniAppScheduleAttendanceBridgeService(this.bridge);
+    }
+    return this.instances.scheduleAttendance;
   }
   get school() {
     if (!this.instances.school) {
