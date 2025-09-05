@@ -16,11 +16,9 @@ import { MiniAppAppMessageBridgeService } from "../services/resources/app-messag
 import { MiniAppAppUserBridgeService } from "../services/resources/app-user-bridge.service";
 import { MiniAppAppUserAnnouncementViewBridgeService } from "../services/resources/app-user-announcement-view-bridge.service";
 import { MiniAppAreaBridgeService } from "../services/resources/area-bridge.service";
-import { MiniAppAttendanceBridgeService } from "../services/resources/attendance-bridge.service";
 import { MiniAppCategoryBridgeService } from "../services/resources/category-bridge.service";
 import { MiniAppCreditNoteBridgeService } from "../services/resources/credit-note-bridge.service";
 import { MiniAppEnrollmentBridgeService } from "../services/resources/enrollment-bridge.service";
-import { MiniAppEnrollmentTransactionBridgeService } from "../services/resources/enrollment-transaction-bridge.service";
 import { MiniAppHolidayBridgeService } from "../services/resources/holiday-bridge.service";
 import { MiniAppInvoiceBridgeService } from "../services/resources/invoice-bridge.service";
 import { MiniAppLevelBridgeService } from "../services/resources/level-bridge.service";
@@ -38,6 +36,7 @@ import { MiniAppReligionBridgeService } from "../services/resources/religion-bri
 import { MiniAppRoomBridgeService } from "../services/resources/room-bridge.service";
 import { MiniAppRoomTypeBridgeService } from "../services/resources/room-type-bridge.service";
 import { MiniAppScheduleBridgeService } from "../services/resources/schedule-bridge.service";
+import { MiniAppScheduleAttendanceBridgeService } from "../services/resources/schedule-attendance-bridge.service";
 import { MiniAppSchoolBridgeService } from "../services/resources/school-bridge.service";
 import { MiniAppStopEnrollBridgeService } from "../services/resources/stop-enroll-bridge.service";
 import { MiniAppStopReasonBridgeService } from "../services/resources/stop-reason-bridge.service";
@@ -63,11 +62,9 @@ export type MiniAppResourceMap = {
   appUser: MiniAppAppUserBridgeService;
   appUserAnnouncementView: MiniAppAppUserAnnouncementViewBridgeService;
   area: MiniAppAreaBridgeService;
-  attendance: MiniAppAttendanceBridgeService;
   category: MiniAppCategoryBridgeService;
   creditNote: MiniAppCreditNoteBridgeService;
   enrollment: MiniAppEnrollmentBridgeService;
-  enrollmentTransaction: MiniAppEnrollmentTransactionBridgeService;
   holiday: MiniAppHolidayBridgeService;
   invoice: MiniAppInvoiceBridgeService;
   level: MiniAppLevelBridgeService;
@@ -85,6 +82,7 @@ export type MiniAppResourceMap = {
   room: MiniAppRoomBridgeService;
   roomType: MiniAppRoomTypeBridgeService;
   schedule: MiniAppScheduleBridgeService;
+  scheduleAttendance: MiniAppScheduleAttendanceBridgeService;
   school: MiniAppSchoolBridgeService;
   stopEnroll: MiniAppStopEnrollBridgeService;
   stopReason: MiniAppStopReasonBridgeService;
