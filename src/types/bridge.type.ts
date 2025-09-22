@@ -6,6 +6,7 @@
  */
 
 import { MINI_APP_BRIDGE_MESSAGES } from "../constants/common.constant";
+import { NavigateToOptions } from "./navigate.type";
 
 export type MiniAppResource = {
   name: string;
@@ -27,6 +28,7 @@ export type MiniAppBridgeMessageNavigate = {
     target: string;
     id?: string;
     query?: string;
+    options?: NavigateToOptions;
   };
 };
 
@@ -35,6 +37,7 @@ export type MiniAppBridgeMessageNavigateCurrentMiniApp = {
   params: {
     target: string;
     query?: string;
+    options?: NavigateToOptions;
   };
 };
 
