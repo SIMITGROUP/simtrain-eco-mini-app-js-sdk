@@ -8,10 +8,10 @@
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
 
-export class MiniAppLevelBridgeService {
+export class MiniAppMobileAppMessageBridgeService {
   private bridge: MiniAppBridgeService;
 
-  private resourceName = "level";
+  private resourceName = "mobileAppMessage";
 
   constructor(bridge: MiniAppBridgeService) {
     this.bridge = bridge;
@@ -28,12 +28,6 @@ export class MiniAppLevelBridgeService {
   async autoComplete(query: string, data: any) {
     return this.bridge.callApi(this.resourceName, "autoComplete", {
       query,
-      body: data,
-    });
-  }
-
-  async searchWithRelation(data: any) {
-    return this.bridge.callApi(this.resourceName, "searchWithRelation", {
       body: data,
     });
   }

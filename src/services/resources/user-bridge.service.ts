@@ -32,6 +32,19 @@ export class MiniAppUserBridgeService {
     });
   }
 
+  async getPhoto(id: string) {
+    return this.bridge.callApi(this.resourceName, "getPhoto", {
+      id: id,
+    });
+  }
+
+  async uploadPhoto(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "uploadPhoto", {
+      id: id,
+      body: data,
+    });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,

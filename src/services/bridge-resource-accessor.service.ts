@@ -15,17 +15,17 @@ import { MiniAppAccountTransactionBridgeService } from "../services/resources/ac
 import { MiniAppAgentBridgeService } from "../services/resources/agent-bridge.service";
 import { MiniAppAnnouncementBridgeService } from "../services/resources/announcement-bridge.service";
 import { MiniAppAnnouncementTypeBridgeService } from "../services/resources/announcement-type-bridge.service";
-import { MiniAppAppMessageBridgeService } from "../services/resources/app-message-bridge.service";
-import { MiniAppAppUserBridgeService } from "../services/resources/app-user-bridge.service";
 import { MiniAppAppUserAnnouncementViewBridgeService } from "../services/resources/app-user-announcement-view-bridge.service";
 import { MiniAppAreaBridgeService } from "../services/resources/area-bridge.service";
 import { MiniAppCategoryBridgeService } from "../services/resources/category-bridge.service";
 import { MiniAppCreditNoteBridgeService } from "../services/resources/credit-note-bridge.service";
+import { MiniAppMobileAppUserBridgeService } from "../services/resources/mobile-app-user-bridge.service";
 import { MiniAppEnrollmentBridgeService } from "../services/resources/enrollment-bridge.service";
 import { MiniAppHolidayBridgeService } from "../services/resources/holiday-bridge.service";
 import { MiniAppInvoiceBridgeService } from "../services/resources/invoice-bridge.service";
 import { MiniAppLevelBridgeService } from "../services/resources/level-bridge.service";
 import { MiniAppMiniAppInstallationBridgeService } from "../services/resources/mini-app-installation-bridge.service";
+import { MiniAppMobileAppMessageBridgeService } from "../services/resources/mobile-app-message-bridge.service";
 import { MiniAppParentBridgeService } from "../services/resources/parent-bridge.service";
 import { MiniAppPaymentBridgeService } from "../services/resources/payment-bridge.service";
 import { MiniAppPaymentMethodBridgeService } from "../services/resources/payment-method-bridge.service";
@@ -41,7 +41,7 @@ import { MiniAppRoomTypeBridgeService } from "../services/resources/room-type-br
 import { MiniAppScheduleBridgeService } from "../services/resources/schedule-bridge.service";
 import { MiniAppScheduleAttendanceBridgeService } from "../services/resources/schedule-attendance-bridge.service";
 import { MiniAppSchoolBridgeService } from "../services/resources/school-bridge.service";
-import { MiniAppStopEnrollBridgeService } from "../services/resources/stop-enroll-bridge.service";
+import { MiniAppStopEnrollmentBridgeService } from "../services/resources/stop-enrollment-bridge.service";
 import { MiniAppStopReasonBridgeService } from "../services/resources/stop-reason-bridge.service";
 import { MiniAppStudentBridgeService } from "../services/resources/student-bridge.service";
 import { MiniAppStudentDescriptionBridgeService } from "../services/resources/student-description-bridge.service";
@@ -111,20 +111,6 @@ export class MiniAppBridgeResourceAccessor {
     }
     return this.instances.announcementType;
   }
-  get appMessage() {
-    if (!this.instances.appMessage) {
-      this.instances.appMessage = new MiniAppAppMessageBridgeService(
-        this.bridge
-      );
-    }
-    return this.instances.appMessage;
-  }
-  get appUser() {
-    if (!this.instances.appUser) {
-      this.instances.appUser = new MiniAppAppUserBridgeService(this.bridge);
-    }
-    return this.instances.appUser;
-  }
   get appUserAnnouncementView() {
     if (!this.instances.appUserAnnouncementView) {
       this.instances.appUserAnnouncementView =
@@ -151,6 +137,14 @@ export class MiniAppBridgeResourceAccessor {
       );
     }
     return this.instances.creditNote;
+  }
+  get mobileAppUser() {
+    if (!this.instances.mobileAppUser) {
+      this.instances.mobileAppUser = new MiniAppMobileAppUserBridgeService(
+        this.bridge
+      );
+    }
+    return this.instances.mobileAppUser;
   }
   get enrollment() {
     if (!this.instances.enrollment) {
@@ -184,6 +178,13 @@ export class MiniAppBridgeResourceAccessor {
         new MiniAppMiniAppInstallationBridgeService(this.bridge);
     }
     return this.instances.miniAppInstallation;
+  }
+  get mobileAppMessage() {
+    if (!this.instances.mobileAppMessage) {
+      this.instances.mobileAppMessage =
+        new MiniAppMobileAppMessageBridgeService(this.bridge);
+    }
+    return this.instances.mobileAppMessage;
   }
   get parent() {
     if (!this.instances.parent) {
@@ -282,13 +283,13 @@ export class MiniAppBridgeResourceAccessor {
     }
     return this.instances.school;
   }
-  get stopEnroll() {
-    if (!this.instances.stopEnroll) {
-      this.instances.stopEnroll = new MiniAppStopEnrollBridgeService(
+  get stopEnrollment() {
+    if (!this.instances.stopEnrollment) {
+      this.instances.stopEnrollment = new MiniAppStopEnrollmentBridgeService(
         this.bridge
       );
     }
-    return this.instances.stopEnroll;
+    return this.instances.stopEnrollment;
   }
   get stopReason() {
     if (!this.instances.stopReason) {

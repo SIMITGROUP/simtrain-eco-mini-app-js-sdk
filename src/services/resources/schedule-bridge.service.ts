@@ -44,6 +44,12 @@ export class MiniAppScheduleBridgeService {
     return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
   }
 
+  async searchWithRelation(data: any) {
+    return this.bridge.callApi(this.resourceName, "searchWithRelation", {
+      body: data,
+    });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,

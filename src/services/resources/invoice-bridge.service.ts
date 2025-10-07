@@ -32,6 +32,10 @@ export class MiniAppInvoiceBridgeService {
     });
   }
 
+  async create(data: any) {
+    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,

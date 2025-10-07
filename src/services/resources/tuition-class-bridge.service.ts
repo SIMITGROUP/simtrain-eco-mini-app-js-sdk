@@ -32,6 +32,36 @@ export class MiniAppTuitionClassBridgeService {
     });
   }
 
+  async patch(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
+  }
+
+  async getTuitionClassesWithLastSchedules(data: any) {
+    return this.bridge.callApi(
+      this.resourceName,
+      "getTuitionClassesWithLastSchedules",
+      {
+        body: data,
+      }
+    );
+  }
+
+  async getTuitionClassesWithNearbySchedules(data: any) {
+    return this.bridge.callApi(
+      this.resourceName,
+      "getTuitionClassesWithNearbySchedules",
+      {
+        body: data,
+      }
+    );
+  }
+
+  async closeRegistrations(data: any) {
+    return this.bridge.callApi(this.resourceName, "closeRegistrations", {
+      body: data,
+    });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,
