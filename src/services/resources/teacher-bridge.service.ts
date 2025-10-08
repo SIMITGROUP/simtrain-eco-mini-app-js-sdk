@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppTeacherBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,23 +24,35 @@ export class MiniAppTeacherBridgeService {
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi(this.resourceName, "list", { body: params });
+    return this.bridge.callApi<Schema.Teacher[]>(this.resourceName, "list", {
+      body: params,
+    });
   }
 
   async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
+    return this.bridge.callApi<Schema.Teacher>(this.resourceName, "detail", {
+      id,
+    });
   }
 
-  async create(data: any) {
-    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  async create(data: CreateResource<Schema.Teacher>) {
+    return this.bridge.callApi<Schema.Teacher>(this.resourceName, "create", {
+      body: data,
+    });
   }
 
-  async update(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "update", { id, body: data });
+  async update(id: string, data: UpdateResource<Schema.Teacher>) {
+    return this.bridge.callApi<Schema.Teacher>(this.resourceName, "update", {
+      id,
+      body: data,
+    });
   }
 
-  async patch(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
+  async patch(id: string, data: PatchResource<Schema.Teacher>) {
+    return this.bridge.callApi<Schema.Teacher>(this.resourceName, "patch", {
+      id,
+      body: data,
+    });
   }
 
   async delete(id: string) {
@@ -42,14 +60,18 @@ export class MiniAppTeacherBridgeService {
   }
 
   async autoComplete(query: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "autoComplete", {
-      query,
-      body: data,
-    });
+    return this.bridge.callApi<Schema.TeacherAutoComplete[]>(
+      this.resourceName,
+      "autoComplete",
+      {
+        query,
+        body: data,
+      }
+    );
   }
 
   async getTeacherCommissionResult(period: string) {
-    return this.bridge.callApi(
+    return this.bridge.callApi<Schema.CommissionResponseData[]>(
       this.resourceName,
       "getTeacherCommissionResult",
       {
@@ -61,13 +83,13 @@ export class MiniAppTeacherBridgeService {
   }
 
   async getPhoto(id: string) {
-    return this.bridge.callApi(this.resourceName, "getPhoto", {
+    return this.bridge.callApi<string>(this.resourceName, "getPhoto", {
       id: id,
     });
   }
 
-  async uploadPhoto(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "uploadPhoto", {
+  async uploadPhoto(id: string, data: Schema.UploadPhoto) {
+    return this.bridge.callApi<string>(this.resourceName, "uploadPhoto", {
       id: id,
       body: data,
     });

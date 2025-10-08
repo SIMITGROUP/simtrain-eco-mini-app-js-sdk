@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppTuitionClassBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,26 +24,51 @@ export class MiniAppTuitionClassBridgeService {
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi(this.resourceName, "list", { body: params });
+    return this.bridge.callApi<Schema.TuitionClass[]>(
+      this.resourceName,
+      "list",
+      { body: params }
+    );
   }
 
   async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
+    return this.bridge.callApi<Schema.TuitionClass>(
+      this.resourceName,
+      "detail",
+      { id }
+    );
   }
 
   async autoComplete(query: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "autoComplete", {
-      query,
+    return this.bridge.callApi<Schema.TuitionClassAutoComplete[]>(
+      this.resourceName,
+      "autoComplete",
+      {
+        query,
+        body: data,
+      }
+    );
+  }
+
+  async patch(id: string, data: PatchResource<Schema.TuitionClass>) {
+    return this.bridge.callApi<Schema.TuitionClass>(
+      this.resourceName,
+      "patch",
+      { id, body: data }
+    );
+  }
+
+  async patchMany(id: string, data: Schema.PatchManyRequest) {
+    return this.bridge.callApi<Schema.UpdateManyResponse>(this.resourceName, "patchMany", {
+      id,
       body: data,
     });
   }
 
-  async patch(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
-  }
-
-  async getTuitionClassesWithLastSchedules(data: any) {
-    return this.bridge.callApi(
+  async getTuitionClassesWithLastSchedules(
+    data: Schema.TuitionClassWithLastScheduleParam
+  ) {
+    return this.bridge.callApi<Schema.TuitionClassWithLastSchedule[]>(
       this.resourceName,
       "getTuitionClassesWithLastSchedules",
       {
@@ -46,8 +77,10 @@ export class MiniAppTuitionClassBridgeService {
     );
   }
 
-  async getTuitionClassesWithNearbySchedules(data: any) {
-    return this.bridge.callApi(
+  async getTuitionClassesWithNearbySchedules(
+    data: Schema.TuitionClassWithNearbyScheduleParam
+  ) {
+    return this.bridge.callApi<Schema.TuitionClassWithNearbySchedule[]>(
       this.resourceName,
       "getTuitionClassesWithNearbySchedules",
       {
@@ -56,10 +89,14 @@ export class MiniAppTuitionClassBridgeService {
     );
   }
 
-  async closeRegistrations(data: any) {
-    return this.bridge.callApi(this.resourceName, "closeRegistrations", {
-      body: data,
-    });
+  async closeRegistrations(data: Schema.CloseTuitionClassesRegistration) {
+    return this.bridge.callApi<Schema.TuitionClass[]>(
+      this.resourceName,
+      "closeRegistrations",
+      {
+        body: data,
+      }
+    );
   }
 
   openOnScreenForm(id?: string) {

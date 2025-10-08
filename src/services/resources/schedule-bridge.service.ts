@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppScheduleBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,36 +24,63 @@ export class MiniAppScheduleBridgeService {
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi(this.resourceName, "list", { body: params });
+    return this.bridge.callApi<Schema.Schedule[]>(this.resourceName, "list", {
+      body: params,
+    });
   }
 
   async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
+    return this.bridge.callApi<Schema.Schedule>(this.resourceName, "detail", {
+      id,
+    });
   }
 
   async autoComplete(query: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "autoComplete", {
-      query,
+    return this.bridge.callApi<Schema.ScheduleAutoComplete[]>(
+      this.resourceName,
+      "autoComplete",
+      {
+        query,
+        body: data,
+      }
+    );
+  }
+
+  async create(data: CreateResource<Schema.Schedule>) {
+    return this.bridge.callApi<Schema.Schedule>(this.resourceName, "create", {
       body: data,
     });
   }
 
-  async create(data: any) {
-    return this.bridge.callApi(this.resourceName, "create", { body: data });
-  }
-
-  async update(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "update", { id, body: data });
-  }
-
-  async patch(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "patch", { id, body: data });
-  }
-
-  async searchWithRelation(data: any) {
-    return this.bridge.callApi(this.resourceName, "searchWithRelation", {
+  async update(id: string, data: UpdateResource<Schema.Schedule>) {
+    return this.bridge.callApi<Schema.Schedule>(this.resourceName, "update", {
+      id,
       body: data,
     });
+  }
+
+  async patch(id: string, data: PatchResource<Schema.Schedule>) {
+    return this.bridge.callApi<Schema.Schedule>(this.resourceName, "patch", {
+      id,
+      body: data,
+    });
+  }
+
+  async patchMany(id: string, data: any) {
+    return this.bridge.callApi(this.resourceName, "patchMany", {
+      id,
+      body: data,
+    });
+  }
+
+  async searchWithRelation(data: Schema.SearchScheduleWithRelations) {
+    return this.bridge.callApi<Schema.ScheduleWithRelation[]>(
+      this.resourceName,
+      "searchWithRelation",
+      {
+        body: data,
+      }
+    );
   }
 
   openOnScreenForm(id?: string) {

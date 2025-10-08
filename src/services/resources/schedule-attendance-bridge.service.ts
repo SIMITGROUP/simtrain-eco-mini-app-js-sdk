@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppScheduleAttendanceBridgeService {
   private bridge: MiniAppBridgeService;
@@ -17,12 +23,20 @@ export class MiniAppScheduleAttendanceBridgeService {
     this.bridge = bridge;
   }
 
-  async create(data: any) {
-    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  async create(data: CreateResource<Schema.ScheduleAttendance>) {
+    return this.bridge.callApi<Schema.ScheduleAttendance>(
+      this.resourceName,
+      "create",
+      { body: data }
+    );
   }
 
-  async update(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "update", { id, body: data });
+  async update(id: string, data: UpdateResource<Schema.ScheduleAttendance>) {
+    return this.bridge.callApi<Schema.ScheduleAttendance>(
+      this.resourceName,
+      "update",
+      { id, body: data }
+    );
   }
 
   openOnScreenForm(id?: string) {

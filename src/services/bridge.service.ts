@@ -46,7 +46,7 @@ export class MiniAppBridgeService {
     }
   }
 
-  async callApi(
+  async callApi<TResponse>(
     resource: string,
     action: string,
     params: MiniAppResourceServiceApiParam = {}
@@ -66,7 +66,7 @@ export class MiniAppBridgeService {
       },
     };
 
-    const promise = new Promise<any>((resolve, reject) => {
+    const promise = new Promise<TResponse>((resolve, reject) => {
       this.pendingRequests[requestId] = { resolve, reject };
     });
 

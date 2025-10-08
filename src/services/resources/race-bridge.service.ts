@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppRaceBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,18 +24,26 @@ export class MiniAppRaceBridgeService {
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi(this.resourceName, "list", { body: params });
+    return this.bridge.callApi<Schema.Race[]>(this.resourceName, "list", {
+      body: params,
+    });
   }
 
   async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
+    return this.bridge.callApi<Schema.Race>(this.resourceName, "detail", {
+      id,
+    });
   }
 
   async autoComplete(query: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "autoComplete", {
-      query,
-      body: data,
-    });
+    return this.bridge.callApi<Schema.RaceAutoComplete[]>(
+      this.resourceName,
+      "autoComplete",
+      {
+        query,
+        body: data,
+      }
+    );
   }
 
   openOnScreenForm(id?: string) {

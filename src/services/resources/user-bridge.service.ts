@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppUserBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,28 +24,36 @@ export class MiniAppUserBridgeService {
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi(this.resourceName, "list", { body: params });
-  }
-
-  async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
-  }
-
-  async autoComplete(query: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "autoComplete", {
-      query,
-      body: data,
+    return this.bridge.callApi<Schema.User[]>(this.resourceName, "list", {
+      body: params,
     });
   }
 
+  async detail(id: string) {
+    return this.bridge.callApi<Schema.User>(this.resourceName, "detail", {
+      id,
+    });
+  }
+
+  async autoComplete(query: string, data: any) {
+    return this.bridge.callApi<Schema.UserAutoComplete[]>(
+      this.resourceName,
+      "autoComplete",
+      {
+        query,
+        body: data,
+      }
+    );
+  }
+
   async getPhoto(id: string) {
-    return this.bridge.callApi(this.resourceName, "getPhoto", {
+    return this.bridge.callApi<string>(this.resourceName, "getPhoto", {
       id: id,
     });
   }
 
-  async uploadPhoto(id: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "uploadPhoto", {
+  async uploadPhoto(id: string, data: Schema.UploadPhoto) {
+    return this.bridge.callApi<string>(this.resourceName, "uploadPhoto", {
       id: id,
       body: data,
     });

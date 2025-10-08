@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppMiniAppInstallationBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,7 +24,11 @@ export class MiniAppMiniAppInstallationBridgeService {
   }
 
   async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
+    return this.bridge.callApi<Schema.MiniAppInstallation>(
+      this.resourceName,
+      "detail",
+      { id }
+    );
   }
 
   openOnScreenForm(id?: string) {

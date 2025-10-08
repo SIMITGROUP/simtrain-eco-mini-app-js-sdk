@@ -7,6 +7,12 @@
 
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
+import * as Schema from "../../openapi/backend-api";
+import {
+  CreateResource,
+  PatchResource,
+  UpdateResource,
+} from "../../types/common";
 
 export class MiniAppPaymentBridgeService {
   private bridge: MiniAppBridgeService;
@@ -18,22 +24,32 @@ export class MiniAppPaymentBridgeService {
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi(this.resourceName, "list", { body: params });
-  }
-
-  async detail(id: string) {
-    return this.bridge.callApi(this.resourceName, "detail", { id });
-  }
-
-  async autoComplete(query: string, data: any) {
-    return this.bridge.callApi(this.resourceName, "autoComplete", {
-      query,
-      body: data,
+    return this.bridge.callApi<Schema.Payment[]>(this.resourceName, "list", {
+      body: params,
     });
   }
 
-  async create(data: any) {
-    return this.bridge.callApi(this.resourceName, "create", { body: data });
+  async detail(id: string) {
+    return this.bridge.callApi<Schema.Payment>(this.resourceName, "detail", {
+      id,
+    });
+  }
+
+  async autoComplete(query: string, data: any) {
+    return this.bridge.callApi<Schema.PaymentAutoComplete[]>(
+      this.resourceName,
+      "autoComplete",
+      {
+        query,
+        body: data,
+      }
+    );
+  }
+
+  async create(data: CreateResource<Schema.Payment>) {
+    return this.bridge.callApi<Schema.Payment>(this.resourceName, "create", {
+      body: data,
+    });
   }
 
   openOnScreenForm(id?: string) {
