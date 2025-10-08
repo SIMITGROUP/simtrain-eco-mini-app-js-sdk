@@ -66,11 +66,11 @@ export class MiniAppScheduleBridgeService {
     });
   }
 
-  async patchMany(id: string, data: Schema.PatchManyRequest) {
+  async patchMany(data: Schema.PatchManyRequest) {
     return this.bridge.callApi<Schema.UpdateManyResponse>(
       this.resourceName,
       "patchMany",
-      { id, body: data }
+      { body: data }
     );
   }
 
