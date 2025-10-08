@@ -59,10 +59,11 @@ export class MiniAppTuitionClassBridgeService {
   }
 
   async patchMany(id: string, data: Schema.PatchManyRequest) {
-    return this.bridge.callApi<Schema.UpdateManyResponse>(this.resourceName, "patchMany", {
-      id,
-      body: data,
-    });
+    return this.bridge.callApi<Schema.UpdateManyResponse>(
+      this.resourceName,
+      "patchMany",
+      { id, body: data }
+    );
   }
 
   async getTuitionClassesWithLastSchedules(
