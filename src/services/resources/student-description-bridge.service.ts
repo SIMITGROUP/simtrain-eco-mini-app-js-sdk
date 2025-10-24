@@ -50,6 +50,34 @@ export class MiniAppStudentDescriptionBridgeService {
     );
   }
 
+  async create(data: CreateResource<Schema.StudentDescription>) {
+    return this.bridge.callApi<Schema.StudentDescription>(
+      this.resourceName,
+      "create",
+      { body: data }
+    );
+  }
+
+  async update(id: string, data: UpdateResource<Schema.StudentDescription>) {
+    return this.bridge.callApi<Schema.StudentDescription>(
+      this.resourceName,
+      "update",
+      { id, body: data }
+    );
+  }
+
+  async patch(id: string, data: PatchResource<Schema.StudentDescription>) {
+    return this.bridge.callApi<Schema.StudentDescription>(
+      this.resourceName,
+      "patch",
+      { id, body: data }
+    );
+  }
+
+  async delete(id: string) {
+    return this.bridge.callApi(this.resourceName, "delete", { id });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,

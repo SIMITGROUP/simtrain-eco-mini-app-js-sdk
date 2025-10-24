@@ -50,6 +50,30 @@ export class MiniAppAnnouncementBridgeService {
     );
   }
 
+  async create(data: CreateResource<Schema.Announcement>) {
+    return this.bridge.callApi<Schema.Announcement>(
+      this.resourceName,
+      "create",
+      { body: data }
+    );
+  }
+
+  async update(id: string, data: UpdateResource<Schema.Announcement>) {
+    return this.bridge.callApi<Schema.Announcement>(
+      this.resourceName,
+      "update",
+      { id, body: data }
+    );
+  }
+
+  async patch(id: string, data: PatchResource<Schema.Announcement>) {
+    return this.bridge.callApi<Schema.Announcement>(
+      this.resourceName,
+      "patch",
+      { id, body: data }
+    );
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,
