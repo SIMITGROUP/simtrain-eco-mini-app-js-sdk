@@ -23,6 +23,10 @@ export class MiniAppUserBridgeService {
     this.bridge = bridge;
   }
 
+  async current() {
+    return this.bridge.callApi(this.resourceName, "current");
+  }
+
   async list(params?: MiniAppApiListParam | undefined) {
     return this.bridge.callApi<Schema.User[]>(this.resourceName, "list", {
       body: params,
