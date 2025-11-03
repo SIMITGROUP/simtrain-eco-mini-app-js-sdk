@@ -14,6 +14,7 @@ import { MiniAppAnnouncementBridgeService } from "../services/resources/announce
 import { MiniAppAnnouncementTypeBridgeService } from "../services/resources/announcement-type-bridge.service";
 import { MiniAppAppUserAnnouncementViewBridgeService } from "../services/resources/app-user-announcement-view-bridge.service";
 import { MiniAppAreaBridgeService } from "../services/resources/area-bridge.service";
+import { MiniAppBillingScheduleBridgeService } from "../services/resources/billing-schedule-bridge.service";
 import { MiniAppCategoryBridgeService } from "../services/resources/category-bridge.service";
 import { MiniAppCreditNoteBridgeService } from "../services/resources/credit-note-bridge.service";
 import { MiniAppMobileAppUserBridgeService } from "../services/resources/mobile-app-user-bridge.service";
@@ -60,6 +61,7 @@ export type MiniAppResourceMap = {
   announcementType: MiniAppAnnouncementTypeBridgeService;
   appUserAnnouncementView: MiniAppAppUserAnnouncementViewBridgeService;
   area: MiniAppAreaBridgeService;
+  billingSchedule: MiniAppBillingScheduleBridgeService;
   category: MiniAppCategoryBridgeService;
   creditNote: MiniAppCreditNoteBridgeService;
   mobileAppUser: MiniAppMobileAppUserBridgeService;

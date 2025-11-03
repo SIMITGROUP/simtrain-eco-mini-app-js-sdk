@@ -14,17 +14,17 @@ import {
   UpdateResource,
 } from "../../types/common";
 
-export class MiniAppScheduleAttendanceBridgeService {
+export class MiniAppBillingScheduleBridgeService {
   private bridge: MiniAppBridgeService;
 
-  private resourceName = "scheduleAttendance";
+  private resourceName = "billingSchedule";
 
   constructor(bridge: MiniAppBridgeService) {
     this.bridge = bridge;
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi<Schema.ScheduleAttendance[]>(
+    return this.bridge.callApi<Schema.BillingSchedule[]>(
       this.resourceName,
       "list",
       { body: params }
@@ -32,7 +32,7 @@ export class MiniAppScheduleAttendanceBridgeService {
   }
 
   async detail(id: string) {
-    return this.bridge.callApi<Schema.ScheduleAttendance>(
+    return this.bridge.callApi<Schema.BillingSchedule>(
       this.resourceName,
       "detail",
       { id }
@@ -40,29 +40,13 @@ export class MiniAppScheduleAttendanceBridgeService {
   }
 
   async autoComplete(query: string, data: any) {
-    return this.bridge.callApi<Schema.ScheduleAttendanceAutoComplete[]>(
+    return this.bridge.callApi<Schema.BillingScheduleAutoComplete[]>(
       this.resourceName,
       "autoComplete",
       {
         query,
         body: data,
       }
-    );
-  }
-
-  async create(data: CreateResource<Schema.ScheduleAttendance>) {
-    return this.bridge.callApi<Schema.ScheduleAttendance>(
-      this.resourceName,
-      "create",
-      { body: data }
-    );
-  }
-
-  async update(id: string, data: UpdateResource<Schema.ScheduleAttendance>) {
-    return this.bridge.callApi<Schema.ScheduleAttendance>(
-      this.resourceName,
-      "update",
-      { id, body: data }
     );
   }
 
