@@ -3,18 +3,19 @@ import { MiniAppOnlinePaymentMerchantConfigBridgeService } from "./customs/onlin
 
 export class MiniAppBridgeResourceAccessor extends MiniAppBridgeResourceAccessorBase {
   protected customInstances: Partial<{
-    onlinePaymentMerchantConfig: MiniAppOnlinePaymentMerchantConfigBridgeService;
+    // onlinePaymentMerchantConfig: MiniAppOnlinePaymentMerchantConfigBridgeService;
   }> = {};
 
   constructor() {
     super();
   }
 
-  get onlinePaymentMerchantConfig() {
-    if (!this.customInstances.onlinePaymentMerchantConfig) {
-      this.customInstances.onlinePaymentMerchantConfig =
-        new MiniAppOnlinePaymentMerchantConfigBridgeService(this.bridge);
-    }
-    return this.customInstances.onlinePaymentMerchantConfig;
-  }
+  // ! Danger API, Shouldn't Expose
+  // get onlinePaymentMerchantConfig() {
+  //   if (!this.customInstances.onlinePaymentMerchantConfig) {
+  //     this.customInstances.onlinePaymentMerchantConfig =
+  //       new MiniAppOnlinePaymentMerchantConfigBridgeService(this.bridge);
+  //   }
+  //   return this.customInstances.onlinePaymentMerchantConfig;
+  // }
 }
