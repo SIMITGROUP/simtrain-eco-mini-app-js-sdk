@@ -52,6 +52,22 @@ export class MiniAppInvoiceBridgeService {
     });
   }
 
+  async patch(id: string, data: PatchResource<Schema.Invoice>) {
+    return this.bridge.callApi<Schema.Invoice>(this.resourceName, "patch", {
+      id,
+      body: data,
+    });
+  }
+
+  async print(id: string, formatId: string) {
+    return this.bridge.callApi<string>(this.resourceName, "print", {
+      id: id,
+      queryParams: {
+        formatId: formatId,
+      },
+    });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,

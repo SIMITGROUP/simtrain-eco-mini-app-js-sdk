@@ -14,29 +14,29 @@ import {
   UpdateResource,
 } from "../../types/common";
 
-export class MiniAppRefundBridgeService {
+export class MiniAppRewardBridgeService {
   private bridge: MiniAppBridgeService;
 
-  private resourceName = "refund";
+  private resourceName = "reward";
 
   constructor(bridge: MiniAppBridgeService) {
     this.bridge = bridge;
   }
 
   async list(params?: MiniAppApiListParam | undefined) {
-    return this.bridge.callApi<Schema.Refund[]>(this.resourceName, "list", {
+    return this.bridge.callApi<Schema.Reward[]>(this.resourceName, "list", {
       body: params,
     });
   }
 
   async detail(id: string) {
-    return this.bridge.callApi<Schema.Refund>(this.resourceName, "detail", {
+    return this.bridge.callApi<Schema.Reward>(this.resourceName, "detail", {
       id,
     });
   }
 
   async autoComplete(query: string, data: any) {
-    return this.bridge.callApi<Schema.RefundAutoComplete[]>(
+    return this.bridge.callApi<Schema.RewardAutoComplete[]>(
       this.resourceName,
       "autoComplete",
       {
@@ -44,19 +44,6 @@ export class MiniAppRefundBridgeService {
         body: data,
       }
     );
-  }
-
-  async create(data: CreateResource<Schema.Refund>) {
-    return this.bridge.callApi<Schema.Refund>(this.resourceName, "create", {
-      body: data,
-    });
-  }
-
-  async patch(id: string, data: PatchResource<Schema.Refund>) {
-    return this.bridge.callApi<Schema.Refund>(this.resourceName, "patch", {
-      id,
-      body: data,
-    });
   }
 
   openOnScreenForm(id?: string) {

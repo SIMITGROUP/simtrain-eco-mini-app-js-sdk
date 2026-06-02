@@ -37,6 +37,8 @@ import { MiniAppRaceBridgeService } from "../services/resources/race-bridge.serv
 import { MiniAppRefundBridgeService } from "../services/resources/refund-bridge.service";
 import { MiniAppRefundTypeBridgeService } from "../services/resources/refund-type-bridge.service";
 import { MiniAppReligionBridgeService } from "../services/resources/religion-bridge.service";
+import { MiniAppRewardBridgeService } from "../services/resources/reward-bridge.service";
+import { MiniAppRewardTypeBridgeService } from "../services/resources/reward-type-bridge.service";
 import { MiniAppRoomBridgeService } from "../services/resources/room-bridge.service";
 import { MiniAppRoomTypeBridgeService } from "../services/resources/room-type-bridge.service";
 import { MiniAppScheduleBridgeService } from "../services/resources/schedule-bridge.service";
@@ -260,6 +262,20 @@ export class MiniAppBridgeResourceAccessor {
       this.instances.religion = new MiniAppReligionBridgeService(this.bridge);
     }
     return this.instances.religion;
+  }
+  get reward() {
+    if (!this.instances.reward) {
+      this.instances.reward = new MiniAppRewardBridgeService(this.bridge);
+    }
+    return this.instances.reward;
+  }
+  get rewardType() {
+    if (!this.instances.rewardType) {
+      this.instances.rewardType = new MiniAppRewardTypeBridgeService(
+        this.bridge
+      );
+    }
+    return this.instances.rewardType;
   }
   get room() {
     if (!this.instances.room) {

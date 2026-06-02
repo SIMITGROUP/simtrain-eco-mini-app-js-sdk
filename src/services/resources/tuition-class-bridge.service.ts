@@ -50,6 +50,14 @@ export class MiniAppTuitionClassBridgeService {
     );
   }
 
+  async create(data: CreateResource<Schema.TuitionClass>) {
+    return this.bridge.callApi<Schema.TuitionClass>(
+      this.resourceName,
+      "create",
+      { body: data }
+    );
+  }
+
   async patch(id: string, data: PatchResource<Schema.TuitionClass>) {
     return this.bridge.callApi<Schema.TuitionClass>(
       this.resourceName,

@@ -46,6 +46,36 @@ export class MiniAppParentBridgeService {
     );
   }
 
+  async searchWithRelation(data: Schema.SearchParentWithRelations) {
+    return this.bridge.callApi<Schema.ParentWithRelation[]>(
+      this.resourceName,
+      "searchWithRelation",
+      {
+        body: data,
+      }
+    );
+  }
+
+  async create(data: CreateResource<Schema.Parent>) {
+    return this.bridge.callApi<Schema.Parent>(this.resourceName, "create", {
+      body: data,
+    });
+  }
+
+  async update(id: string, data: UpdateResource<Schema.Parent>) {
+    return this.bridge.callApi<Schema.Parent>(this.resourceName, "update", {
+      id,
+      body: data,
+    });
+  }
+
+  async patch(id: string, data: PatchResource<Schema.Parent>) {
+    return this.bridge.callApi<Schema.Parent>(this.resourceName, "patch", {
+      id,
+      body: data,
+    });
+  }
+
   openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,
