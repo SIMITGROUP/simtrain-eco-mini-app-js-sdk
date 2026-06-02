@@ -13,7 +13,6 @@ import {
   PatchResource,
   UpdateResource,
 } from "../../types/common";
-import { MiniAppOnScreenResourceFormCallback } from "../../types/service.type";
 
 export class MiniAppCategoryBridgeService {
   private bridge: MiniAppBridgeService;
@@ -47,13 +46,9 @@ export class MiniAppCategoryBridgeService {
     );
   }
 
-  openOnScreenForm(
-    id?: string,
-    callback?: MiniAppOnScreenResourceFormCallback
-  ) {
+  openOnScreenForm(id?: string) {
     this.bridge.openOnScreenResourceForm(this.resourceName, {
       id,
-      callback,
     });
   }
 }

@@ -83,7 +83,6 @@ export class MiniAppBridgeService {
       params: {
         resource: { name: resource, id: params.id },
         data: params.data,
-        callback: params.callback,
       },
     };
 
