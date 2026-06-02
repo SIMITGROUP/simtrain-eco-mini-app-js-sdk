@@ -7,7 +7,6 @@
 
 import { MINI_APP_BRIDGE_MESSAGES } from "../constants/common.constant";
 import { NavigateToOptions } from "./navigate.type";
-import { MiniAppOnScreenResourceFormCallback } from "./service.type";
 
 export type MiniAppResource = {
   name: string;
@@ -47,7 +46,6 @@ export type MiniAppBridgeMessageOpenOnScreenResourceForm = {
   params: {
     resource: MiniAppResource;
     data?: any;
-    callback?: MiniAppOnScreenResourceFormCallback;
   };
 };
 
