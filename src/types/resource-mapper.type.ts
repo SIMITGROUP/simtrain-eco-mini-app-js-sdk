@@ -34,6 +34,8 @@ import { MiniAppRaceBridgeService } from "../services/resources/race-bridge.serv
 import { MiniAppRefundBridgeService } from "../services/resources/refund-bridge.service";
 import { MiniAppRefundTypeBridgeService } from "../services/resources/refund-type-bridge.service";
 import { MiniAppReligionBridgeService } from "../services/resources/religion-bridge.service";
+import { MiniAppRewardBridgeService } from "../services/resources/reward-bridge.service";
+import { MiniAppRewardTypeBridgeService } from "../services/resources/reward-type-bridge.service";
 import { MiniAppRoomBridgeService } from "../services/resources/room-bridge.service";
 import { MiniAppRoomTypeBridgeService } from "../services/resources/room-type-bridge.service";
 import { MiniAppScheduleBridgeService } from "../services/resources/schedule-bridge.service";
@@ -81,6 +83,8 @@ export type MiniAppResourceMap = {
   refund: MiniAppRefundBridgeService;
   refundType: MiniAppRefundTypeBridgeService;
   religion: MiniAppReligionBridgeService;
+  reward: MiniAppRewardBridgeService;
+  rewardType: MiniAppRewardTypeBridgeService;
   room: MiniAppRoomBridgeService;
   roomType: MiniAppRoomTypeBridgeService;
   schedule: MiniAppScheduleBridgeService;

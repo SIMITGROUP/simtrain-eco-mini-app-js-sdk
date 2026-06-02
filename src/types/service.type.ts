@@ -15,8 +15,16 @@ export type MiniAppResourceServiceApiParam = {
   body?: any;
 };
 
+export type MiniAppOnScreenResourceFormCallback = (
+  eventType: "create" | "update" | "delete",
+  data: any,
+  visible: boolean
+) => Promise<void>;
+
 export type MiniAppResourceServiceOpenOnScreenResourceFormParam = {
   id?: string;
   // TODO: Type
   data?: any;
+
+  callback?: MiniAppOnScreenResourceFormCallback;
 };
