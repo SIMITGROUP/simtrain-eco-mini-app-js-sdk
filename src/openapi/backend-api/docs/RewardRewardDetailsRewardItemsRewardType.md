@@ -1,22 +1,23 @@
 # RewardRewardDetailsRewardItemsRewardType
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [default to undefined]            |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RewardRewardDetailsRewardItemsRewardType } from "./api";
+import { RewardRewardDetailsRewardItemsRewardType } from './api';
 
 const instance: RewardRewardDetailsRewardItemsRewardType = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

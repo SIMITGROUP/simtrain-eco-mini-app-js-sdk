@@ -1,24 +1,25 @@
 # AssignSummary
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes           |
-| --------------- | ---------- | ----------- | --------------- |
-| **teacherId**   | **string** |             | [default to ''] |
-| **teacherCode** | **string** |             | [default to ''] |
-| **teacherName** | **string** |             | [default to ''] |
-| **numClass**    | **number** |             | [default to 0]  |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**teacherId** | **string** |  | [default to '']
+**teacherCode** | **string** |  | [default to '']
+**teacherName** | **string** |  | [default to '']
+**numClass** | **number** |  | [default to 0]
 
 ## Example
 
 ```typescript
-import { AssignSummary } from "./api";
+import { AssignSummary } from './api';
 
 const instance: AssignSummary = {
-  teacherId,
-  teacherCode,
-  teacherName,
-  numClass,
+    teacherId,
+    teacherCode,
+    teacherName,
+    numClass,
 };
 ```
 

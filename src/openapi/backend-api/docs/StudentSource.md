@@ -1,42 +1,43 @@
 # StudentSource
 
+
 ## Properties
 
-| Name                  | Type        | Description | Notes                             |
-| --------------------- | ----------- | ----------- | --------------------------------- |
-| **\_id**              | **string**  |             | [optional] [default to undefined] |
-| **created**           | **string**  |             | [optional] [default to undefined] |
-| **updated**           | **string**  |             | [optional] [default to undefined] |
-| **createdBy**         | **string**  |             | [optional] [default to undefined] |
-| **updatedBy**         | **string**  |             | [optional] [default to undefined] |
-| **tenantId**          | **number**  |             | [optional] [default to undefined] |
-| **orgId**             | **number**  |             | [optional] [default to undefined] |
-| **branchId**          | **number**  |             | [optional] [default to undefined] |
-| **studentSourceCode** | **string**  |             | [optional] [default to undefined] |
-| **studentSourceName** | **string**  |             | [optional] [default to undefined] |
-| **active**            | **boolean** |             | [optional] [default to undefined] |
-| **description**       | **string**  |             | [optional] [default to undefined] |
-| **more**              | **object**  |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**tenantId** | **number** |  | [optional] [default to undefined]
+**orgId** | **number** |  | [optional] [default to undefined]
+**branchId** | **number** |  | [optional] [default to undefined]
+**studentSourceCode** | **string** |  | [optional] [default to undefined]
+**studentSourceName** | **string** |  | [optional] [default to undefined]
+**active** | **boolean** |  | [optional] [default to undefined]
+**description** | **string** |  | [optional] [default to undefined]
+**more** | **object** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { StudentSource } from "./api";
+import { StudentSource } from './api';
 
 const instance: StudentSource = {
-  _id,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  tenantId,
-  orgId,
-  branchId,
-  studentSourceCode,
-  studentSourceName,
-  active,
-  description,
-  more,
+    _id,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    tenantId,
+    orgId,
+    branchId,
+    studentSourceCode,
+    studentSourceName,
+    active,
+    description,
+    more,
 };
 ```
 

@@ -1,20 +1,21 @@
 # SubscriptionPaymentCreateCheckoutSessionDto
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                             |
-| --------------- | ---------- | ----------- | --------------------------------- |
-| **redirectUrl** | **string** |             | [default to undefined]            |
-| **cancelUrl**   | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**redirectUrl** | **string** |  | [default to undefined]
+**cancelUrl** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionPaymentCreateCheckoutSessionDto } from "./api";
+import { SubscriptionPaymentCreateCheckoutSessionDto } from './api';
 
 const instance: SubscriptionPaymentCreateCheckoutSessionDto = {
-  redirectUrl,
-  cancelUrl,
+    redirectUrl,
+    cancelUrl,
 };
 ```
 

@@ -1,18 +1,19 @@
 # MiniAppDevelopment
 
+
 ## Properties
 
-| Name         | Type       | Description | Notes                             |
-| ------------ | ---------- | ----------- | --------------------------------- |
-| **demoXOrg** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**demoXOrg** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppDevelopment } from "./api";
+import { MiniAppDevelopment } from './api';
 
 const instance: MiniAppDevelopment = {
-  demoXOrg,
+    demoXOrg,
 };
 ```
 

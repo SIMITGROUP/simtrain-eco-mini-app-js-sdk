@@ -1,18 +1,19 @@
 # RewardRewardDetails
 
+
 ## Properties
 
-| Name            | Type                                                                                 | Description | Notes                             |
-| --------------- | ------------------------------------------------------------------------------------ | ----------- | --------------------------------- |
-| **rewardItems** | [**Array&lt;RewardRewardDetailsRewardItems&gt;**](RewardRewardDetailsRewardItems.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**rewardItems** | [**Array&lt;RewardRewardDetailsRewardItems&gt;**](RewardRewardDetailsRewardItems.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RewardRewardDetails } from "./api";
+import { RewardRewardDetails } from './api';
 
 const instance: RewardRewardDetails = {
-  rewardItems,
+    rewardItems,
 };
 ```
 

@@ -1,20 +1,21 @@
 # TenantSubscriptionAddOns
 
+
 ## Properties
 
-| Name         | Type       | Description | Notes                             |
-| ------------ | ---------- | ----------- | --------------------------------- |
-| **students** | **number** |             | [optional] [default to undefined] |
-| **branches** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**students** | **number** |  | [optional] [default to undefined]
+**branches** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TenantSubscriptionAddOns } from "./api";
+import { TenantSubscriptionAddOns } from './api';
 
 const instance: TenantSubscriptionAddOns = {
-  students,
-  branches,
+    students,
+    branches,
 };
 ```
 

@@ -1,18 +1,19 @@
 # EinvoiceDashboardDataList
 
+
 ## Properties
 
-| Name             | Type                           | Description | Notes                  |
-| ---------------- | ------------------------------ | ----------- | ---------------------- |
-| **documentType** | **{ [key: string]: string; }** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**documentType** | **{ [key: string]: string; }** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { EinvoiceDashboardDataList } from "./api";
+import { EinvoiceDashboardDataList } from './api';
 
 const instance: EinvoiceDashboardDataList = {
-  documentType,
+    documentType,
 };
 ```
 

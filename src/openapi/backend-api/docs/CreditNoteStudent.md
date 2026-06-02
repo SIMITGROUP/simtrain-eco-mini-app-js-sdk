@@ -1,28 +1,29 @@
 # CreditNoteStudent
 
+
 ## Properties
 
-| Name             | Type                                                                  | Description | Notes                             |
-| ---------------- | --------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **\_id**         | **string**                                                            |             | [default to undefined]            |
-| **label**        | **string**                                                            |             | [optional] [default to undefined] |
-| **code**         | **string**                                                            |             | [optional] [default to undefined] |
-| **agent**        | [**CreditNoteStudentAgent**](CreditNoteStudentAgent.md)               |             | [optional] [default to undefined] |
-| **level**        | [**CreditNoteStudentLevel**](CreditNoteStudentLevel.md)               |             | [optional] [default to undefined] |
-| **studentGroup** | [**CreditNoteStudentStudentGroup**](CreditNoteStudentStudentGroup.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**agent** | [**CreditNoteStudentAgent**](CreditNoteStudentAgent.md) |  | [optional] [default to undefined]
+**level** | [**CreditNoteStudentLevel**](CreditNoteStudentLevel.md) |  | [optional] [default to undefined]
+**studentGroup** | [**CreditNoteStudentStudentGroup**](CreditNoteStudentStudentGroup.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { CreditNoteStudent } from "./api";
+import { CreditNoteStudent } from './api';
 
 const instance: CreditNoteStudent = {
-  _id,
-  label,
-  code,
-  agent,
-  level,
-  studentGroup,
+    _id,
+    label,
+    code,
+    agent,
+    level,
+    studentGroup,
 };
 ```
 

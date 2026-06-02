@@ -1,22 +1,23 @@
 # RequestOnlinePaymentStudent
 
+
 ## Properties
 
-| Name     | Type       | Description | Notes                  |
-| -------- | ---------- | ----------- | ---------------------- |
-| **\_id** | **string** |             | [default to undefined] |
-| **code** | **string** |             | [default to undefined] |
-| **name** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**code** | **string** |  | [default to undefined]
+**name** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { RequestOnlinePaymentStudent } from "./api";
+import { RequestOnlinePaymentStudent } from './api';
 
 const instance: RequestOnlinePaymentStudent = {
-  _id,
-  code,
-  name,
+    _id,
+    code,
+    name,
 };
 ```
 

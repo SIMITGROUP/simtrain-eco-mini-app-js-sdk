@@ -1,28 +1,29 @@
 # AnnouncementTargetsLevels
 
+
 ## Properties
 
-| Name          | Type                                                                      | Description | Notes                             |
-| ------------- | ------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **created**   | **string**                                                                |             | [optional] [default to undefined] |
-| **updated**   | **string**                                                                |             | [optional] [default to undefined] |
-| **createdBy** | **string**                                                                |             | [optional] [default to undefined] |
-| **updatedBy** | **string**                                                                |             | [optional] [default to undefined] |
-| **\_id**      | **string**                                                                |             | [optional] [default to undefined] |
-| **person**    | [**AnnouncementTargetsLevelsPerson**](AnnouncementTargetsLevelsPerson.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
+**person** | [**AnnouncementTargetsLevelsPerson**](AnnouncementTargetsLevelsPerson.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { AnnouncementTargetsLevels } from "./api";
+import { AnnouncementTargetsLevels } from './api';
 
 const instance: AnnouncementTargetsLevels = {
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
-  person,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
+    person,
 };
 ```
 

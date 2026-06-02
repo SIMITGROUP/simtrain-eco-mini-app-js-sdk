@@ -1,20 +1,21 @@
 # TutorScheduleLessonPlanUpdate
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                  |
-| --------------- | ---------- | ----------- | ---------------------- |
-| **lessonPlan**  | **string** |             | [default to undefined] |
-| **description** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**lessonPlan** | **string** |  | [default to undefined]
+**description** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { TutorScheduleLessonPlanUpdate } from "./api";
+import { TutorScheduleLessonPlanUpdate } from './api';
 
 const instance: TutorScheduleLessonPlanUpdate = {
-  lessonPlan,
-  description,
+    lessonPlan,
+    description,
 };
 ```
 

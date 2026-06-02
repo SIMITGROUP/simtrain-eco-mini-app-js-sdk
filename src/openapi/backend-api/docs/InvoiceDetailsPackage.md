@@ -1,24 +1,25 @@
 # InvoiceDetailsPackage
 
+
 ## Properties
 
-| Name       | Type       | Description | Notes                             |
-| ---------- | ---------- | ----------- | --------------------------------- |
-| **\_id**   | **string** |             | [optional] [default to undefined] |
-| **code**   | **string** |             | [optional] [default to undefined] |
-| **label**  | **string** |             | [optional] [default to undefined] |
-| **amount** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**amount** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { InvoiceDetailsPackage } from "./api";
+import { InvoiceDetailsPackage } from './api';
 
 const instance: InvoiceDetailsPackage = {
-  _id,
-  code,
-  label,
-  amount,
+    _id,
+    code,
+    label,
+    amount,
 };
 ```
 

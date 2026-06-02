@@ -1,24 +1,25 @@
 # TuitionClassNearbySchedule
 
+
 ## Properties
 
-| Name          | Type       | Description | Notes                  |
-| ------------- | ---------- | ----------- | ---------------------- |
-| **\_id**      | **string** |             | [default to undefined] |
-| **day**       | **string** |             | [default to undefined] |
-| **startTime** | **string** |             | [default to undefined] |
-| **endTime**   | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**day** | **string** |  | [default to undefined]
+**startTime** | **string** |  | [default to undefined]
+**endTime** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { TuitionClassNearbySchedule } from "./api";
+import { TuitionClassNearbySchedule } from './api';
 
 const instance: TuitionClassNearbySchedule = {
-  _id,
-  day,
-  startTime,
-  endTime,
+    _id,
+    day,
+    startTime,
+    endTime,
 };
 ```
 

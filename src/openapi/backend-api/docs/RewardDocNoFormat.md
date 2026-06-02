@@ -1,20 +1,21 @@
 # RewardDocNoFormat
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RewardDocNoFormat } from "./api";
+import { RewardDocNoFormat } from './api';
 
 const instance: RewardDocNoFormat = {
-  _id,
-  label,
+    _id,
+    label,
 };
 ```
 

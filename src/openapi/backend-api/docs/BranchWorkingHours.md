@@ -1,32 +1,33 @@
 # BranchWorkingHours
 
+
 ## Properties
 
-| Name          | Type       | Description | Notes                             |
-| ------------- | ---------- | ----------- | --------------------------------- |
-| **day**       | **string** |             | [optional] [default to undefined] |
-| **start**     | **string** |             | [optional] [default to undefined] |
-| **end**       | **string** |             | [optional] [default to undefined] |
-| **created**   | **string** |             | [optional] [default to undefined] |
-| **updated**   | **string** |             | [optional] [default to undefined] |
-| **createdBy** | **string** |             | [optional] [default to undefined] |
-| **updatedBy** | **string** |             | [optional] [default to undefined] |
-| **\_id**      | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**day** | **string** |  | [optional] [default to undefined]
+**start** | **string** |  | [optional] [default to undefined]
+**end** | **string** |  | [optional] [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { BranchWorkingHours } from "./api";
+import { BranchWorkingHours } from './api';
 
 const instance: BranchWorkingHours = {
-  day,
-  start,
-  end,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
+    day,
+    start,
+    end,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
 };
 ```
 

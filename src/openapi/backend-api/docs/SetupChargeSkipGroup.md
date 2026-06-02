@@ -1,22 +1,23 @@
 # SetupChargeSkipGroup
 
+
 ## Properties
 
-| Name       | Type                                           | Description | Notes                  |
-| ---------- | ---------------------------------------------- | ----------- | ---------------------- |
-| **reason** | **string**                                     |             | [default to undefined] |
-| **count**  | **number**                                     |             | [default to undefined] |
-| **items**  | [**Array&lt;SetupCharge&gt;**](SetupCharge.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**reason** | **string** |  | [default to undefined]
+**count** | **number** |  | [default to undefined]
+**items** | [**Array&lt;SetupCharge&gt;**](SetupCharge.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupChargeSkipGroup } from "./api";
+import { SetupChargeSkipGroup } from './api';
 
 const instance: SetupChargeSkipGroup = {
-  reason,
-  count,
-  items,
+    reason,
+    count,
+    items,
 };
 ```
 

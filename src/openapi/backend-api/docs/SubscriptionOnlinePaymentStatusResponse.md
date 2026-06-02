@@ -1,20 +1,21 @@
 # SubscriptionOnlinePaymentStatusResponse
 
+
 ## Properties
 
-| Name              | Type                                                          | Description | Notes                  |
-| ----------------- | ------------------------------------------------------------- | ----------- | ---------------------- |
-| **status**        | **string**                                                    |             | [default to undefined] |
-| **onlinePayment** | [**SubscriptionOnlinePayment**](SubscriptionOnlinePayment.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**status** | **string** |  | [default to undefined]
+**onlinePayment** | [**SubscriptionOnlinePayment**](SubscriptionOnlinePayment.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionOnlinePaymentStatusResponse } from "./api";
+import { SubscriptionOnlinePaymentStatusResponse } from './api';
 
 const instance: SubscriptionOnlinePaymentStatusResponse = {
-  status,
-  onlinePayment,
+    status,
+    onlinePayment,
 };
 ```
 

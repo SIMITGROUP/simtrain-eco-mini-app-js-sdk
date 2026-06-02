@@ -1,20 +1,21 @@
 # PaymentDocNoFormat
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { PaymentDocNoFormat } from "./api";
+import { PaymentDocNoFormat } from './api';
 
 const instance: PaymentDocNoFormat = {
-  _id,
-  label,
+    _id,
+    label,
 };
 ```
 

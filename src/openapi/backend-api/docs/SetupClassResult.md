@@ -1,22 +1,23 @@
 # SetupClassResult
 
+
 ## Properties
 
-| Name        | Type                                                           | Description | Notes                  |
-| ----------- | -------------------------------------------------------------- | ----------- | ---------------------- |
-| **total**   | **number**                                                     |             | [default to undefined] |
-| **created** | **number**                                                     |             | [default to undefined] |
-| **skipped** | [**Array&lt;SetupClassSkipGroup&gt;**](SetupClassSkipGroup.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**total** | **number** |  | [default to undefined]
+**created** | **number** |  | [default to undefined]
+**skipped** | [**Array&lt;SetupClassSkipGroup&gt;**](SetupClassSkipGroup.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupClassResult } from "./api";
+import { SetupClassResult } from './api';
 
 const instance: SetupClassResult = {
-  total,
-  created,
-  skipped,
+    total,
+    created,
+    skipped,
 };
 ```
 

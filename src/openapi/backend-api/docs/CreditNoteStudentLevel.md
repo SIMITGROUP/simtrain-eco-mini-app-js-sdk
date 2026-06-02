@@ -1,22 +1,23 @@
 # CreditNoteStudentLevel
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { CreditNoteStudentLevel } from "./api";
+import { CreditNoteStudentLevel } from './api';
 
 const instance: CreditNoteStudentLevel = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

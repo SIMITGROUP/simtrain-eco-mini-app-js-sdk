@@ -1,22 +1,23 @@
 # KeyValue
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **key**   | **string** |             | [default to undefined]            |
-| **value** | **string** |             | [default to undefined]            |
-| **id**    | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**key** | **string** |  | [default to undefined]
+**value** | **string** |  | [default to undefined]
+**id** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { KeyValue } from "./api";
+import { KeyValue } from './api';
 
 const instance: KeyValue = {
-  key,
-  value,
-  id,
+    key,
+    value,
+    id,
 };
 ```
 

@@ -1,24 +1,25 @@
 # CreditNoteInvoicesInvoice
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                             |
-| --------------- | ---------- | ----------- | --------------------------------- |
-| **\_id**        | **string** |             | [optional] [default to undefined] |
-| **label**       | **string** |             | [optional] [default to undefined] |
-| **code**        | **string** |             | [optional] [default to undefined] |
-| **invoiceDate** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**invoiceDate** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { CreditNoteInvoicesInvoice } from "./api";
+import { CreditNoteInvoicesInvoice } from './api';
 
 const instance: CreditNoteInvoicesInvoice = {
-  _id,
-  label,
-  code,
-  invoiceDate,
+    _id,
+    label,
+    code,
+    invoiceDate,
 };
 ```
 

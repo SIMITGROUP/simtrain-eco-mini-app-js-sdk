@@ -1,22 +1,23 @@
 # SubscriptionCheckoutDowngradeDto
 
+
 ## Properties
 
-| Name                | Type       | Description | Notes                             |
-| ------------------- | ---------- | ----------- | --------------------------------- |
-| **licenseCode**     | **string** |             | [default to undefined]            |
-| **addOnStudentQty** | **number** |             | [optional] [default to undefined] |
-| **addOnBranchQty**  | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**licenseCode** | **string** |  | [default to undefined]
+**addOnStudentQty** | **number** |  | [optional] [default to undefined]
+**addOnBranchQty** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionCheckoutDowngradeDto } from "./api";
+import { SubscriptionCheckoutDowngradeDto } from './api';
 
 const instance: SubscriptionCheckoutDowngradeDto = {
-  licenseCode,
-  addOnStudentQty,
-  addOnBranchQty,
+    licenseCode,
+    addOnStudentQty,
+    addOnBranchQty,
 };
 ```
 

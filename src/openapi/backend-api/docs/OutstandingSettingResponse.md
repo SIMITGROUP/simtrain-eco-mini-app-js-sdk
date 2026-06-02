@@ -1,20 +1,21 @@
 # OutstandingSettingResponse
 
+
 ## Properties
 
-| Name       | Type                    | Description | Notes                  |
-| ---------- | ----------------------- | ----------- | ---------------------- |
-| **enable** | **boolean**             |             | [default to false]     |
-| **cron**   | **Array&lt;string&gt;** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**enable** | **boolean** |  | [default to false]
+**cron** | **Array&lt;string&gt;** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { OutstandingSettingResponse } from "./api";
+import { OutstandingSettingResponse } from './api';
 
 const instance: OutstandingSettingResponse = {
-  enable,
-  cron,
+    enable,
+    cron,
 };
 ```
 

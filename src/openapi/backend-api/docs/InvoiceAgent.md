@@ -1,22 +1,23 @@
 # InvoiceAgent
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { InvoiceAgent } from "./api";
+import { InvoiceAgent } from './api';
 
 const instance: InvoiceAgent = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

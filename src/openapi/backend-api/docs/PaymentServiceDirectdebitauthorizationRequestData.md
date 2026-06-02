@@ -1,18 +1,19 @@
 # PaymentServiceDirectdebitauthorizationRequestData
 
+
 ## Properties
 
-| Name          | Type       | Description | Notes                             |
-| ------------- | ---------- | ----------- | --------------------------------- |
-| **requestAt** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**requestAt** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { PaymentServiceDirectdebitauthorizationRequestData } from "./api";
+import { PaymentServiceDirectdebitauthorizationRequestData } from './api';
 
 const instance: PaymentServiceDirectdebitauthorizationRequestData = {
-  requestAt,
+    requestAt,
 };
 ```
 

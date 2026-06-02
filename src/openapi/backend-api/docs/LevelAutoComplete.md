@@ -1,22 +1,23 @@
 # LevelAutoComplete
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes           |
-| --------- | ---------- | ----------- | --------------- |
-| **\_id**  | **string** |             | [default to ''] |
-| **code**  | **string** |             | [default to ''] |
-| **label** | **string** |             | [default to ''] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
 
 ## Example
 
 ```typescript
-import { LevelAutoComplete } from "./api";
+import { LevelAutoComplete } from './api';
 
 const instance: LevelAutoComplete = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

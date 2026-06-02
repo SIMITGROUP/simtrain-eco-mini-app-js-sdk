@@ -1,20 +1,21 @@
 # RegenerateTuitionClassSchedule
 
+
 ## Properties
 
-| Name          | Type                                | Description | Notes                  |
-| ------------- | ----------------------------------- | ----------- | ---------------------- |
-| **data**      | [**TuitionClass**](TuitionClass.md) |             | [default to undefined] |
-| **startDate** | **string**                          |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**data** | [**TuitionClass**](TuitionClass.md) |  | [default to undefined]
+**startDate** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { RegenerateTuitionClassSchedule } from "./api";
+import { RegenerateTuitionClassSchedule } from './api';
 
 const instance: RegenerateTuitionClassSchedule = {
-  data,
-  startDate,
+    data,
+    startDate,
 };
 ```
 

@@ -1,22 +1,23 @@
 # DeveloperPortalInstalledXOrgsResponseInstalledXOrg
 
+
 ## Properties
 
-| Name           | Type                    | Description | Notes                  |
-| -------------- | ----------------------- | ----------- | ---------------------- |
-| **branchCode** | **string**              |             | [default to undefined] |
-| **branchName** | **string**              |             | [default to undefined] |
-| **xOrg**       | **Array&lt;string&gt;** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**branchCode** | **string** |  | [default to undefined]
+**branchName** | **string** |  | [default to undefined]
+**xOrg** | **Array&lt;string&gt;** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { DeveloperPortalInstalledXOrgsResponseInstalledXOrg } from "./api";
+import { DeveloperPortalInstalledXOrgsResponseInstalledXOrg } from './api';
 
 const instance: DeveloperPortalInstalledXOrgsResponseInstalledXOrg = {
-  branchCode,
-  branchName,
-  xOrg,
+    branchCode,
+    branchName,
+    xOrg,
 };
 ```
 

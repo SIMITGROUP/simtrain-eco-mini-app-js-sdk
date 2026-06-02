@@ -1,22 +1,23 @@
 # AccountTransactionDocument
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { AccountTransactionDocument } from "./api";
+import { AccountTransactionDocument } from './api';
 
 const instance: AccountTransactionDocument = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

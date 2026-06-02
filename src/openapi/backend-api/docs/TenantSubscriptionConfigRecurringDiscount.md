@@ -1,20 +1,21 @@
 # TenantSubscriptionConfigRecurringDiscount
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                             |
-| --------------- | ---------- | ----------- | --------------------------------- |
-| **amount**      | **number** |             | [optional] [default to undefined] |
-| **description** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**amount** | **number** |  | [optional] [default to undefined]
+**description** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TenantSubscriptionConfigRecurringDiscount } from "./api";
+import { TenantSubscriptionConfigRecurringDiscount } from './api';
 
 const instance: TenantSubscriptionConfigRecurringDiscount = {
-  amount,
-  description,
+    amount,
+    description,
 };
 ```
 

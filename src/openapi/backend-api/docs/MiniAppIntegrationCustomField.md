@@ -1,18 +1,19 @@
 # MiniAppIntegrationCustomField
 
+
 ## Properties
 
-| Name       | Type                                                                                           | Description | Notes                  |
-| ---------- | ---------------------------------------------------------------------------------------------- | ----------- | ---------------------- |
-| **fields** | [**Array&lt;MiniAppIntegrationCustomFieldFields&gt;**](MiniAppIntegrationCustomFieldFields.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**fields** | [**Array&lt;MiniAppIntegrationCustomFieldFields&gt;**](MiniAppIntegrationCustomFieldFields.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppIntegrationCustomField } from "./api";
+import { MiniAppIntegrationCustomField } from './api';
 
 const instance: MiniAppIntegrationCustomField = {
-  fields,
+    fields,
 };
 ```
 

@@ -1,22 +1,23 @@
 # ProductPackageProductsProductLevel
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { ProductPackageProductsProductLevel } from "./api";
+import { ProductPackageProductsProductLevel } from './api';
 
 const instance: ProductPackageProductsProductLevel = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

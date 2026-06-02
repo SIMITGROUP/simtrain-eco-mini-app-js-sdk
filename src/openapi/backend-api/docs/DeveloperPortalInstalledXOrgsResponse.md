@@ -1,20 +1,21 @@
 # DeveloperPortalInstalledXOrgsResponse
 
+
 ## Properties
 
-| Name               | Type                                                                                                                         | Description | Notes                  |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------------------- |
-| **demoXOrg**       | **string**                                                                                                                   |             | [default to undefined] |
-| **installedXOrgs** | [**Array&lt;DeveloperPortalInstalledXOrgsResponseInstalledXOrg&gt;**](DeveloperPortalInstalledXOrgsResponseInstalledXOrg.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**demoXOrg** | **string** |  | [default to undefined]
+**installedXOrgs** | [**Array&lt;DeveloperPortalInstalledXOrgsResponseInstalledXOrg&gt;**](DeveloperPortalInstalledXOrgsResponseInstalledXOrg.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { DeveloperPortalInstalledXOrgsResponse } from "./api";
+import { DeveloperPortalInstalledXOrgsResponse } from './api';
 
 const instance: DeveloperPortalInstalledXOrgsResponse = {
-  demoXOrg,
-  installedXOrgs,
+    demoXOrg,
+    installedXOrgs,
 };
 ```
 

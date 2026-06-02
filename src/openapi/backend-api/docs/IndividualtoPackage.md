@@ -1,26 +1,27 @@
 # IndividualtoPackage
 
+
 ## Properties
 
-| Name              | Type                    | Description | Notes                             |
-| ----------------- | ----------------------- | ----------- | --------------------------------- |
-| **studentId**     | **string**              |             | [default to undefined]            |
-| **packageId**     | **string**              |             | [default to undefined]            |
-| **effectiveDate** | **string**              |             | [optional] [default to undefined] |
-| **preferProduct** | **Array&lt;string&gt;** |             | [default to undefined]            |
-| **preferClass**   | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**studentId** | **string** |  | [default to undefined]
+**packageId** | **string** |  | [default to undefined]
+**effectiveDate** | **string** |  | [optional] [default to undefined]
+**preferProduct** | **Array&lt;string&gt;** |  | [default to undefined]
+**preferClass** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { IndividualtoPackage } from "./api";
+import { IndividualtoPackage } from './api';
 
 const instance: IndividualtoPackage = {
-  studentId,
-  packageId,
-  effectiveDate,
-  preferProduct,
-  preferClass,
+    studentId,
+    packageId,
+    effectiveDate,
+    preferProduct,
+    preferClass,
 };
 ```
 

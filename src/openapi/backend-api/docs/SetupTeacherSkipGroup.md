@@ -1,22 +1,23 @@
 # SetupTeacherSkipGroup
 
+
 ## Properties
 
-| Name       | Type                                       | Description | Notes                  |
-| ---------- | ------------------------------------------ | ----------- | ---------------------- |
-| **reason** | **string**                                 |             | [default to undefined] |
-| **count**  | **number**                                 |             | [default to undefined] |
-| **items**  | [**Array&lt;SetupTeam&gt;**](SetupTeam.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**reason** | **string** |  | [default to undefined]
+**count** | **number** |  | [default to undefined]
+**items** | [**Array&lt;SetupTeam&gt;**](SetupTeam.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupTeacherSkipGroup } from "./api";
+import { SetupTeacherSkipGroup } from './api';
 
 const instance: SetupTeacherSkipGroup = {
-  reason,
-  count,
-  items,
+    reason,
+    count,
+    items,
 };
 ```
 

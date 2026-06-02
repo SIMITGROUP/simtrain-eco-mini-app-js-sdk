@@ -1,20 +1,21 @@
 # StudentDocNoFormat
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { StudentDocNoFormat } from "./api";
+import { StudentDocNoFormat } from './api';
 
 const instance: StudentDocNoFormat = {
-  _id,
-  label,
+    _id,
+    label,
 };
 ```
 

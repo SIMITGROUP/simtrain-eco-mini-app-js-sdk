@@ -1,22 +1,23 @@
 # MobileAppUserAutoComplete
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes           |
-| --------- | ---------- | ----------- | --------------- |
-| **\_id**  | **string** |             | [default to ''] |
-| **code**  | **string** |             | [default to ''] |
-| **label** | **string** |             | [default to ''] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
 
 ## Example
 
 ```typescript
-import { MobileAppUserAutoComplete } from "./api";
+import { MobileAppUserAutoComplete } from './api';
 
 const instance: MobileAppUserAutoComplete = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

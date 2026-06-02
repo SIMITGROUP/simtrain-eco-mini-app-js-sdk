@@ -1,24 +1,25 @@
 # ScheduleTuitionClass
 
+
 ## Properties
 
-| Name          | Type       | Description | Notes                             |
-| ------------- | ---------- | ----------- | --------------------------------- |
-| **\_id**      | **string** |             | [optional] [default to undefined] |
-| **code**      | **string** |             | [optional] [default to undefined] |
-| **label**     | **string** |             | [optional] [default to undefined] |
-| **productId** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**productId** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { ScheduleTuitionClass } from "./api";
+import { ScheduleTuitionClass } from './api';
 
 const instance: ScheduleTuitionClass = {
-  _id,
-  code,
-  label,
-  productId,
+    _id,
+    code,
+    label,
+    productId,
 };
 ```
 

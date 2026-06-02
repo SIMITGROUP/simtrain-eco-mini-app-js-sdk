@@ -1,22 +1,23 @@
 # QueueJobError
 
+
 ## Properties
 
-| Name        | Type       | Description | Notes                             |
-| ----------- | ---------- | ----------- | --------------------------------- |
-| **status**  | **number** |             | [optional] [default to undefined] |
-| **name**    | **string** |             | [optional] [default to undefined] |
-| **message** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**status** | **number** |  | [optional] [default to undefined]
+**name** | **string** |  | [optional] [default to undefined]
+**message** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { QueueJobError } from "./api";
+import { QueueJobError } from './api';
 
 const instance: QueueJobError = {
-  status,
-  name,
-  message,
+    status,
+    name,
+    message,
 };
 ```
 

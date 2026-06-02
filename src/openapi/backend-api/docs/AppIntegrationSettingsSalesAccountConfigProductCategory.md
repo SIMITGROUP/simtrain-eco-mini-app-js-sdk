@@ -1,24 +1,25 @@
 # AppIntegrationSettingsSalesAccountConfigProductCategory
 
+
 ## Properties
 
-| Name             | Type       | Description | Notes                             |
-| ---------------- | ---------- | ----------- | --------------------------------- |
-| **\_id**         | **string** |             | [optional] [default to undefined] |
-| **label**        | **string** |             | [optional] [default to undefined] |
-| **code**         | **string** |             | [optional] [default to undefined] |
-| **categoryType** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**categoryType** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { AppIntegrationSettingsSalesAccountConfigProductCategory } from "./api";
+import { AppIntegrationSettingsSalesAccountConfigProductCategory } from './api';
 
 const instance: AppIntegrationSettingsSalesAccountConfigProductCategory = {
-  _id,
-  label,
-  code,
-  categoryType,
+    _id,
+    label,
+    code,
+    categoryType,
 };
 ```
 

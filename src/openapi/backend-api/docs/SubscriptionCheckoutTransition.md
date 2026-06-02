@@ -1,20 +1,21 @@
 # SubscriptionCheckoutTransition
 
+
 ## Properties
 
-| Name     | Type                                                                            | Description | Notes                  |
-| -------- | ------------------------------------------------------------------------------- | ----------- | ---------------------- |
-| **from** | [**SubscriptionCheckoutTransitionItem**](SubscriptionCheckoutTransitionItem.md) |             | [default to undefined] |
-| **to**   | [**SubscriptionCheckoutTransitionItem**](SubscriptionCheckoutTransitionItem.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**from** | [**SubscriptionCheckoutTransitionItem**](SubscriptionCheckoutTransitionItem.md) |  | [default to undefined]
+**to** | [**SubscriptionCheckoutTransitionItem**](SubscriptionCheckoutTransitionItem.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionCheckoutTransition } from "./api";
+import { SubscriptionCheckoutTransition } from './api';
 
 const instance: SubscriptionCheckoutTransition = {
-  from,
-  to,
+    from,
+    to,
 };
 ```
 

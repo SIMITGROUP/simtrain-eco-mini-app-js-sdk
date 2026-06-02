@@ -1,26 +1,27 @@
 # SetupSubjectPrice
 
+
 ## Properties
 
-| Name               | Type       | Description | Notes                             |
-| ------------------ | ---------- | ----------- | --------------------------------- |
-| **subjectId**      | **string** |             | [optional] [default to undefined] |
-| **levelId**        | **string** |             | [optional] [default to undefined] |
-| **price**          | **number** |             | [optional] [default to undefined] |
-| **billingMethod**  | **string** |             | [optional] [default to undefined] |
-| **lessonsPerTerm** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**subjectId** | **string** |  | [optional] [default to undefined]
+**levelId** | **string** |  | [optional] [default to undefined]
+**price** | **number** |  | [optional] [default to undefined]
+**billingMethod** | **string** |  | [optional] [default to undefined]
+**lessonsPerTerm** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupSubjectPrice } from "./api";
+import { SetupSubjectPrice } from './api';
 
 const instance: SetupSubjectPrice = {
-  subjectId,
-  levelId,
-  price,
-  billingMethod,
-  lessonsPerTerm,
+    subjectId,
+    levelId,
+    price,
+    billingMethod,
+    lessonsPerTerm,
 };
 ```
 

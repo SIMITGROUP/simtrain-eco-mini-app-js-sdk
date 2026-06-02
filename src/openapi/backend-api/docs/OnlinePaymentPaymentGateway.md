@@ -1,22 +1,23 @@
 # OnlinePaymentPaymentGateway
 
+
 ## Properties
 
-| Name     | Type       | Description | Notes                             |
-| -------- | ---------- | ----------- | --------------------------------- |
-| **name** | **string** |             | [default to undefined]            |
-| **html** | **string** |             | [default to undefined]            |
-| **data** | **object** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **string** |  | [default to undefined]
+**html** | **string** |  | [default to undefined]
+**data** | **object** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { OnlinePaymentPaymentGateway } from "./api";
+import { OnlinePaymentPaymentGateway } from './api';
 
 const instance: OnlinePaymentPaymentGateway = {
-  name,
-  html,
-  data,
+    name,
+    html,
+    data,
 };
 ```
 

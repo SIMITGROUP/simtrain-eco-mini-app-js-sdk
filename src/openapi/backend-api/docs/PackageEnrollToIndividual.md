@@ -1,24 +1,25 @@
 # PackageEnrollToIndividual
 
+
 ## Properties
 
-| Name              | Type                            | Description | Notes                  |
-| ----------------- | ------------------------------- | ----------- | ---------------------- |
-| **studentId**     | **string**                      |             | [default to undefined] |
-| **packageId**     | **string**                      |             | [default to undefined] |
-| **stopReason**    | [**ForeignKey**](ForeignKey.md) |             | [default to undefined] |
-| **effectiveDate** | **string**                      |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**studentId** | **string** |  | [default to undefined]
+**packageId** | **string** |  | [default to undefined]
+**stopReason** | [**ForeignKey**](ForeignKey.md) |  | [default to undefined]
+**effectiveDate** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { PackageEnrollToIndividual } from "./api";
+import { PackageEnrollToIndividual } from './api';
 
 const instance: PackageEnrollToIndividual = {
-  studentId,
-  packageId,
-  stopReason,
-  effectiveDate,
+    studentId,
+    packageId,
+    stopReason,
+    effectiveDate,
 };
 ```
 

@@ -1,22 +1,23 @@
 # SetupLevelSkipGroup
 
+
 ## Properties
 
-| Name       | Type                                         | Description | Notes                  |
-| ---------- | -------------------------------------------- | ----------- | ---------------------- |
-| **reason** | **string**                                   |             | [default to undefined] |
-| **count**  | **number**                                   |             | [default to undefined] |
-| **items**  | [**Array&lt;SetupLevel&gt;**](SetupLevel.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**reason** | **string** |  | [default to undefined]
+**count** | **number** |  | [default to undefined]
+**items** | [**Array&lt;SetupLevel&gt;**](SetupLevel.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupLevelSkipGroup } from "./api";
+import { SetupLevelSkipGroup } from './api';
 
 const instance: SetupLevelSkipGroup = {
-  reason,
-  count,
-  items,
+    reason,
+    count,
+    items,
 };
 ```
 

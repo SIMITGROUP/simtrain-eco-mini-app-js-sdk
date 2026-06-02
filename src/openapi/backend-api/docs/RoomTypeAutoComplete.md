@@ -1,22 +1,23 @@
 # RoomTypeAutoComplete
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes           |
-| --------- | ---------- | ----------- | --------------- |
-| **\_id**  | **string** |             | [default to ''] |
-| **code**  | **string** |             | [default to ''] |
-| **label** | **string** |             | [default to ''] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
 
 ## Example
 
 ```typescript
-import { RoomTypeAutoComplete } from "./api";
+import { RoomTypeAutoComplete } from './api';
 
 const instance: RoomTypeAutoComplete = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

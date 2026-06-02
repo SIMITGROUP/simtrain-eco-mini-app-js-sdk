@@ -1,26 +1,27 @@
 # TuitionClassAcademySession
 
+
 ## Properties
 
-| Name          | Type       | Description | Notes                             |
-| ------------- | ---------- | ----------- | --------------------------------- |
-| **\_id**      | **string** |             | [optional] [default to undefined] |
-| **code**      | **string** |             | [optional] [default to undefined] |
-| **label**     | **string** |             | [optional] [default to undefined] |
-| **startDate** | **string** |             | [optional] [default to undefined] |
-| **endDate**   | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**startDate** | **string** |  | [optional] [default to undefined]
+**endDate** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TuitionClassAcademySession } from "./api";
+import { TuitionClassAcademySession } from './api';
 
 const instance: TuitionClassAcademySession = {
-  _id,
-  code,
-  label,
-  startDate,
-  endDate,
+    _id,
+    code,
+    label,
+    startDate,
+    endDate,
 };
 ```
 

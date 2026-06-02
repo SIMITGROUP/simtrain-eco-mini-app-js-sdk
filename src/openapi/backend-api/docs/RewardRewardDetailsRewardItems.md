@@ -1,32 +1,33 @@
 # RewardRewardDetailsRewardItems
 
+
 ## Properties
 
-| Name             | Type                                                                                        | Description | Notes                             |
-| ---------------- | ------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **rewardAmount** | **number**                                                                                  |             | [default to undefined]            |
-| **description**  | **string**                                                                                  |             | [optional] [default to undefined] |
-| **created**      | **string**                                                                                  |             | [optional] [default to undefined] |
-| **updated**      | **string**                                                                                  |             | [optional] [default to undefined] |
-| **createdBy**    | **string**                                                                                  |             | [optional] [default to undefined] |
-| **updatedBy**    | **string**                                                                                  |             | [optional] [default to undefined] |
-| **\_id**         | **string**                                                                                  |             | [optional] [default to undefined] |
-| **rewardType**   | [**RewardRewardDetailsRewardItemsRewardType**](RewardRewardDetailsRewardItemsRewardType.md) |             | [default to undefined]            |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**rewardAmount** | **number** |  | [default to undefined]
+**description** | **string** |  | [optional] [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
+**rewardType** | [**RewardRewardDetailsRewardItemsRewardType**](RewardRewardDetailsRewardItemsRewardType.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { RewardRewardDetailsRewardItems } from "./api";
+import { RewardRewardDetailsRewardItems } from './api';
 
 const instance: RewardRewardDetailsRewardItems = {
-  rewardAmount,
-  description,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
-  rewardType,
+    rewardAmount,
+    description,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
+    rewardType,
 };
 ```
 

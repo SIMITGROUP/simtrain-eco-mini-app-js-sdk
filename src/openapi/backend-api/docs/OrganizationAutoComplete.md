@@ -1,24 +1,25 @@
 # OrganizationAutoComplete
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                  |
-| --------- | ---------- | ----------- | ---------------------- |
-| **\_id**  | **string** |             | [default to '']        |
-| **code**  | **string** |             | [default to '']        |
-| **label** | **string** |             | [default to '']        |
-| **orgId** | **number** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
+**orgId** | **number** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { OrganizationAutoComplete } from "./api";
+import { OrganizationAutoComplete } from './api';
 
 const instance: OrganizationAutoComplete = {
-  _id,
-  code,
-  label,
-  orgId,
+    _id,
+    code,
+    label,
+    orgId,
 };
 ```
 

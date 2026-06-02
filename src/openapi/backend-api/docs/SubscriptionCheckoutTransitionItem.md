@@ -1,22 +1,23 @@
 # SubscriptionCheckoutTransitionItem
 
+
 ## Properties
 
-| Name                | Type       | Description | Notes                             |
-| ------------------- | ---------- | ----------- | --------------------------------- |
-| **licenseCode**     | **string** |             | [optional] [default to undefined] |
-| **addOnStudentQty** | **number** |             | [optional] [default to undefined] |
-| **addOnBranchQty**  | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**licenseCode** | **string** |  | [optional] [default to undefined]
+**addOnStudentQty** | **number** |  | [optional] [default to undefined]
+**addOnBranchQty** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionCheckoutTransitionItem } from "./api";
+import { SubscriptionCheckoutTransitionItem } from './api';
 
 const instance: SubscriptionCheckoutTransitionItem = {
-  licenseCode,
-  addOnStudentQty,
-  addOnBranchQty,
+    licenseCode,
+    addOnStudentQty,
+    addOnBranchQty,
 };
 ```
 

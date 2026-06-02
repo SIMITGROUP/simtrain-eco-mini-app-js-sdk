@@ -1,24 +1,25 @@
 # MiniAppInstallationMiniApiUser
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **uid**   | **string** |             | [optional] [default to undefined] |
-| **name**  | **string** |             | [optional] [default to undefined] |
-| **email** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**uid** | **string** |  | [optional] [default to undefined]
+**name** | **string** |  | [optional] [default to undefined]
+**email** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppInstallationMiniApiUser } from "./api";
+import { MiniAppInstallationMiniApiUser } from './api';
 
 const instance: MiniAppInstallationMiniApiUser = {
-  _id,
-  uid,
-  name,
-  email,
+    _id,
+    uid,
+    name,
+    email,
 };
 ```
 

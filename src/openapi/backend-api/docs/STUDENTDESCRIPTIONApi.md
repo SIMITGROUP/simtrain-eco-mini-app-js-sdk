@@ -1,30 +1,32 @@
 # STUDENTDESCRIPTIONApi
 
-All URIs are relative to _http://localhost_
+All URIs are relative to *http://localhost*
 
-| Method                              | HTTP request                              | Description |
-| ----------------------------------- | ----------------------------------------- | ----------- |
-| [**autoComplete**](#autocomplete)   | **POST** /studentdescription/autocomplete |             |
-| [**runCreate**](#runcreate)         | **POST** /studentdescription              |             |
-| [**runCreateMany**](#runcreatemany) | **POST** /studentdescription/bulk-create  |             |
-| [**runDefault**](#rundefault)       | **GET** /studentdescription               |             |
-| [**runDelete**](#rundelete)         | **DELETE** /studentdescription/{id}       |             |
-| [**runFindOne**](#runfindone)       | **GET** /studentdescription/{id}          |             |
-| [**runPatch**](#runpatch)           | **PATCH** /studentdescription/{id}        |             |
-| [**runPatchMany**](#runpatchmany)   | **PATCH** /studentdescription/bulk-patch  |             |
-| [**runSearch**](#runsearch)         | **POST** /studentdescription/search       |             |
-| [**runUpdate**](#runupdate)         | **PUT** /studentdescription/{id}          |             |
+|Method | HTTP request | Description|
+|------------- | ------------- | -------------|
+|[**autoComplete**](#autocomplete) | **POST** /studentdescription/autocomplete | |
+|[**runCreate**](#runcreate) | **POST** /studentdescription | |
+|[**runCreateMany**](#runcreatemany) | **POST** /studentdescription/bulk-create | |
+|[**runDefault**](#rundefault) | **GET** /studentdescription | |
+|[**runDelete**](#rundelete) | **DELETE** /studentdescription/{id} | |
+|[**runFindOne**](#runfindone) | **GET** /studentdescription/{id} | |
+|[**runPatch**](#runpatch) | **PATCH** /studentdescription/{id} | |
+|[**runPatchMany**](#runpatchmany) | **PATCH** /studentdescription/bulk-patch | |
+|[**runSearch**](#runsearch) | **POST** /studentdescription/search | |
+|[**runUpdate**](#runupdate) | **PUT** /studentdescription/{id} | |
 
 # **autoComplete**
-
 > Array<StudentDescriptionAutoComplete> autoComplete(body)
 
-retrieve array of {\_id, code, name}
+retrieve array of {_id, code, name}
 
 ### Example
 
 ```typescript
-import { STUDENTDESCRIPTIONApi, Configuration } from "./api";
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
@@ -32,15 +34,19 @@ const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(keyword, body);
+const { status, data } = await apiInstance.autoComplete(
+    keyword,
+    body
+);
 ```
 
 ### Parameters
 
-| Name        | Type         | Description | Notes                 |
-| ----------- | ------------ | ----------- | --------------------- |
-| **body**    | **object**   | Data        |                       |
-| **keyword** | [**string**] |             | defaults to undefined |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **body** | **object**| Data | |
+| **keyword** | [**string**] |  | defaults to undefined|
+
 
 ### Return type
 
@@ -52,44 +58,47 @@ const { status, data } = await apiInstance.autoComplete(keyword, body);
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 
 ### HTTP response details
-
-| Status code | Description    | Response headers |
-| ----------- | -------------- | ---------------- |
-| **200**     | Found          | -                |
-| **500**     | Internal error | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | Found |  -  |
+|**500** | Internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-
 > StudentDescription runCreate(studentDescription)
+
 
 ### Example
 
 ```typescript
 import {
-  STUDENTDESCRIPTIONApi,
-  Configuration,
-  StudentDescription,
-} from "./api";
+    STUDENTDESCRIPTIONApi,
+    Configuration,
+    StudentDescription
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 
 let studentDescription: StudentDescription; //Data
 
-const { status, data } = await apiInstance.runCreate(studentDescription);
+const { status, data } = await apiInstance.runCreate(
+    studentDescription
+);
 ```
 
 ### Parameters
 
-| Name                   | Type                   | Description | Notes |
-| ---------------------- | ---------------------- | ----------- | ----- |
-| **studentDescription** | **StudentDescription** | Data        |       |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **studentDescription** | **StudentDescription**| Data | |
+
 
 ### Return type
 
@@ -101,41 +110,47 @@ const { status, data } = await apiInstance.runCreate(studentDescription);
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 
 ### HTTP response details
-
-| Status code | Description    | Response headers |
-| ----------- | -------------- | ---------------- |
-| **201**     | success        | -                |
-| **400**     | bad request    | -                |
-| **500**     | internal error | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**201** | success |  -  |
+|**400** | bad request |  -  |
+|**500** | internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-
 > Array<StudentDescription> runCreateMany(studentDescription)
+
 
 ### Example
 
 ```typescript
-import { STUDENTDESCRIPTIONApi, Configuration } from "./api";
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 
 let studentDescription: Array<StudentDescription>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(studentDescription);
+const { status, data } = await apiInstance.runCreateMany(
+    studentDescription
+);
 ```
 
 ### Parameters
 
-| Name                   | Type                          | Description | Notes |
-| ---------------------- | ----------------------------- | ----------- | ----- |
-| **studentDescription** | **Array<StudentDescription>** | Data        |       |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **studentDescription** | **Array<StudentDescription>**| Data | |
+
 
 ### Return type
 
@@ -147,21 +162,20 @@ const { status, data } = await apiInstance.runCreateMany(studentDescription);
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 
 ### HTTP response details
-
-| Status code | Description    | Response headers |
-| ----------- | -------------- | ---------------- |
-| **201**     | success        | -                |
-| **400**     | bad request    | -                |
-| **500**     | internal error | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**201** | success |  -  |
+|**400** | bad request |  -  |
+|**500** | internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
-
 > object runDefault()
 
 Run default behavior like say hello
@@ -169,7 +183,10 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import { STUDENTDESCRIPTIONApi, Configuration } from "./api";
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
@@ -178,8 +195,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-
 This endpoint does not have any parameters.
+
 
 ### Return type
 
@@ -191,122 +208,134 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
 
 ### HTTP response details
-
-| Status code | Description         | Response headers |
-| ----------- | ------------------- | ---------------- |
-| **200**     | Sample 200 response | -                |
-| **500**     | Internal error      | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | Sample 200 response |  -  |
+|**500** | Internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-
 > StudentDescription runDelete()
 
-### Example
-
-```typescript
-import { STUDENTDESCRIPTIONApi, Configuration } from "./api";
-
-const configuration = new Configuration();
-const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
-
-let id: string; // (default to undefined)
-
-const { status, data } = await apiInstance.runDelete(id);
-```
-
-### Parameters
-
-| Name   | Type         | Description | Notes                 |
-| ------ | ------------ | ----------- | --------------------- |
-| **id** | [**string**] |             | defaults to undefined |
-
-### Return type
-
-**StudentDescription**
-
-### Authorization
-
-[x-apisecret](../README.md#x-apisecret), [x-guest-accesstoken](../README.md#x-guest-accesstoken), [oauth2](../README.md#oauth2), [x-apikey](../README.md#x-apikey), [x-org](../README.md#x-org)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-### HTTP response details
-
-| Status code | Description        | Response headers |
-| ----------- | ------------------ | ---------------- |
-| **200**     | success            | -                |
-| **404**     | Document not found | -                |
-| **500**     | Internal error     | -                |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **runFindOne**
-
-> StudentDescription runFindOne()
-
-### Example
-
-```typescript
-import { STUDENTDESCRIPTIONApi, Configuration } from "./api";
-
-const configuration = new Configuration();
-const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
-
-let id: string; // (default to undefined)
-
-const { status, data } = await apiInstance.runFindOne(id);
-```
-
-### Parameters
-
-| Name   | Type         | Description | Notes                 |
-| ------ | ------------ | ----------- | --------------------- |
-| **id** | [**string**] |             | defaults to undefined |
-
-### Return type
-
-**StudentDescription**
-
-### Authorization
-
-[x-apisecret](../README.md#x-apisecret), [x-guest-accesstoken](../README.md#x-guest-accesstoken), [oauth2](../README.md#oauth2), [x-apikey](../README.md#x-apikey), [x-org](../README.md#x-org)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-### HTTP response details
-
-| Status code | Description        | Response headers |
-| ----------- | ------------------ | ---------------- |
-| **200**     | Founds             | -                |
-| **404**     | Document not found | -                |
-| **500**     | Internal error     | -                |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **runPatch**
-
-> runPatch(studentDescription)
 
 ### Example
 
 ```typescript
 import {
-  STUDENTDESCRIPTIONApi,
-  Configuration,
-  StudentDescription,
-} from "./api";
+    STUDENTDESCRIPTIONApi,
+    Configuration
+} from './api';
+
+const configuration = new Configuration();
+const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
+
+let id: string; // (default to undefined)
+
+const { status, data } = await apiInstance.runDelete(
+    id
+);
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **id** | [**string**] |  | defaults to undefined|
+
+
+### Return type
+
+**StudentDescription**
+
+### Authorization
+
+[x-apisecret](../README.md#x-apisecret), [x-guest-accesstoken](../README.md#x-guest-accesstoken), [oauth2](../README.md#oauth2), [x-apikey](../README.md#x-apikey), [x-org](../README.md#x-org)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | success |  -  |
+|**404** | Document not found |  -  |
+|**500** | Internal error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **runFindOne**
+> StudentDescription runFindOne()
+
+
+### Example
+
+```typescript
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration
+} from './api';
+
+const configuration = new Configuration();
+const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
+
+let id: string; // (default to undefined)
+
+const { status, data } = await apiInstance.runFindOne(
+    id
+);
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **id** | [**string**] |  | defaults to undefined|
+
+
+### Return type
+
+**StudentDescription**
+
+### Authorization
+
+[x-apisecret](../README.md#x-apisecret), [x-guest-accesstoken](../README.md#x-guest-accesstoken), [oauth2](../README.md#oauth2), [x-apikey](../README.md#x-apikey), [x-org](../README.md#x-org)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | Founds |  -  |
+|**404** | Document not found |  -  |
+|**500** | Internal error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **runPatch**
+> runPatch(studentDescription)
+
+
+### Example
+
+```typescript
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration,
+    StudentDescription
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
@@ -314,15 +343,19 @@ const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 let id: string; // (default to undefined)
 let studentDescription: StudentDescription; //Data
 
-const { status, data } = await apiInstance.runPatch(id, studentDescription);
+const { status, data } = await apiInstance.runPatch(
+    id,
+    studentDescription
+);
 ```
 
 ### Parameters
 
-| Name                   | Type                   | Description | Notes                 |
-| ---------------------- | ---------------------- | ----------- | --------------------- |
-| **studentDescription** | **StudentDescription** | Data        |                       |
-| **id**                 | [**string**]           |             | defaults to undefined |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **studentDescription** | **StudentDescription**| Data | |
+| **id** | [**string**] |  | defaults to undefined|
+
 
 ### Return type
 
@@ -334,41 +367,48 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
 
 ### HTTP response details
-
-| Status code | Description        | Response headers |
-| ----------- | ------------------ | ---------------- |
-| **200**     | success            | -                |
-| **404**     | Document not found | -                |
-| **500**     | Internal error     | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | success |  -  |
+|**404** | Document not found |  -  |
+|**500** | Internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-
 > UpdateManyResponse runPatchMany(patchManyRequest)
+
 
 ### Example
 
 ```typescript
-import { STUDENTDESCRIPTIONApi, Configuration, PatchManyRequest } from "./api";
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration,
+    PatchManyRequest
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
+const { status, data } = await apiInstance.runPatchMany(
+    patchManyRequest
+);
 ```
 
 ### Parameters
 
-| Name                 | Type                 | Description | Notes |
-| -------------------- | -------------------- | ----------- | ----- |
-| **patchManyRequest** | **PatchManyRequest** | Data        |       |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **patchManyRequest** | **PatchManyRequest**| Data | |
+
 
 ### Return type
 
@@ -380,41 +420,47 @@ const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 
 ### HTTP response details
-
-| Status code | Description        | Response headers |
-| ----------- | ------------------ | ---------------- |
-| **200**     | success            | -                |
-| **404**     | Document not found | -                |
-| **500**     | Internal error     | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | success |  -  |
+|**404** | Document not found |  -  |
+|**500** | Internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-
 > Array<StudentDescription> runSearch(body)
+
 
 ### Example
 
 ```typescript
-import { STUDENTDESCRIPTIONApi, Configuration } from "./api";
+import {
+    STUDENTDESCRIPTIONApi,
+    Configuration
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(body);
+const { status, data } = await apiInstance.runSearch(
+    body
+);
 ```
 
 ### Parameters
 
-| Name     | Type       | Description | Notes |
-| -------- | ---------- | ----------- | ----- |
-| **body** | **object** | Data        |       |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **body** | **object**| Data | |
+
 
 ### Return type
 
@@ -426,31 +472,31 @@ const { status, data } = await apiInstance.runSearch(body);
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 
 ### HTTP response details
-
-| Status code | Description    | Response headers |
-| ----------- | -------------- | ---------------- |
-| **200**     | success        | -                |
-| **400**     | bad request    | -                |
-| **500**     | internal error | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | success |  -  |
+|**400** | bad request |  -  |
+|**500** | internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-
 > runUpdate(studentDescription)
+
 
 ### Example
 
 ```typescript
 import {
-  STUDENTDESCRIPTIONApi,
-  Configuration,
-  StudentDescription,
-} from "./api";
+    STUDENTDESCRIPTIONApi,
+    Configuration,
+    StudentDescription
+} from './api';
 
 const configuration = new Configuration();
 const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
@@ -458,15 +504,19 @@ const apiInstance = new STUDENTDESCRIPTIONApi(configuration);
 let id: string; // (default to undefined)
 let studentDescription: StudentDescription; //Data
 
-const { status, data } = await apiInstance.runUpdate(id, studentDescription);
+const { status, data } = await apiInstance.runUpdate(
+    id,
+    studentDescription
+);
 ```
 
 ### Parameters
 
-| Name                   | Type                   | Description | Notes                 |
-| ---------------------- | ---------------------- | ----------- | --------------------- |
-| **studentDescription** | **StudentDescription** | Data        |                       |
-| **id**                 | [**string**]           |             | defaults to undefined |
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **studentDescription** | **StudentDescription**| Data | |
+| **id** | [**string**] |  | defaults to undefined|
+
 
 ### Return type
 
@@ -478,15 +528,16 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
 
 ### HTTP response details
-
-| Status code | Description        | Response headers |
-| ----------- | ------------------ | ---------------- |
-| **200**     | success            | -                |
-| **404**     | Document not found | -                |
-| **500**     | Internal error     | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | success |  -  |
+|**404** | Document not found |  -  |
+|**500** | Internal error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

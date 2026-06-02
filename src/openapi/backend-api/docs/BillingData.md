@@ -1,20 +1,21 @@
 # BillingData
 
+
 ## Properties
 
-| Name           | Type                    | Description | Notes                             |
-| -------------- | ----------------------- | ----------- | --------------------------------- |
-| **studentId**  | **string**              |             | [optional] [default to undefined] |
-| **billingIds** | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**studentId** | **string** |  | [optional] [default to undefined]
+**billingIds** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { BillingData } from "./api";
+import { BillingData } from './api';
 
 const instance: BillingData = {
-  studentId,
-  billingIds,
+    studentId,
+    billingIds,
 };
 ```
 

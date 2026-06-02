@@ -1,22 +1,23 @@
 # AppIntegrationLogAutoComplete
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes           |
-| --------- | ---------- | ----------- | --------------- |
-| **\_id**  | **string** |             | [default to ''] |
-| **code**  | **string** |             | [default to ''] |
-| **label** | **string** |             | [default to ''] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
 
 ## Example
 
 ```typescript
-import { AppIntegrationLogAutoComplete } from "./api";
+import { AppIntegrationLogAutoComplete } from './api';
 
 const instance: AppIntegrationLogAutoComplete = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

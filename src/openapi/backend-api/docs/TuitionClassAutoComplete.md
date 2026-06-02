@@ -1,32 +1,33 @@
 # TuitionClassAutoComplete
 
+
 ## Properties
 
-| Name               | Type                                                            | Description | Notes                             |
-| ------------------ | --------------------------------------------------------------- | ----------- | --------------------------------- |
-| **\_id**           | **string**                                                      |             | [default to '']                   |
-| **code**           | **string**                                                      |             | [default to '']                   |
-| **label**          | **string**                                                      |             | [default to '']                   |
-| **startDate**      | **string**                                                      |             | [default to undefined]            |
-| **endDate**        | **string**                                                      |             | [default to undefined]            |
-| **level**          | [**TuitionClassLevel**](TuitionClassLevel.md)                   |             | [optional] [default to undefined] |
-| **defaultTeacher** | [**TuitionClassDefaultTeacher**](TuitionClassDefaultTeacher.md) |             | [default to undefined]            |
-| **studentGroup**   | [**TuitionClassStudentGroup**](TuitionClassStudentGroup.md)     |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
+**startDate** | **string** |  | [default to undefined]
+**endDate** | **string** |  | [default to undefined]
+**level** | [**TuitionClassLevel**](TuitionClassLevel.md) |  | [optional] [default to undefined]
+**defaultTeacher** | [**TuitionClassDefaultTeacher**](TuitionClassDefaultTeacher.md) |  | [default to undefined]
+**studentGroup** | [**TuitionClassStudentGroup**](TuitionClassStudentGroup.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TuitionClassAutoComplete } from "./api";
+import { TuitionClassAutoComplete } from './api';
 
 const instance: TuitionClassAutoComplete = {
-  _id,
-  code,
-  label,
-  startDate,
-  endDate,
-  level,
-  defaultTeacher,
-  studentGroup,
+    _id,
+    code,
+    label,
+    startDate,
+    endDate,
+    level,
+    defaultTeacher,
+    studentGroup,
 };
 ```
 

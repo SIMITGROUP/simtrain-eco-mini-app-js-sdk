@@ -1,22 +1,23 @@
 # SubscriptionSummaryModificationAddOnsTransition
 
+
 ## Properties
 
-| Name          | Type                                                                                                                  | Description | Notes                             |
-| ------------- | --------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **current**   | [**SubscriptionSummaryModificationAddOnsTransitionDetail**](SubscriptionSummaryModificationAddOnsTransitionDetail.md) |             | [default to undefined]            |
-| **target**    | [**SubscriptionSummaryModificationAddOnsTransitionDetail**](SubscriptionSummaryModificationAddOnsTransitionDetail.md) |             | [default to undefined]            |
-| **proration** | [**SubscriptionProration**](SubscriptionProration.md)                                                                 |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**current** | [**SubscriptionSummaryModificationAddOnsTransitionDetail**](SubscriptionSummaryModificationAddOnsTransitionDetail.md) |  | [default to undefined]
+**target** | [**SubscriptionSummaryModificationAddOnsTransitionDetail**](SubscriptionSummaryModificationAddOnsTransitionDetail.md) |  | [default to undefined]
+**proration** | [**SubscriptionProration**](SubscriptionProration.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionSummaryModificationAddOnsTransition } from "./api";
+import { SubscriptionSummaryModificationAddOnsTransition } from './api';
 
 const instance: SubscriptionSummaryModificationAddOnsTransition = {
-  current,
-  target,
-  proration,
+    current,
+    target,
+    proration,
 };
 ```
 

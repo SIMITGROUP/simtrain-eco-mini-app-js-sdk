@@ -1,22 +1,23 @@
 # ProductPackageProductsProductCategory
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { ProductPackageProductsProductCategory } from "./api";
+import { ProductPackageProductsProductCategory } from './api';
 
 const instance: ProductPackageProductsProductCategory = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

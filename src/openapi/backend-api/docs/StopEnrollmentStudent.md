@@ -1,24 +1,25 @@
 # StopEnrollmentStudent
 
+
 ## Properties
 
-| Name      | Type                                                            | Description | Notes                             |
-| --------- | --------------------------------------------------------------- | ----------- | --------------------------------- |
-| **\_id**  | **string**                                                      |             | [default to undefined]            |
-| **code**  | **string**                                                      |             | [optional] [default to undefined] |
-| **label** | **string**                                                      |             | [optional] [default to undefined] |
-| **level** | [**StopEnrollmentStudentLevel**](StopEnrollmentStudentLevel.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**level** | [**StopEnrollmentStudentLevel**](StopEnrollmentStudentLevel.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { StopEnrollmentStudent } from "./api";
+import { StopEnrollmentStudent } from './api';
 
 const instance: StopEnrollmentStudent = {
-  _id,
-  code,
-  label,
-  level,
+    _id,
+    code,
+    label,
+    level,
 };
 ```
 

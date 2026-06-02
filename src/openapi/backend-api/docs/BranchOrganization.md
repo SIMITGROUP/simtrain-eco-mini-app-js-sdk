@@ -1,24 +1,25 @@
 # BranchOrganization
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
-| **orgId** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**orgId** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { BranchOrganization } from "./api";
+import { BranchOrganization } from './api';
 
 const instance: BranchOrganization = {
-  _id,
-  code,
-  label,
-  orgId,
+    _id,
+    code,
+    label,
+    orgId,
 };
 ```
 

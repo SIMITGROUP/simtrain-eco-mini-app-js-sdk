@@ -1,36 +1,37 @@
 # RefundIntegrateSystem
 
+
 ## Properties
 
-| Name               | Type       | Description | Notes                             |
-| ------------------ | ---------- | ----------- | --------------------------------- |
-| **appId**          | **string** |             | [optional] [default to undefined] |
-| **documentNo**     | **string** |             | [optional] [default to undefined] |
-| **documentType**   | **string** |             | [optional] [default to undefined] |
-| **documentId**     | **string** |             | [optional] [default to undefined] |
-| **documentStatus** | **string** |             | [optional] [default to undefined] |
-| **created**        | **string** |             | [optional] [default to undefined] |
-| **updated**        | **string** |             | [optional] [default to undefined] |
-| **createdBy**      | **string** |             | [optional] [default to undefined] |
-| **updatedBy**      | **string** |             | [optional] [default to undefined] |
-| **\_id**           | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**appId** | **string** |  | [optional] [default to undefined]
+**documentNo** | **string** |  | [optional] [default to undefined]
+**documentType** | **string** |  | [optional] [default to undefined]
+**documentId** | **string** |  | [optional] [default to undefined]
+**documentStatus** | **string** |  | [optional] [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RefundIntegrateSystem } from "./api";
+import { RefundIntegrateSystem } from './api';
 
 const instance: RefundIntegrateSystem = {
-  appId,
-  documentNo,
-  documentType,
-  documentId,
-  documentStatus,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
+    appId,
+    documentNo,
+    documentType,
+    documentId,
+    documentStatus,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
 };
 ```
 

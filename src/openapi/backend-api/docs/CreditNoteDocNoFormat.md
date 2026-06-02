@@ -1,20 +1,21 @@
 # CreditNoteDocNoFormat
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { CreditNoteDocNoFormat } from "./api";
+import { CreditNoteDocNoFormat } from './api';
 
 const instance: CreditNoteDocNoFormat = {
-  _id,
-  label,
+    _id,
+    label,
 };
 ```
 

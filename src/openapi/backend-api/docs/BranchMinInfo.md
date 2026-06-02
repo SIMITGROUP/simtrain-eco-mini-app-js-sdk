@@ -1,22 +1,23 @@
 # BranchMinInfo
 
+
 ## Properties
 
-| Name           | Type       | Description | Notes                  |
-| -------------- | ---------- | ----------- | ---------------------- |
-| **branchId**   | **string** |             | [default to undefined] |
-| **branchCode** | **string** |             | [default to undefined] |
-| **branchName** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**branchId** | **string** |  | [default to undefined]
+**branchCode** | **string** |  | [default to undefined]
+**branchName** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { BranchMinInfo } from "./api";
+import { BranchMinInfo } from './api';
 
 const instance: BranchMinInfo = {
-  branchId,
-  branchCode,
-  branchName,
+    branchId,
+    branchCode,
+    branchName,
 };
 ```
 

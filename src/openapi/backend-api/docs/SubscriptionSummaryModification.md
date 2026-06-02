@@ -1,20 +1,21 @@
 # SubscriptionSummaryModification
 
+
 ## Properties
 
-| Name        | Type                                                                                                        | Description | Notes                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **license** | [**SubscriptionSummaryModificationLicenseTransition**](SubscriptionSummaryModificationLicenseTransition.md) |             | [optional] [default to undefined] |
-| **addOns**  | [**SubscriptionSummaryModificationAddOns**](SubscriptionSummaryModificationAddOns.md)                       |             | [default to undefined]            |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**license** | [**SubscriptionSummaryModificationLicenseTransition**](SubscriptionSummaryModificationLicenseTransition.md) |  | [optional] [default to undefined]
+**addOns** | [**SubscriptionSummaryModificationAddOns**](SubscriptionSummaryModificationAddOns.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionSummaryModification } from "./api";
+import { SubscriptionSummaryModification } from './api';
 
 const instance: SubscriptionSummaryModification = {
-  license,
-  addOns,
+    license,
+    addOns,
 };
 ```
 

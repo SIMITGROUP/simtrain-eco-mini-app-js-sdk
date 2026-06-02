@@ -1,36 +1,37 @@
 # ProductAutoComplete
 
+
 ## Properties
 
-| Name                | Type                                      | Description | Notes                             |
-| ------------------- | ----------------------------------------- | ----------- | --------------------------------- |
-| **\_id**            | **string**                                |             | [default to '']                   |
-| **code**            | **string**                                |             | [default to '']                   |
-| **label**           | **string**                                |             | [default to '']                   |
-| **defaultPrice**    | **number**                                |             | [default to undefined]            |
-| **categoryType**    | **string**                                |             | [optional] [default to undefined] |
-| **level**           | [**ProductLevel**](ProductLevel.md)       |             | [optional] [default to undefined] |
-| **defaultDuration** | **number**                                |             | [optional] [default to undefined] |
-| **lessonsPerTerm**  | **number**                                |             | [optional] [default to undefined] |
-| **billingMethod**   | **string**                                |             | [default to undefined]            |
-| **category**        | [**ProductCategory**](ProductCategory.md) |             | [default to undefined]            |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
+**defaultPrice** | **number** |  | [default to undefined]
+**categoryType** | **string** |  | [optional] [default to undefined]
+**level** | [**ProductLevel**](ProductLevel.md) |  | [optional] [default to undefined]
+**defaultDuration** | **number** |  | [optional] [default to undefined]
+**lessonsPerTerm** | **number** |  | [optional] [default to undefined]
+**billingMethod** | **string** |  | [default to undefined]
+**category** | [**ProductCategory**](ProductCategory.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { ProductAutoComplete } from "./api";
+import { ProductAutoComplete } from './api';
 
 const instance: ProductAutoComplete = {
-  _id,
-  code,
-  label,
-  defaultPrice,
-  categoryType,
-  level,
-  defaultDuration,
-  lessonsPerTerm,
-  billingMethod,
-  category,
+    _id,
+    code,
+    label,
+    defaultPrice,
+    categoryType,
+    level,
+    defaultDuration,
+    lessonsPerTerm,
+    billingMethod,
+    category,
 };
 ```
 

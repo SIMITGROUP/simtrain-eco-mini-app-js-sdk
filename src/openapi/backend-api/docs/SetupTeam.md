@@ -1,24 +1,25 @@
 # SetupTeam
 
+
 ## Properties
 
-| Name      | Type                    | Description | Notes                             |
-| --------- | ----------------------- | ----------- | --------------------------------- |
-| **\_id**  | **string**              |             | [optional] [default to undefined] |
-| **name**  | **string**              |             | [optional] [default to undefined] |
-| **email** | **string**              |             | [optional] [default to undefined] |
-| **roles** | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**name** | **string** |  | [optional] [default to undefined]
+**email** | **string** |  | [optional] [default to undefined]
+**roles** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupTeam } from "./api";
+import { SetupTeam } from './api';
 
 const instance: SetupTeam = {
-  _id,
-  name,
-  email,
-  roles,
+    _id,
+    name,
+    email,
+    roles,
 };
 ```
 

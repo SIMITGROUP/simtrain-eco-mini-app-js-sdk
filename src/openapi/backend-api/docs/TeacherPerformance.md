@@ -1,34 +1,35 @@
 # TeacherPerformance
 
+
 ## Properties
 
-| Name                     | Type                                               | Description | Notes                  |
-| ------------------------ | -------------------------------------------------- | ----------- | ---------------------- |
-| **datetime**             | **string**                                         |             | [default to '']        |
-| **totalTeacher**         | **number**                                         |             | [default to 0]         |
-| **totalTeacherGroup**    | **number**                                         |             | [default to 0]         |
-| **totalLessons**         | **number**                                         |             | [default to 0]         |
-| **totalDuration**        | **number**                                         |             | [default to 0]         |
-| **totalStudentsByClass** | **number**                                         |             | [default to 0]         |
-| **lessons**              | [**Array&lt;AssignSummary&gt;**](AssignSummary.md) |             | [default to undefined] |
-| **assign**               | [**Array&lt;AssignSummary&gt;**](AssignSummary.md) |             | [default to undefined] |
-| **classDetails**         | [**Array&lt;ClassDetails&gt;**](ClassDetails.md)   |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**datetime** | **string** |  | [default to '']
+**totalTeacher** | **number** |  | [default to 0]
+**totalTeacherGroup** | **number** |  | [default to 0]
+**totalLessons** | **number** |  | [default to 0]
+**totalDuration** | **number** |  | [default to 0]
+**totalStudentsByClass** | **number** |  | [default to 0]
+**lessons** | [**Array&lt;AssignSummary&gt;**](AssignSummary.md) |  | [default to undefined]
+**assign** | [**Array&lt;AssignSummary&gt;**](AssignSummary.md) |  | [default to undefined]
+**classDetails** | [**Array&lt;ClassDetails&gt;**](ClassDetails.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { TeacherPerformance } from "./api";
+import { TeacherPerformance } from './api';
 
 const instance: TeacherPerformance = {
-  datetime,
-  totalTeacher,
-  totalTeacherGroup,
-  totalLessons,
-  totalDuration,
-  totalStudentsByClass,
-  lessons,
-  assign,
-  classDetails,
+    datetime,
+    totalTeacher,
+    totalTeacherGroup,
+    totalLessons,
+    totalDuration,
+    totalStudentsByClass,
+    lessons,
+    assign,
+    classDetails,
 };
 ```
 

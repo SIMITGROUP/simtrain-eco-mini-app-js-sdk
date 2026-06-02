@@ -1,22 +1,23 @@
 # StudentParentsParent
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { StudentParentsParent } from "./api";
+import { StudentParentsParent } from './api';
 
 const instance: StudentParentsParent = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

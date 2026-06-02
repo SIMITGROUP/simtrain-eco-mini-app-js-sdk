@@ -1,26 +1,27 @@
 # TeacherByLvl
 
+
 ## Properties
 
-| Name           | Type       | Description | Notes           |
-| -------------- | ---------- | ----------- | --------------- |
-| **datetime**   | **string** |             | [default to ''] |
-| **levelId**    | **string** |             | [default to ''] |
-| **levelCode**  | **string** |             | [default to ''] |
-| **levelName**  | **string** |             | [default to ''] |
-| **numTeacher** | **number** |             | [default to 0]  |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**datetime** | **string** |  | [default to '']
+**levelId** | **string** |  | [default to '']
+**levelCode** | **string** |  | [default to '']
+**levelName** | **string** |  | [default to '']
+**numTeacher** | **number** |  | [default to 0]
 
 ## Example
 
 ```typescript
-import { TeacherByLvl } from "./api";
+import { TeacherByLvl } from './api';
 
 const instance: TeacherByLvl = {
-  datetime,
-  levelId,
-  levelCode,
-  levelName,
-  numTeacher,
+    datetime,
+    levelId,
+    levelCode,
+    levelName,
+    numTeacher,
 };
 ```
 

@@ -1,22 +1,23 @@
 # AccountTransactionAutoComplete
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes           |
-| --------- | ---------- | ----------- | --------------- |
-| **\_id**  | **string** |             | [default to ''] |
-| **code**  | **string** |             | [default to ''] |
-| **label** | **string** |             | [default to ''] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
 
 ## Example
 
 ```typescript
-import { AccountTransactionAutoComplete } from "./api";
+import { AccountTransactionAutoComplete } from './api';
 
 const instance: AccountTransactionAutoComplete = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

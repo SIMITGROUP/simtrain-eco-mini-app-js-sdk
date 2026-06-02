@@ -1,30 +1,31 @@
 # SubscriptionPaymentSummary
 
+
 ## Properties
 
-| Name              | Type                                                                      | Description | Notes                  |
-| ----------------- | ------------------------------------------------------------------------- | ----------- | ---------------------- |
-| **action**        | **string**                                                                |             | [default to undefined] |
-| **currency**      | **string**                                                                |             | [default to undefined] |
-| **billingCycle**  | **string**                                                                |             | [default to undefined] |
-| **period**        | [**SubscriptionSummaryPeriod**](SubscriptionSummaryPeriod.md)             |             | [default to undefined] |
-| **modifications** | [**SubscriptionSummaryModification**](SubscriptionSummaryModification.md) |             | [default to undefined] |
-| **invoice**       | [**SubscriptionSummaryInvoice**](SubscriptionSummaryInvoice.md)           |             | [default to undefined] |
-| **xOrg**          | **string**                                                                |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**action** | **string** |  | [default to undefined]
+**currency** | **string** |  | [default to undefined]
+**billingCycle** | **string** |  | [default to undefined]
+**period** | [**SubscriptionSummaryPeriod**](SubscriptionSummaryPeriod.md) |  | [default to undefined]
+**modifications** | [**SubscriptionSummaryModification**](SubscriptionSummaryModification.md) |  | [default to undefined]
+**invoice** | [**SubscriptionSummaryInvoice**](SubscriptionSummaryInvoice.md) |  | [default to undefined]
+**xOrg** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionPaymentSummary } from "./api";
+import { SubscriptionPaymentSummary } from './api';
 
 const instance: SubscriptionPaymentSummary = {
-  action,
-  currency,
-  billingCycle,
-  period,
-  modifications,
-  invoice,
-  xOrg,
+    action,
+    currency,
+    billingCycle,
+    period,
+    modifications,
+    invoice,
+    xOrg,
 };
 ```
 

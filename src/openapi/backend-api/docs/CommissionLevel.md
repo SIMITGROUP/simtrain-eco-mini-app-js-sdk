@@ -1,20 +1,21 @@
 # CommissionLevel
 
+
 ## Properties
 
-| Name       | Type                                                             | Description | Notes                             |
-| ---------- | ---------------------------------------------------------------- | ----------- | --------------------------------- |
-| **levels** | [**Array&lt;CommissionClassLevel&gt;**](CommissionClassLevel.md) |             | [optional] [default to undefined] |
-| **rates**  | [**Array&lt;CommissionRate&gt;**](CommissionRate.md)             |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**levels** | [**Array&lt;CommissionClassLevel&gt;**](CommissionClassLevel.md) |  | [optional] [default to undefined]
+**rates** | [**Array&lt;CommissionRate&gt;**](CommissionRate.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { CommissionLevel } from "./api";
+import { CommissionLevel } from './api';
 
 const instance: CommissionLevel = {
-  levels,
-  rates,
+    levels,
+    rates,
 };
 ```
 

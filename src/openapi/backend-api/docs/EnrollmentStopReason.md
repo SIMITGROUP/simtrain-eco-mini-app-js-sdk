@@ -1,22 +1,23 @@
 # EnrollmentStopReason
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { EnrollmentStopReason } from "./api";
+import { EnrollmentStopReason } from './api';
 
 const instance: EnrollmentStopReason = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

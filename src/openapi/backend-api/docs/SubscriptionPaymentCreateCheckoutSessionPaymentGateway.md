@@ -1,20 +1,21 @@
 # SubscriptionPaymentCreateCheckoutSessionPaymentGateway
 
+
 ## Properties
 
-| Name     | Type       | Description | Notes                  |
-| -------- | ---------- | ----------- | ---------------------- |
-| **name** | **string** |             | [default to undefined] |
-| **html** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **string** |  | [default to undefined]
+**html** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionPaymentCreateCheckoutSessionPaymentGateway } from "./api";
+import { SubscriptionPaymentCreateCheckoutSessionPaymentGateway } from './api';
 
 const instance: SubscriptionPaymentCreateCheckoutSessionPaymentGateway = {
-  name,
-  html,
+    name,
+    html,
 };
 ```
 

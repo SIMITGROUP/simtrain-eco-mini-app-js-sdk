@@ -1,20 +1,21 @@
 # RefundDocNoFormat
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RefundDocNoFormat } from "./api";
+import { RefundDocNoFormat } from './api';
 
 const instance: RefundDocNoFormat = {
-  _id,
-  label,
+    _id,
+    label,
 };
 ```
 

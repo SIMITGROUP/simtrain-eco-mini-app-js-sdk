@@ -1,36 +1,37 @@
 # MiniAppIntegrationCustomFieldFields
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                             |
-| --------------- | ---------- | ----------- | --------------------------------- |
-| **code**        | **string** |             | [default to undefined]            |
-| **title**       | **string** |             | [default to undefined]            |
-| **description** | **string** |             | [default to undefined]            |
-| **created**     | **string** |             | [optional] [default to undefined] |
-| **updated**     | **string** |             | [optional] [default to undefined] |
-| **createdBy**   | **string** |             | [optional] [default to undefined] |
-| **updatedBy**   | **string** |             | [optional] [default to undefined] |
-| **\_id**        | **string** |             | [optional] [default to undefined] |
-| **jsonSchema**  | **object** |             | [default to undefined]            |
-| **patches**     | **object** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**code** | **string** |  | [default to undefined]
+**title** | **string** |  | [default to undefined]
+**description** | **string** |  | [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
+**jsonSchema** | **object** |  | [default to undefined]
+**patches** | **object** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppIntegrationCustomFieldFields } from "./api";
+import { MiniAppIntegrationCustomFieldFields } from './api';
 
 const instance: MiniAppIntegrationCustomFieldFields = {
-  code,
-  title,
-  description,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
-  jsonSchema,
-  patches,
+    code,
+    title,
+    description,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
+    jsonSchema,
+    patches,
 };
 ```
 

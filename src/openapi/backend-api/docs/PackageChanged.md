@@ -1,28 +1,29 @@
 # PackageChanged
 
+
 ## Properties
 
-| Name                  | Type                                         | Description | Notes                             |
-| --------------------- | -------------------------------------------- | ----------- | --------------------------------- |
-| **studentId**         | **string**                                   |             | [default to undefined]            |
-| **previouspackageId** | **string**                                   |             | [default to undefined]            |
-| **newpackageId**      | **string**                                   |             | [default to undefined]            |
-| **changePlan**        | [**Array&lt;ChangePlan&gt;**](ChangePlan.md) |             | [default to undefined]            |
-| **stopReason**        | [**ForeignKey**](ForeignKey.md)              |             | [optional] [default to undefined] |
-| **effectiveDate**     | **string**                                   |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**studentId** | **string** |  | [default to undefined]
+**previouspackageId** | **string** |  | [default to undefined]
+**newpackageId** | **string** |  | [default to undefined]
+**changePlan** | [**Array&lt;ChangePlan&gt;**](ChangePlan.md) |  | [default to undefined]
+**stopReason** | [**ForeignKey**](ForeignKey.md) |  | [optional] [default to undefined]
+**effectiveDate** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { PackageChanged } from "./api";
+import { PackageChanged } from './api';
 
 const instance: PackageChanged = {
-  studentId,
-  previouspackageId,
-  newpackageId,
-  changePlan,
-  stopReason,
-  effectiveDate,
+    studentId,
+    previouspackageId,
+    newpackageId,
+    changePlan,
+    stopReason,
+    effectiveDate,
 };
 ```
 

@@ -1,22 +1,23 @@
 # SetupClassDaySchedule
 
+
 ## Properties
 
-| Name       | Type        | Description | Notes                             |
-| ---------- | ----------- | ----------- | --------------------------------- |
-| **active** | **boolean** |             | [optional] [default to undefined] |
-| **from**   | **string**  |             | [optional] [default to undefined] |
-| **to**     | **string**  |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**active** | **boolean** |  | [optional] [default to undefined]
+**from** | **string** |  | [optional] [default to undefined]
+**to** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupClassDaySchedule } from "./api";
+import { SetupClassDaySchedule } from './api';
 
 const instance: SetupClassDaySchedule = {
-  active,
-  from,
-  to,
+    active,
+    from,
+    to,
 };
 ```
 

@@ -1,18 +1,19 @@
 # CustomFieldList
 
+
 ## Properties
 
-| Name       | Type                    | Description | Notes                             |
-| ---------- | ----------------------- | ----------- | --------------------------------- |
-| **fields** | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**fields** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { CustomFieldList } from "./api";
+import { CustomFieldList } from './api';
 
 const instance: CustomFieldList = {
-  fields,
+    fields,
 };
 ```
 

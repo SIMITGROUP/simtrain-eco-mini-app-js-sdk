@@ -1,22 +1,23 @@
 # PaymentServiceCreateDdiDto
 
+
 ## Properties
 
-| Name           | Type                                                                                | Description | Notes                             |
-| -------------- | ----------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **source**     | **string**                                                                          |             | [default to undefined]            |
-| **ddaRefNo**   | **string**                                                                          |             | [default to undefined]            |
-| **ringgitPay** | [**PaymentServiceCreateRinggitPayDdiDto**](PaymentServiceCreateRinggitPayDdiDto.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**source** | **string** |  | [default to undefined]
+**ddaRefNo** | **string** |  | [default to undefined]
+**ringgitPay** | [**PaymentServiceCreateRinggitPayDdiDto**](PaymentServiceCreateRinggitPayDdiDto.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { PaymentServiceCreateDdiDto } from "./api";
+import { PaymentServiceCreateDdiDto } from './api';
 
 const instance: PaymentServiceCreateDdiDto = {
-  source,
-  ddaRefNo,
-  ringgitPay,
+    source,
+    ddaRefNo,
+    ringgitPay,
 };
 ```
 

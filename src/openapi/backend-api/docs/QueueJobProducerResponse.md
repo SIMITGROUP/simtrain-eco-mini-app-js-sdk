@@ -1,22 +1,23 @@
 # QueueJobProducerResponse
 
+
 ## Properties
 
-| Name          | Type       | Description | Notes                  |
-| ------------- | ---------- | ----------- | ---------------------- |
-| **id**        | **string** |             | [default to undefined] |
-| **name**      | **string** |             | [default to undefined] |
-| **processor** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [default to undefined]
+**name** | **string** |  | [default to undefined]
+**processor** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { QueueJobProducerResponse } from "./api";
+import { QueueJobProducerResponse } from './api';
 
 const instance: QueueJobProducerResponse = {
-  id,
-  name,
-  processor,
+    id,
+    name,
+    processor,
 };
 ```
 

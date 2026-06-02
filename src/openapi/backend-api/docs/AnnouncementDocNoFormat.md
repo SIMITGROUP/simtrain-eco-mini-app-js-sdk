@@ -1,20 +1,21 @@
 # AnnouncementDocNoFormat
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { AnnouncementDocNoFormat } from "./api";
+import { AnnouncementDocNoFormat } from './api';
 
 const instance: AnnouncementDocNoFormat = {
-  _id,
-  label,
+    _id,
+    label,
 };
 ```
 

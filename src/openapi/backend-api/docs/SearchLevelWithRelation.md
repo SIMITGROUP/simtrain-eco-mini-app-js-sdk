@@ -1,20 +1,21 @@
 # SearchLevelWithRelation
 
+
 ## Properties
 
-| Name        | Type                                                            | Description | Notes                             |
-| ----------- | --------------------------------------------------------------- | ----------- | --------------------------------- |
-| **product** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |             | [optional] [default to undefined] |
-| **student** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**product** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |  | [optional] [default to undefined]
+**student** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SearchLevelWithRelation } from "./api";
+import { SearchLevelWithRelation } from './api';
 
 const instance: SearchLevelWithRelation = {
-  product,
-  student,
+    product,
+    student,
 };
 ```
 

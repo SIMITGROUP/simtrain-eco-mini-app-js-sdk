@@ -1,22 +1,23 @@
 # SubscriptionSummaryModificationLicenseTransition
 
+
 ## Properties
 
-| Name          | Type                                                                                                                    | Description | Notes                             |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **current**   | [**SubscriptionSummaryModificationLicenseTransitionDetail**](SubscriptionSummaryModificationLicenseTransitionDetail.md) |             | [default to undefined]            |
-| **target**    | [**SubscriptionSummaryModificationLicenseTransitionDetail**](SubscriptionSummaryModificationLicenseTransitionDetail.md) |             | [default to undefined]            |
-| **proration** | [**SubscriptionProration**](SubscriptionProration.md)                                                                   |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**current** | [**SubscriptionSummaryModificationLicenseTransitionDetail**](SubscriptionSummaryModificationLicenseTransitionDetail.md) |  | [default to undefined]
+**target** | [**SubscriptionSummaryModificationLicenseTransitionDetail**](SubscriptionSummaryModificationLicenseTransitionDetail.md) |  | [default to undefined]
+**proration** | [**SubscriptionProration**](SubscriptionProration.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionSummaryModificationLicenseTransition } from "./api";
+import { SubscriptionSummaryModificationLicenseTransition } from './api';
 
 const instance: SubscriptionSummaryModificationLicenseTransition = {
-  current,
-  target,
-  proration,
+    current,
+    target,
+    proration,
 };
 ```
 

@@ -1,24 +1,25 @@
 # CodeLabelValue
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                  |
-| --------- | ---------- | ----------- | ---------------------- |
-| **\_id**  | **string** |             | [default to undefined] |
-| **code**  | **string** |             | [default to undefined] |
-| **label** | **string** |             | [default to undefined] |
-| **value** | **number** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**code** | **string** |  | [default to undefined]
+**label** | **string** |  | [default to undefined]
+**value** | **number** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { CodeLabelValue } from "./api";
+import { CodeLabelValue } from './api';
 
 const instance: CodeLabelValue = {
-  _id,
-  code,
-  label,
-  value,
+    _id,
+    code,
+    label,
+    value,
 };
 ```
 

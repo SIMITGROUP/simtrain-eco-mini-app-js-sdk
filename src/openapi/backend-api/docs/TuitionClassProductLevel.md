@@ -1,22 +1,23 @@
 # TuitionClassProductLevel
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TuitionClassProductLevel } from "./api";
+import { TuitionClassProductLevel } from './api';
 
 const instance: TuitionClassProductLevel = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

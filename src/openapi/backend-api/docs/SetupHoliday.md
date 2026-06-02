@@ -1,22 +1,23 @@
 # SetupHoliday
 
+
 ## Properties
 
-| Name     | Type       | Description | Notes                             |
-| -------- | ---------- | ----------- | --------------------------------- |
-| **\_id** | **string** |             | [optional] [default to undefined] |
-| **name** | **string** |             | [optional] [default to undefined] |
-| **date** | **string** | YYYY-MM-DD  | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**name** | **string** |  | [optional] [default to undefined]
+**date** | **string** | YYYY-MM-DD | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupHoliday } from "./api";
+import { SetupHoliday } from './api';
 
 const instance: SetupHoliday = {
-  _id,
-  name,
-  date,
+    _id,
+    name,
+    date,
 };
 ```
 

@@ -1,24 +1,25 @@
 # AnnouncementAutoComplete
 
+
 ## Properties
 
-| Name                 | Type       | Description | Notes                  |
-| -------------------- | ---------- | ----------- | ---------------------- |
-| **\_id**             | **string** |             | [default to '']        |
-| **code**             | **string** |             | [default to '']        |
-| **label**            | **string** |             | [default to '']        |
-| **announcementDate** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to '']
+**code** | **string** |  | [default to '']
+**label** | **string** |  | [default to '']
+**announcementDate** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { AnnouncementAutoComplete } from "./api";
+import { AnnouncementAutoComplete } from './api';
 
 const instance: AnnouncementAutoComplete = {
-  _id,
-  code,
-  label,
-  announcementDate,
+    _id,
+    code,
+    label,
+    announcementDate,
 };
 ```
 

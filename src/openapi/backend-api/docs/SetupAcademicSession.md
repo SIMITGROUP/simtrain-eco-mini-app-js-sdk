@@ -1,24 +1,25 @@
 # SetupAcademicSession
 
+
 ## Properties
 
-| Name             | Type       | Description | Notes                             |
-| ---------------- | ---------- | ----------- | --------------------------------- |
-| **name**         | **string** |             | [optional] [default to undefined] |
-| **start**        | **string** | YYYY-MM-DD  | [optional] [default to undefined] |
-| **end**          | **string** | YYYY-MM-DD  | [optional] [default to undefined] |
-| **scheduleFrom** | **string** | YYYY-MM-DD  | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **string** |  | [optional] [default to undefined]
+**start** | **string** | YYYY-MM-DD | [optional] [default to undefined]
+**end** | **string** | YYYY-MM-DD | [optional] [default to undefined]
+**scheduleFrom** | **string** | YYYY-MM-DD | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupAcademicSession } from "./api";
+import { SetupAcademicSession } from './api';
 
 const instance: SetupAcademicSession = {
-  name,
-  start,
-  end,
-  scheduleFrom,
+    name,
+    start,
+    end,
+    scheduleFrom,
 };
 ```
 

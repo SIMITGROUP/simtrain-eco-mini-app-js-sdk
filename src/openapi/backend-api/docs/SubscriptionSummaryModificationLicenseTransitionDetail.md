@@ -1,22 +1,23 @@
 # SubscriptionSummaryModificationLicenseTransitionDetail
 
+
 ## Properties
 
-| Name       | Type       | Description | Notes                  |
-| ---------- | ---------- | ----------- | ---------------------- |
-| **code**   | **string** |             | [default to undefined] |
-| **name**   | **string** |             | [default to undefined] |
-| **amount** | **number** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**code** | **string** |  | [default to undefined]
+**name** | **string** |  | [default to undefined]
+**amount** | **number** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionSummaryModificationLicenseTransitionDetail } from "./api";
+import { SubscriptionSummaryModificationLicenseTransitionDetail } from './api';
 
 const instance: SubscriptionSummaryModificationLicenseTransitionDetail = {
-  code,
-  name,
-  amount,
+    code,
+    name,
+    amount,
 };
 ```
 

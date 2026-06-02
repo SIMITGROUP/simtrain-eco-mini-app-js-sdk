@@ -1,28 +1,29 @@
 # EinvoiceRecordURLResponse
 
+
 ## Properties
 
-| Name               | Type       | Description | Notes                             |
-| ------------------ | ---------- | ----------- | --------------------------------- |
-| **uuid**           | **string** |             | [optional] [default to undefined] |
-| **longId**         | **string** |             | [optional] [default to undefined] |
-| **status**         | **string** |             | [optional] [default to undefined] |
-| **url**            | **string** |             | [optional] [default to undefined] |
-| **issueTime**      | **string** |             | [optional] [default to undefined] |
-| **submissionType** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**uuid** | **string** |  | [optional] [default to undefined]
+**longId** | **string** |  | [optional] [default to undefined]
+**status** | **string** |  | [optional] [default to undefined]
+**url** | **string** |  | [optional] [default to undefined]
+**issueTime** | **string** |  | [optional] [default to undefined]
+**submissionType** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { EinvoiceRecordURLResponse } from "./api";
+import { EinvoiceRecordURLResponse } from './api';
 
 const instance: EinvoiceRecordURLResponse = {
-  uuid,
-  longId,
-  status,
-  url,
-  issueTime,
-  submissionType,
+    uuid,
+    longId,
+    status,
+    url,
+    issueTime,
+    submissionType,
 };
 ```
 

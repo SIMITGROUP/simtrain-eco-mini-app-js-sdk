@@ -1,20 +1,21 @@
 # StudentAlphabetIndex
 
+
 ## Properties
 
-| Name       | Type       | Description | Notes                  |
-| ---------- | ---------- | ----------- | ---------------------- |
-| **letter** | **string** |             | [default to undefined] |
-| **count**  | **number** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**letter** | **string** |  | [default to undefined]
+**count** | **number** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { StudentAlphabetIndex } from "./api";
+import { StudentAlphabetIndex } from './api';
 
 const instance: StudentAlphabetIndex = {
-  letter,
-  count,
+    letter,
+    count,
 };
 ```
 

@@ -1,34 +1,35 @@
 # StudentSummaryActiveEnrollments
 
+
 ## Properties
 
-| Name             | Type       | Description | Notes                             |
-| ---------------- | ---------- | ----------- | --------------------------------- |
-| **enrollmentId** | **string** |             | [optional] [default to undefined] |
-| **startDate**    | **string** |             | [optional] [default to undefined] |
-| **endDate**      | **string** |             | [optional] [default to undefined] |
-| **label**        | **string** |             | [optional] [default to undefined] |
-| **created**      | **string** |             | [optional] [default to undefined] |
-| **updated**      | **string** |             | [optional] [default to undefined] |
-| **createdBy**    | **string** |             | [optional] [default to undefined] |
-| **updatedBy**    | **string** |             | [optional] [default to undefined] |
-| **\_id**         | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**enrollmentId** | **string** |  | [optional] [default to undefined]
+**startDate** | **string** |  | [optional] [default to undefined]
+**endDate** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { StudentSummaryActiveEnrollments } from "./api";
+import { StudentSummaryActiveEnrollments } from './api';
 
 const instance: StudentSummaryActiveEnrollments = {
-  enrollmentId,
-  startDate,
-  endDate,
-  label,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
+    enrollmentId,
+    startDate,
+    endDate,
+    label,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
 };
 ```
 

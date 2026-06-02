@@ -1,26 +1,27 @@
 # Data
 
+
 ## Properties
 
-| Name               | Type                                    | Description | Notes                             |
-| ------------------ | --------------------------------------- | ----------- | --------------------------------- |
-| **documentNo**     | **string**                              |             | [optional] [default to undefined] |
-| **documentType**   | **string**                              |             | [optional] [default to undefined] |
-| **documentDate**   | **string**                              |             | [optional] [default to undefined] |
-| **documentStatus** | **Array&lt;string&gt;**                 |             | [optional] [default to undefined] |
-| **eInvoiceStatus** | [**EInvoiceStatus**](EInvoiceStatus.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**documentNo** | **string** |  | [optional] [default to undefined]
+**documentType** | **string** |  | [optional] [default to undefined]
+**documentDate** | **string** |  | [optional] [default to undefined]
+**documentStatus** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
+**eInvoiceStatus** | [**EInvoiceStatus**](EInvoiceStatus.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { Data } from "./api";
+import { Data } from './api';
 
 const instance: Data = {
-  documentNo,
-  documentType,
-  documentDate,
-  documentStatus,
-  eInvoiceStatus,
+    documentNo,
+    documentType,
+    documentDate,
+    documentStatus,
+    eInvoiceStatus,
 };
 ```
 

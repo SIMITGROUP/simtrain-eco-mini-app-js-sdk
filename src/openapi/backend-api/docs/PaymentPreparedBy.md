@@ -1,22 +1,23 @@
 # PaymentPreparedBy
 
+
 ## Properties
 
-| Name         | Type       | Description | Notes                             |
-| ------------ | ---------- | ----------- | --------------------------------- |
-| **\_id**     | **string** |             | [optional] [default to undefined] |
-| **fullName** | **string** |             | [optional] [default to undefined] |
-| **uid**      | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**fullName** | **string** |  | [optional] [default to undefined]
+**uid** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { PaymentPreparedBy } from "./api";
+import { PaymentPreparedBy } from './api';
 
 const instance: PaymentPreparedBy = {
-  _id,
-  fullName,
-  uid,
+    _id,
+    fullName,
+    uid,
 };
 ```
 

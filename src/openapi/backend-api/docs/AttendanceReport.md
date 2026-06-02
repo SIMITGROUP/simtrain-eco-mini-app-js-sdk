@@ -1,20 +1,21 @@
 # AttendanceReport
 
+
 ## Properties
 
-| Name         | Type                                                   | Description | Notes                  |
-| ------------ | ------------------------------------------------------ | ----------- | ---------------------- |
-| **datetime** | **string**                                             |             | [default to '']        |
-| **data**     | [**Array&lt;DailyAttendance&gt;**](DailyAttendance.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**datetime** | **string** |  | [default to '']
+**data** | [**Array&lt;DailyAttendance&gt;**](DailyAttendance.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { AttendanceReport } from "./api";
+import { AttendanceReport } from './api';
 
 const instance: AttendanceReport = {
-  datetime,
-  data,
+    datetime,
+    data,
 };
 ```
 

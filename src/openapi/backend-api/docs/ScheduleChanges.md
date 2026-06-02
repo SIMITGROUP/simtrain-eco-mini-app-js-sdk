@@ -1,66 +1,67 @@
 # ScheduleChanges
 
+
 ## Properties
 
-| Name                    | Type                                                | Description | Notes                             |
-| ----------------------- | --------------------------------------------------- | ----------- | --------------------------------- |
-| **\_id**                | **string**                                          |             | [optional] [default to undefined] |
-| **created**             | **string**                                          |             | [optional] [default to undefined] |
-| **updated**             | **string**                                          |             | [optional] [default to undefined] |
-| **createdBy**           | **string**                                          |             | [optional] [default to undefined] |
-| **updatedBy**           | **string**                                          |             | [optional] [default to undefined] |
-| **tenantId**            | **number**                                          |             | [optional] [default to undefined] |
-| **orgId**               | **number**                                          |             | [optional] [default to undefined] |
-| **branchId**            | **number**                                          |             | [optional] [default to undefined] |
-| **active**              | **boolean**                                         |             | [optional] [default to undefined] |
-| **scheduleNo**          | **number**                                          |             | [optional] [default to undefined] |
-| **termNo**              | **number**                                          |             | [optional] [default to undefined] |
-| **lessonPlan**          | **string**                                          |             | [optional] [default to undefined] |
-| **onlineClassUrl**      | **string**                                          |             | [optional] [default to undefined] |
-| **description**         | **string**                                          |             | [optional] [default to undefined] |
-| **startTime**           | **string**                                          |             | [optional] [default to undefined] |
-| **endTime**             | **string**                                          |             | [optional] [default to undefined] |
-| **duration**            | **number**                                          |             | [optional] [default to undefined] |
-| **day**                 | **string**                                          |             | [optional] [default to undefined] |
-| **tuitionClass**        | [**ScheduleTuitionClass**](ScheduleTuitionClass.md) |             | [optional] [default to undefined] |
-| **room**                | [**ScheduleRoom**](ScheduleRoom.md)                 |             | [optional] [default to undefined] |
-| **teacher**             | [**ScheduleTeacher**](ScheduleTeacher.md)           |             | [optional] [default to undefined] |
-| **more**                | **object**                                          |             | [optional] [default to undefined] |
-| **attendQty**           | **number**                                          |             | [default to undefined]            |
-| **studentQty**          | **number**                                          |             | [default to undefined]            |
-| **pendingChangeStatus** | **string**                                          |             | [default to undefined]            |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**tenantId** | **number** |  | [optional] [default to undefined]
+**orgId** | **number** |  | [optional] [default to undefined]
+**branchId** | **number** |  | [optional] [default to undefined]
+**active** | **boolean** |  | [optional] [default to undefined]
+**scheduleNo** | **number** |  | [optional] [default to undefined]
+**termNo** | **number** |  | [optional] [default to undefined]
+**lessonPlan** | **string** |  | [optional] [default to undefined]
+**onlineClassUrl** | **string** |  | [optional] [default to undefined]
+**description** | **string** |  | [optional] [default to undefined]
+**startTime** | **string** |  | [optional] [default to undefined]
+**endTime** | **string** |  | [optional] [default to undefined]
+**duration** | **number** |  | [optional] [default to undefined]
+**day** | **string** |  | [optional] [default to undefined]
+**tuitionClass** | [**ScheduleTuitionClass**](ScheduleTuitionClass.md) |  | [optional] [default to undefined]
+**room** | [**ScheduleRoom**](ScheduleRoom.md) |  | [optional] [default to undefined]
+**teacher** | [**ScheduleTeacher**](ScheduleTeacher.md) |  | [optional] [default to undefined]
+**more** | **object** |  | [optional] [default to undefined]
+**attendQty** | **number** |  | [default to undefined]
+**studentQty** | **number** |  | [default to undefined]
+**pendingChangeStatus** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { ScheduleChanges } from "./api";
+import { ScheduleChanges } from './api';
 
 const instance: ScheduleChanges = {
-  _id,
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  tenantId,
-  orgId,
-  branchId,
-  active,
-  scheduleNo,
-  termNo,
-  lessonPlan,
-  onlineClassUrl,
-  description,
-  startTime,
-  endTime,
-  duration,
-  day,
-  tuitionClass,
-  room,
-  teacher,
-  more,
-  attendQty,
-  studentQty,
-  pendingChangeStatus,
+    _id,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    tenantId,
+    orgId,
+    branchId,
+    active,
+    scheduleNo,
+    termNo,
+    lessonPlan,
+    onlineClassUrl,
+    description,
+    startTime,
+    endTime,
+    duration,
+    day,
+    tuitionClass,
+    room,
+    teacher,
+    more,
+    attendQty,
+    studentQty,
+    pendingChangeStatus,
 };
 ```
 

@@ -1,20 +1,21 @@
 # VoidJEFormat
 
+
 ## Properties
 
-| Name       | Type                    | Description | Notes                  |
-| ---------- | ----------------------- | ----------- | ---------------------- |
-| **id**     | **Array&lt;string&gt;** |             | [default to undefined] |
-| **reason** | **string**              |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **Array&lt;string&gt;** |  | [default to undefined]
+**reason** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { VoidJEFormat } from "./api";
+import { VoidJEFormat } from './api';
 
 const instance: VoidJEFormat = {
-  id,
-  reason,
+    id,
+    reason,
 };
 ```
 

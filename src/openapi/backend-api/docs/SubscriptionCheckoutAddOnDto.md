@@ -1,22 +1,23 @@
 # SubscriptionCheckoutAddOnDto
 
+
 ## Properties
 
-| Name                | Type                                                                                              | Description | Notes                             |
-| ------------------- | ------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **addOnStudentQty** | **number**                                                                                        |             | [optional] [default to undefined] |
-| **addOnBranchQty**  | **number**                                                                                        |             | [optional] [default to undefined] |
-| **payment**         | [**SubscriptionPaymentCreateCheckoutSessionDto**](SubscriptionPaymentCreateCheckoutSessionDto.md) |             | [default to undefined]            |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**addOnStudentQty** | **number** |  | [optional] [default to undefined]
+**addOnBranchQty** | **number** |  | [optional] [default to undefined]
+**payment** | [**SubscriptionPaymentCreateCheckoutSessionDto**](SubscriptionPaymentCreateCheckoutSessionDto.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionCheckoutAddOnDto } from "./api";
+import { SubscriptionCheckoutAddOnDto } from './api';
 
 const instance: SubscriptionCheckoutAddOnDto = {
-  addOnStudentQty,
-  addOnBranchQty,
-  payment,
+    addOnStudentQty,
+    addOnBranchQty,
+    payment,
 };
 ```
 

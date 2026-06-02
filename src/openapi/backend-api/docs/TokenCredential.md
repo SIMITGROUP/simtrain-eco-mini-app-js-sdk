@@ -1,22 +1,23 @@
 # TokenCredential
 
+
 ## Properties
 
-| Name               | Type       | Description                            | Notes                             |
-| ------------------ | ---------- | -------------------------------------- | --------------------------------- |
-| **email**          | **string** |                                        | [default to '']                   |
-| **messagingToken** | **string** |                                        | [default to '']                   |
-| **appType**        | **string** | App identifier: mysimtrain or simtrain | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**email** | **string** |  | [default to '']
+**messagingToken** | **string** |  | [default to '']
+**appType** | **string** | App identifier: mysimtrain or simtrain | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TokenCredential } from "./api";
+import { TokenCredential } from './api';
 
 const instance: TokenCredential = {
-  email,
-  messagingToken,
-  appType,
+    email,
+    messagingToken,
+    appType,
 };
 ```
 

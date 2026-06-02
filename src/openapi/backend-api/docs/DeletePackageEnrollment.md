@@ -1,22 +1,23 @@
 # DeletePackageEnrollment
 
+
 ## Properties
 
-| Name              | Type                    | Description | Notes                  |
-| ----------------- | ----------------------- | ----------- | ---------------------- |
-| **studentId**     | **string**              |             | [default to undefined] |
-| **packageId**     | **string**              |             | [default to undefined] |
-| **enrollmentIds** | **Array&lt;string&gt;** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**studentId** | **string** |  | [default to undefined]
+**packageId** | **string** |  | [default to undefined]
+**enrollmentIds** | **Array&lt;string&gt;** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { DeletePackageEnrollment } from "./api";
+import { DeletePackageEnrollment } from './api';
 
 const instance: DeletePackageEnrollment = {
-  studentId,
-  packageId,
-  enrollmentIds,
+    studentId,
+    packageId,
+    enrollmentIds,
 };
 ```
 

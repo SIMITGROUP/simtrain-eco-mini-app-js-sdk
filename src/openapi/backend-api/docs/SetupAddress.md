@@ -1,28 +1,29 @@
 # SetupAddress
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                             |
-| --------------- | ---------- | ----------- | --------------------------------- |
-| **street1**     | **string** |             | [optional] [default to undefined] |
-| **street2**     | **string** |             | [optional] [default to undefined] |
-| **postCode**    | **string** |             | [optional] [default to undefined] |
-| **cityName**    | **string** |             | [optional] [default to undefined] |
-| **stateName**   | **string** |             | [optional] [default to undefined] |
-| **countryName** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**street1** | **string** |  | [optional] [default to undefined]
+**street2** | **string** |  | [optional] [default to undefined]
+**postCode** | **string** |  | [optional] [default to undefined]
+**cityName** | **string** |  | [optional] [default to undefined]
+**stateName** | **string** |  | [optional] [default to undefined]
+**countryName** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SetupAddress } from "./api";
+import { SetupAddress } from './api';
 
 const instance: SetupAddress = {
-  street1,
-  street2,
-  postCode,
-  cityName,
-  stateName,
-  countryName,
+    street1,
+    street2,
+    postCode,
+    cityName,
+    stateName,
+    countryName,
 };
 ```
 

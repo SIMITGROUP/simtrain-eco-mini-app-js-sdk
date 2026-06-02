@@ -1,22 +1,23 @@
 # ScheduleAttendanceStudentLevel
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { ScheduleAttendanceStudentLevel } from "./api";
+import { ScheduleAttendanceStudentLevel } from './api';
 
 const instance: ScheduleAttendanceStudentLevel = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

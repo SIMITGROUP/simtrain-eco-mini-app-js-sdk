@@ -1,28 +1,29 @@
 # AnnouncementTargetsClasses
 
+
 ## Properties
 
-| Name          | Type                                                                        | Description | Notes                             |
-| ------------- | --------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **created**   | **string**                                                                  |             | [optional] [default to undefined] |
-| **updated**   | **string**                                                                  |             | [optional] [default to undefined] |
-| **createdBy** | **string**                                                                  |             | [optional] [default to undefined] |
-| **updatedBy** | **string**                                                                  |             | [optional] [default to undefined] |
-| **\_id**      | **string**                                                                  |             | [optional] [default to undefined] |
-| **person**    | [**AnnouncementTargetsClassesPerson**](AnnouncementTargetsClassesPerson.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**created** | **string** |  | [optional] [default to undefined]
+**updated** | **string** |  | [optional] [default to undefined]
+**createdBy** | **string** |  | [optional] [default to undefined]
+**updatedBy** | **string** |  | [optional] [default to undefined]
+**_id** | **string** |  | [optional] [default to undefined]
+**person** | [**AnnouncementTargetsClassesPerson**](AnnouncementTargetsClassesPerson.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { AnnouncementTargetsClasses } from "./api";
+import { AnnouncementTargetsClasses } from './api';
 
 const instance: AnnouncementTargetsClasses = {
-  created,
-  updated,
-  createdBy,
-  updatedBy,
-  _id,
-  person,
+    created,
+    updated,
+    createdBy,
+    updatedBy,
+    _id,
+    person,
 };
 ```
 

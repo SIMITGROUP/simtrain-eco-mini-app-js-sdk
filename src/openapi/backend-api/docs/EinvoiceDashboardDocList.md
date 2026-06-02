@@ -1,32 +1,33 @@
 # EinvoiceDashboardDocList
 
+
 ## Properties
 
-| Name                    | Type       | Description | Notes                             |
-| ----------------------- | ---------- | ----------- | --------------------------------- |
-| **documentType**        | **string** |             | [optional] [default to undefined] |
-| **documentId**          | **string** |             | [optional] [default to undefined] |
-| **documentNo**          | **string** |             | [optional] [default to undefined] |
-| **documentDate**        | **string** |             | [optional] [default to undefined] |
-| **businessPartnerId**   | **string** |             | [optional] [default to undefined] |
-| **businessPartnerName** | **string** |             | [optional] [default to undefined] |
-| **currency**            | **string** |             | [optional] [default to undefined] |
-| **totalAmount**         | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**documentType** | **string** |  | [optional] [default to undefined]
+**documentId** | **string** |  | [optional] [default to undefined]
+**documentNo** | **string** |  | [optional] [default to undefined]
+**documentDate** | **string** |  | [optional] [default to undefined]
+**businessPartnerId** | **string** |  | [optional] [default to undefined]
+**businessPartnerName** | **string** |  | [optional] [default to undefined]
+**currency** | **string** |  | [optional] [default to undefined]
+**totalAmount** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { EinvoiceDashboardDocList } from "./api";
+import { EinvoiceDashboardDocList } from './api';
 
 const instance: EinvoiceDashboardDocList = {
-  documentType,
-  documentId,
-  documentNo,
-  documentDate,
-  businessPartnerId,
-  businessPartnerName,
-  currency,
-  totalAmount,
+    documentType,
+    documentId,
+    documentNo,
+    documentDate,
+    businessPartnerId,
+    businessPartnerName,
+    currency,
+    totalAmount,
 };
 ```
 

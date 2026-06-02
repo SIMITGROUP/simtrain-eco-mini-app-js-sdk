@@ -1,22 +1,23 @@
 # ForeignKey
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                  |
-| --------- | ---------- | ----------- | ---------------------- |
-| **\_id**  | **string** |             | [default to undefined] |
-| **code**  | **string** |             | [default to undefined] |
-| **label** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**code** | **string** |  | [default to undefined]
+**label** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { ForeignKey } from "./api";
+import { ForeignKey } from './api';
 
 const instance: ForeignKey = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

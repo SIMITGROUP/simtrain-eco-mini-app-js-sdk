@@ -1,20 +1,21 @@
 # OutstandingSetting
 
+
 ## Properties
 
-| Name       | Type                    | Description | Notes                  |
-| ---------- | ----------------------- | ----------- | ---------------------- |
-| **enable** | **boolean**             |             | [default to false]     |
-| **cron**   | **Array&lt;string&gt;** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**enable** | **boolean** |  | [default to false]
+**cron** | **Array&lt;string&gt;** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { OutstandingSetting } from "./api";
+import { OutstandingSetting } from './api';
 
 const instance: OutstandingSetting = {
-  enable,
-  cron,
+    enable,
+    cron,
 };
 ```
 

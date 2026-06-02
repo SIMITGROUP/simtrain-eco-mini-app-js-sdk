@@ -1,26 +1,27 @@
 # SubscriptionSummaryInvoice
 
+
 ## Properties
 
-| Name                | Type                                                                   | Description | Notes                  |
-| ------------------- | ---------------------------------------------------------------------- | ----------- | ---------------------- |
-| **subTotal**        | **number**                                                             |             | [default to undefined] |
-| **amountBeforeTax** | **number**                                                             |             | [default to undefined] |
-| **grandTotal**      | **number**                                                             |             | [default to undefined] |
-| **tax**             | [**SubscriptionTax**](SubscriptionTax.md)                              |             | [default to undefined] |
-| **items**           | [**Array&lt;SubscriptionInvoiceItem&gt;**](SubscriptionInvoiceItem.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**subTotal** | **number** |  | [default to undefined]
+**amountBeforeTax** | **number** |  | [default to undefined]
+**grandTotal** | **number** |  | [default to undefined]
+**tax** | [**SubscriptionTax**](SubscriptionTax.md) |  | [default to undefined]
+**items** | [**Array&lt;SubscriptionInvoiceItem&gt;**](SubscriptionInvoiceItem.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionSummaryInvoice } from "./api";
+import { SubscriptionSummaryInvoice } from './api';
 
 const instance: SubscriptionSummaryInvoice = {
-  subTotal,
-  amountBeforeTax,
-  grandTotal,
-  tax,
-  items,
+    subTotal,
+    amountBeforeTax,
+    grandTotal,
+    tax,
+    items,
 };
 ```
 

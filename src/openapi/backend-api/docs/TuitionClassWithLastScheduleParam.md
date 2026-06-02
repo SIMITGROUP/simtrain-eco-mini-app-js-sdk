@@ -1,20 +1,21 @@
 # TuitionClassWithLastScheduleParam
 
+
 ## Properties
 
-| Name           | Type       | Description                            | Notes                             |
-| -------------- | ---------- | -------------------------------------- | --------------------------------- |
-| **cutoffDate** | **string** |                                        | [default to undefined]            |
-| **filter**     | **object** | MongoDB-style filter for tuition class | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**cutoffDate** | **string** |  | [default to undefined]
+**filter** | **object** | MongoDB-style filter for tuition class | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TuitionClassWithLastScheduleParam } from "./api";
+import { TuitionClassWithLastScheduleParam } from './api';
 
 const instance: TuitionClassWithLastScheduleParam = {
-  cutoffDate,
-  filter,
+    cutoffDate,
+    filter,
 };
 ```
 

@@ -1,22 +1,23 @@
 # RepairSimbizDuplicateIntegrateRequest
 
+
 ## Properties
 
-| Name                       | Type        | Description | Notes                             |
-| -------------------------- | ----------- | ----------- | --------------------------------- |
-| **tenantId**               | **number**  |             | [default to undefined]            |
-| **appId**                  | **string**  |             | [optional] [default to undefined] |
-| **voidInAccountingSystem** | **boolean** |             | [optional] [default to true]      |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**tenantId** | **number** |  | [default to undefined]
+**appId** | **string** |  | [optional] [default to undefined]
+**voidInAccountingSystem** | **boolean** |  | [optional] [default to true]
 
 ## Example
 
 ```typescript
-import { RepairSimbizDuplicateIntegrateRequest } from "./api";
+import { RepairSimbizDuplicateIntegrateRequest } from './api';
 
 const instance: RepairSimbizDuplicateIntegrateRequest = {
-  tenantId,
-  appId,
-  voidInAccountingSystem,
+    tenantId,
+    appId,
+    voidInAccountingSystem,
 };
 ```
 

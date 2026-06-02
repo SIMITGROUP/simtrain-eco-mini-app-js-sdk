@@ -1,28 +1,29 @@
 # ChangePlan
 
+
 ## Properties
 
-| Name        | Type                                                | Description | Notes                             |
-| ----------- | --------------------------------------------------- | ----------- | --------------------------------- |
-| **action**  | **string**                                          |             | [default to undefined]            |
-| **\_new**   | [**NewProductEnrollment**](NewProductEnrollment.md) |             | [optional] [default to undefined] |
-| **stop**    | **string**                                          |             | [optional] [default to undefined] |
-| **alacart** | **string**                                          |             | [optional] [default to undefined] |
-| **remain**  | [**NewProductEnrollment**](NewProductEnrollment.md) |             | [optional] [default to undefined] |
-| **row**     | **number**                                          |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**action** | **string** |  | [default to undefined]
+**_new** | [**NewProductEnrollment**](NewProductEnrollment.md) |  | [optional] [default to undefined]
+**stop** | **string** |  | [optional] [default to undefined]
+**alacart** | **string** |  | [optional] [default to undefined]
+**remain** | [**NewProductEnrollment**](NewProductEnrollment.md) |  | [optional] [default to undefined]
+**row** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { ChangePlan } from "./api";
+import { ChangePlan } from './api';
 
 const instance: ChangePlan = {
-  action,
-  _new,
-  stop,
-  alacart,
-  remain,
-  row,
+    action,
+    _new,
+    stop,
+    alacart,
+    remain,
+    row,
 };
 ```
 

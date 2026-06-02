@@ -1,20 +1,21 @@
 # PaymentServiceMerchantConfigStatusDto
 
+
 ## Properties
 
-| Name           | Type        | Description | Notes                             |
-| -------------- | ----------- | ----------- | --------------------------------- |
-| **configured** | **boolean** |             | [default to undefined]            |
-| **provider**   | **string**  |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**configured** | **boolean** |  | [default to undefined]
+**provider** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { PaymentServiceMerchantConfigStatusDto } from "./api";
+import { PaymentServiceMerchantConfigStatusDto } from './api';
 
 const instance: PaymentServiceMerchantConfigStatusDto = {
-  configured,
-  provider,
+    configured,
+    provider,
 };
 ```
 

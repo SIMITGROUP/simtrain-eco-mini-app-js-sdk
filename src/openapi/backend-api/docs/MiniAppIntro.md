@@ -1,22 +1,23 @@
 # MiniAppIntro
 
+
 ## Properties
 
-| Name              | Type                                                             | Description | Notes                  |
-| ----------------- | ---------------------------------------------------------------- | ----------- | ---------------------- |
-| **description**   | **string**                                                       |             | [default to undefined] |
-| **previewImages** | **Array&lt;string&gt;**                                          |             | [default to undefined] |
-| **features**      | [**Array&lt;MiniAppIntroFeatures&gt;**](MiniAppIntroFeatures.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**description** | **string** |  | [default to undefined]
+**previewImages** | **Array&lt;string&gt;** |  | [default to undefined]
+**features** | [**Array&lt;MiniAppIntroFeatures&gt;**](MiniAppIntroFeatures.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppIntro } from "./api";
+import { MiniAppIntro } from './api';
 
 const instance: MiniAppIntro = {
-  description,
-  previewImages,
-  features,
+    description,
+    previewImages,
+    features,
 };
 ```
 

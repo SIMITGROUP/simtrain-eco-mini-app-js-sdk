@@ -1,22 +1,23 @@
 # MiniAppAccess
 
+
 ## Properties
 
-| Name              | Type                    | Description | Notes                             |
-| ----------------- | ----------------------- | ----------- | --------------------------------- |
-| **visibility**    | **string**              |             | [default to undefined]            |
-| **allowEmails**   | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
-| **requiredPlans** | **Array&lt;string&gt;** |             | [default to undefined]            |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**visibility** | **string** |  | [default to undefined]
+**allowEmails** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
+**requiredPlans** | **Array&lt;string&gt;** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppAccess } from "./api";
+import { MiniAppAccess } from './api';
 
 const instance: MiniAppAccess = {
-  visibility,
-  allowEmails,
-  requiredPlans,
+    visibility,
+    allowEmails,
+    requiredPlans,
 };
 ```
 

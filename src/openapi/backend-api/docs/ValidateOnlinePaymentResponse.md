@@ -1,18 +1,19 @@
 # ValidateOnlinePaymentResponse
 
+
 ## Properties
 
-| Name              | Type                                                          | Description | Notes                  |
-| ----------------- | ------------------------------------------------------------- | ----------- | ---------------------- |
-| **onlinePayment** | [**OnlinePaymentValidateData**](OnlinePaymentValidateData.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**onlinePayment** | [**OnlinePaymentValidateData**](OnlinePaymentValidateData.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { ValidateOnlinePaymentResponse } from "./api";
+import { ValidateOnlinePaymentResponse } from './api';
 
 const instance: ValidateOnlinePaymentResponse = {
-  onlinePayment,
+    onlinePayment,
 };
 ```
 

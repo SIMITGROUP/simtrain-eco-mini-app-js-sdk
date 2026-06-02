@@ -1,28 +1,29 @@
 # InvoiceStudent
 
+
 ## Properties
 
-| Name             | Type                                                            | Description | Notes                             |
-| ---------------- | --------------------------------------------------------------- | ----------- | --------------------------------- |
-| **\_id**         | **string**                                                      |             | [default to undefined]            |
-| **label**        | **string**                                                      |             | [optional] [default to undefined] |
-| **code**         | **string**                                                      |             | [optional] [default to undefined] |
-| **agent**        | [**InvoiceStudentAgent**](InvoiceStudentAgent.md)               |             | [optional] [default to undefined] |
-| **level**        | [**InvoiceStudentLevel**](InvoiceStudentLevel.md)               |             | [optional] [default to undefined] |
-| **studentGroup** | [**InvoiceStudentStudentGroup**](InvoiceStudentStudentGroup.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**agent** | [**InvoiceStudentAgent**](InvoiceStudentAgent.md) |  | [optional] [default to undefined]
+**level** | [**InvoiceStudentLevel**](InvoiceStudentLevel.md) |  | [optional] [default to undefined]
+**studentGroup** | [**InvoiceStudentStudentGroup**](InvoiceStudentStudentGroup.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { InvoiceStudent } from "./api";
+import { InvoiceStudent } from './api';
 
 const instance: InvoiceStudent = {
-  _id,
-  label,
-  code,
-  agent,
-  level,
-  studentGroup,
+    _id,
+    label,
+    code,
+    agent,
+    level,
+    studentGroup,
 };
 ```
 

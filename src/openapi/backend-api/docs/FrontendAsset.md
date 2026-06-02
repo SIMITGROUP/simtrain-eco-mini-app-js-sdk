@@ -1,18 +1,19 @@
 # FrontendAsset
 
+
 ## Properties
 
-| Name       | Type                    | Description | Notes                             |
-| ---------- | ----------------------- | ----------- | --------------------------------- |
-| **assets** | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**assets** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { FrontendAsset } from "./api";
+import { FrontendAsset } from './api';
 
 const instance: FrontendAsset = {
-  assets,
+    assets,
 };
 ```
 

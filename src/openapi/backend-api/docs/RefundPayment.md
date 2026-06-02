@@ -1,24 +1,25 @@
 # RefundPayment
 
+
 ## Properties
 
-| Name              | Type       | Description | Notes                             |
-| ----------------- | ---------- | ----------- | --------------------------------- |
-| **\_id**          | **string** |             | [optional] [default to undefined] |
-| **code**          | **string** |             | [optional] [default to undefined] |
-| **label**         | **string** |             | [optional] [default to undefined] |
-| **paymentAmount** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**paymentAmount** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RefundPayment } from "./api";
+import { RefundPayment } from './api';
 
 const instance: RefundPayment = {
-  _id,
-  code,
-  label,
-  paymentAmount,
+    _id,
+    code,
+    label,
+    paymentAmount,
 };
 ```
 

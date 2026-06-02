@@ -1,20 +1,21 @@
 # TenantResourceUsage
 
+
 ## Properties
 
-| Name        | Type                                                      | Description | Notes                  |
-| ----------- | --------------------------------------------------------- | ----------- | ---------------------- |
-| **student** | [**TenantResourceUsageItem**](TenantResourceUsageItem.md) |             | [default to undefined] |
-| **branch**  | [**TenantResourceUsageItem**](TenantResourceUsageItem.md) |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**student** | [**TenantResourceUsageItem**](TenantResourceUsageItem.md) |  | [default to undefined]
+**branch** | [**TenantResourceUsageItem**](TenantResourceUsageItem.md) |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { TenantResourceUsage } from "./api";
+import { TenantResourceUsage } from './api';
 
 const instance: TenantResourceUsage = {
-  student,
-  branch,
+    student,
+    branch,
 };
 ```
 

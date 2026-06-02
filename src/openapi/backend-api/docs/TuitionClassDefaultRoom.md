@@ -1,24 +1,25 @@
 # TuitionClassDefaultRoom
 
+
 ## Properties
 
-| Name         | Type       | Description | Notes                             |
-| ------------ | ---------- | ----------- | --------------------------------- |
-| **\_id**     | **string** |             | [optional] [default to undefined] |
-| **code**     | **string** |             | [optional] [default to undefined] |
-| **label**    | **string** |             | [optional] [default to undefined] |
-| **capacity** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**capacity** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { TuitionClassDefaultRoom } from "./api";
+import { TuitionClassDefaultRoom } from './api';
 
 const instance: TuitionClassDefaultRoom = {
-  _id,
-  code,
-  label,
-  capacity,
+    _id,
+    code,
+    label,
+    capacity,
 };
 ```
 

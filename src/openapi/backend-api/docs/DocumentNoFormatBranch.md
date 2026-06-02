@@ -1,22 +1,23 @@
 # DocumentNoFormatBranch
 
+
 ## Properties
 
-| Name         | Type       | Description | Notes                             |
-| ------------ | ---------- | ----------- | --------------------------------- |
-| **\_id**     | **string** |             | [optional] [default to undefined] |
-| **label**    | **string** |             | [optional] [default to undefined] |
-| **branchId** | **number** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
+**branchId** | **number** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { DocumentNoFormatBranch } from "./api";
+import { DocumentNoFormatBranch } from './api';
 
 const instance: DocumentNoFormatBranch = {
-  _id,
-  label,
-  branchId,
+    _id,
+    label,
+    branchId,
 };
 ```
 

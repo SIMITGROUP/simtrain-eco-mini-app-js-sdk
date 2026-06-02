@@ -1,20 +1,21 @@
 # SubscriptionSummaryModificationAddOns
 
+
 ## Properties
 
-| Name        | Type                                                                                                      | Description | Notes                             |
-| ----------- | --------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
-| **student** | [**SubscriptionSummaryModificationAddOnsTransition**](SubscriptionSummaryModificationAddOnsTransition.md) |             | [optional] [default to undefined] |
-| **branch**  | [**SubscriptionSummaryModificationAddOnsTransition**](SubscriptionSummaryModificationAddOnsTransition.md) |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**student** | [**SubscriptionSummaryModificationAddOnsTransition**](SubscriptionSummaryModificationAddOnsTransition.md) |  | [optional] [default to undefined]
+**branch** | [**SubscriptionSummaryModificationAddOnsTransition**](SubscriptionSummaryModificationAddOnsTransition.md) |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { SubscriptionSummaryModificationAddOns } from "./api";
+import { SubscriptionSummaryModificationAddOns } from './api';
 
 const instance: SubscriptionSummaryModificationAddOns = {
-  student,
-  branch,
+    student,
+    branch,
 };
 ```
 

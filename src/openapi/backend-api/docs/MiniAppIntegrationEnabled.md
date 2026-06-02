@@ -1,22 +1,23 @@
 # MiniAppIntegrationEnabled
 
+
 ## Properties
 
-| Name            | Type        | Description | Notes                  |
-| --------------- | ----------- | ----------- | ---------------------- |
-| **miniApi**     | **boolean** |             | [default to undefined] |
-| **customField** | **boolean** |             | [default to undefined] |
-| **customPage**  | **boolean** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**miniApi** | **boolean** |  | [default to undefined]
+**customField** | **boolean** |  | [default to undefined]
+**customPage** | **boolean** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { MiniAppIntegrationEnabled } from "./api";
+import { MiniAppIntegrationEnabled } from './api';
 
 const instance: MiniAppIntegrationEnabled = {
-  miniApi,
-  customField,
-  customPage,
+    miniApi,
+    customField,
+    customPage,
 };
 ```
 

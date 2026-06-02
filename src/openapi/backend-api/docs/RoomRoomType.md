@@ -1,22 +1,23 @@
 # RoomRoomType
 
+
 ## Properties
 
-| Name      | Type       | Description | Notes                             |
-| --------- | ---------- | ----------- | --------------------------------- |
-| **\_id**  | **string** |             | [optional] [default to undefined] |
-| **code**  | **string** |             | [optional] [default to undefined] |
-| **label** | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**code** | **string** |  | [optional] [default to undefined]
+**label** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RoomRoomType } from "./api";
+import { RoomRoomType } from './api';
 
 const instance: RoomRoomType = {
-  _id,
-  code,
-  label,
+    _id,
+    code,
+    label,
 };
 ```
 

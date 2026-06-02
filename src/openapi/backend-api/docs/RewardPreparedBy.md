@@ -1,22 +1,23 @@
 # RewardPreparedBy
 
+
 ## Properties
 
-| Name         | Type       | Description | Notes                             |
-| ------------ | ---------- | ----------- | --------------------------------- |
-| **\_id**     | **string** |             | [optional] [default to undefined] |
-| **fullName** | **string** |             | [optional] [default to undefined] |
-| **uid**      | **string** |             | [optional] [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **string** |  | [optional] [default to undefined]
+**fullName** | **string** |  | [optional] [default to undefined]
+**uid** | **string** |  | [optional] [default to undefined]
 
 ## Example
 
 ```typescript
-import { RewardPreparedBy } from "./api";
+import { RewardPreparedBy } from './api';
 
 const instance: RewardPreparedBy = {
-  _id,
-  fullName,
-  uid,
+    _id,
+    fullName,
+    uid,
 };
 ```
 

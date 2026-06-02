@@ -1,22 +1,23 @@
 # UpgradeScript
 
+
 ## Properties
 
-| Name            | Type       | Description | Notes                  |
-| --------------- | ---------- | ----------- | ---------------------- |
-| **id**          | **string** |             | [default to undefined] |
-| **subject**     | **string** |             | [default to undefined] |
-| **description** | **string** |             | [default to undefined] |
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [default to undefined]
+**subject** | **string** |  | [default to undefined]
+**description** | **string** |  | [default to undefined]
 
 ## Example
 
 ```typescript
-import { UpgradeScript } from "./api";
+import { UpgradeScript } from './api';
 
 const instance: UpgradeScript = {
-  id,
-  subject,
-  description,
+    id,
+    subject,
+    description,
 };
 ```
 
