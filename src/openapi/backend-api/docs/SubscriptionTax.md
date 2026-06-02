@@ -1,25 +1,24 @@
 # SubscriptionTax
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **string** |  | [default to undefined]
-**rate** | **number** |  | [default to undefined]
-**isInclusive** | **boolean** |  | [default to undefined]
-**amount** | **number** |  | [default to undefined]
+| Name            | Type        | Description | Notes                  |
+| --------------- | ----------- | ----------- | ---------------------- |
+| **name**        | **string**  |             | [default to undefined] |
+| **rate**        | **number**  |             | [default to undefined] |
+| **isInclusive** | **boolean** |             | [default to undefined] |
+| **amount**      | **number**  |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SubscriptionTax } from './api';
+import { SubscriptionTax } from "./api";
 
 const instance: SubscriptionTax = {
-    name,
-    rate,
-    isInclusive,
-    amount,
+  name,
+  rate,
+  isInclusive,
+  amount,
 };
 ```
 

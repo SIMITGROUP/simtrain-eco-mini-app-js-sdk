@@ -1,23 +1,22 @@
 # SetupUserResult
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total** | **number** |  | [default to undefined]
-**created** | **number** |  | [default to undefined]
-**skipped** | [**Array&lt;SetupUserSkipGroup&gt;**](SetupUserSkipGroup.md) |  | [default to undefined]
+| Name        | Type                                                         | Description | Notes                  |
+| ----------- | ------------------------------------------------------------ | ----------- | ---------------------- |
+| **total**   | **number**                                                   |             | [default to undefined] |
+| **created** | **number**                                                   |             | [default to undefined] |
+| **skipped** | [**Array&lt;SetupUserSkipGroup&gt;**](SetupUserSkipGroup.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupUserResult } from './api';
+import { SetupUserResult } from "./api";
 
 const instance: SetupUserResult = {
-    total,
-    created,
-    skipped,
+  total,
+  created,
+  skipped,
 };
 ```
 

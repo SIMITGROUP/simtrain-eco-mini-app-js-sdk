@@ -1,23 +1,22 @@
 # ScheduleRoom
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **code**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { ScheduleRoom } from './api';
+import { ScheduleRoom } from "./api";
 
 const instance: ScheduleRoom = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

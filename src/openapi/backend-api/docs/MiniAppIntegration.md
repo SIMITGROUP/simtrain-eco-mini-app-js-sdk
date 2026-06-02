@@ -1,25 +1,24 @@
 # MiniAppIntegration
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**scopes** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
-**enabled** | [**MiniAppIntegrationEnabled**](MiniAppIntegrationEnabled.md) |  | [default to undefined]
-**customField** | [**MiniAppIntegrationCustomField**](MiniAppIntegrationCustomField.md) |  | [optional] [default to undefined]
-**customPage** | [**MiniAppIntegrationCustomPage**](MiniAppIntegrationCustomPage.md) |  | [optional] [default to undefined]
+| Name            | Type                                                                  | Description | Notes                             |
+| --------------- | --------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **scopes**      | **Array&lt;string&gt;**                                               |             | [optional] [default to undefined] |
+| **enabled**     | [**MiniAppIntegrationEnabled**](MiniAppIntegrationEnabled.md)         |             | [default to undefined]            |
+| **customField** | [**MiniAppIntegrationCustomField**](MiniAppIntegrationCustomField.md) |             | [optional] [default to undefined] |
+| **customPage**  | [**MiniAppIntegrationCustomPage**](MiniAppIntegrationCustomPage.md)   |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { MiniAppIntegration } from './api';
+import { MiniAppIntegration } from "./api";
 
 const instance: MiniAppIntegration = {
-    scopes,
-    enabled,
-    customField,
-    customPage,
+  scopes,
+  enabled,
+  customField,
+  customPage,
 };
 ```
 

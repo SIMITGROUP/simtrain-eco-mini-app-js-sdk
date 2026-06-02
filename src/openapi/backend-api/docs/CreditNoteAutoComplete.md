@@ -1,23 +1,22 @@
 # CreditNoteAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
+| Name      | Type       | Description | Notes           |
+| --------- | ---------- | ----------- | --------------- |
+| **\_id**  | **string** |             | [default to ''] |
+| **code**  | **string** |             | [default to ''] |
+| **label** | **string** |             | [default to ''] |
 
 ## Example
 
 ```typescript
-import { CreditNoteAutoComplete } from './api';
+import { CreditNoteAutoComplete } from "./api";
 
 const instance: CreditNoteAutoComplete = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

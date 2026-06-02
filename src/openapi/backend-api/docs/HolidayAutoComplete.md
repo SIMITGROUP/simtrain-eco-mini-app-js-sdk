@@ -1,23 +1,22 @@
 # HolidayAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
+| Name      | Type       | Description | Notes           |
+| --------- | ---------- | ----------- | --------------- |
+| **\_id**  | **string** |             | [default to ''] |
+| **code**  | **string** |             | [default to ''] |
+| **label** | **string** |             | [default to ''] |
 
 ## Example
 
 ```typescript
-import { HolidayAutoComplete } from './api';
+import { HolidayAutoComplete } from "./api";
 
 const instance: HolidayAutoComplete = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

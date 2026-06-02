@@ -1,21 +1,20 @@
 # FinalResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**success** | **Array&lt;string&gt;** |  | [default to undefined]
-**errors** | **Array&lt;string&gt;** |  | [default to undefined]
+| Name        | Type                    | Description | Notes                  |
+| ----------- | ----------------------- | ----------- | ---------------------- |
+| **success** | **Array&lt;string&gt;** |             | [default to undefined] |
+| **errors**  | **Array&lt;string&gt;** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { FinalResponse } from './api';
+import { FinalResponse } from "./api";
 
 const instance: FinalResponse = {
-    success,
-    errors,
+  success,
+  errors,
 };
 ```
 

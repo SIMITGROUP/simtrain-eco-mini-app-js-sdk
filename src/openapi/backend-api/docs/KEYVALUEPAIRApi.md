@@ -1,32 +1,30 @@
 # KEYVALUEPAIRApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**autoComplete**](#autocomplete) | **POST** /keyvaluepair/autocomplete | |
-|[**runCreate**](#runcreate) | **POST** /keyvaluepair | |
-|[**runCreateMany**](#runcreatemany) | **POST** /keyvaluepair/bulk-create | |
-|[**runDefault**](#rundefault) | **GET** /keyvaluepair | |
-|[**runDelete**](#rundelete) | **DELETE** /keyvaluepair/{id} | |
-|[**runFindOne**](#runfindone) | **GET** /keyvaluepair/{id} | |
-|[**runPatch**](#runpatch) | **PATCH** /keyvaluepair/{id} | |
-|[**runPatchMany**](#runpatchmany) | **PATCH** /keyvaluepair/bulk-patch | |
-|[**runSearch**](#runsearch) | **POST** /keyvaluepair/search | |
-|[**runUpdate**](#runupdate) | **PUT** /keyvaluepair/{id} | |
+| Method                              | HTTP request                        | Description |
+| ----------------------------------- | ----------------------------------- | ----------- |
+| [**autoComplete**](#autocomplete)   | **POST** /keyvaluepair/autocomplete |             |
+| [**runCreate**](#runcreate)         | **POST** /keyvaluepair              |             |
+| [**runCreateMany**](#runcreatemany) | **POST** /keyvaluepair/bulk-create  |             |
+| [**runDefault**](#rundefault)       | **GET** /keyvaluepair               |             |
+| [**runDelete**](#rundelete)         | **DELETE** /keyvaluepair/{id}       |             |
+| [**runFindOne**](#runfindone)       | **GET** /keyvaluepair/{id}          |             |
+| [**runPatch**](#runpatch)           | **PATCH** /keyvaluepair/{id}        |             |
+| [**runPatchMany**](#runpatchmany)   | **PATCH** /keyvaluepair/bulk-patch  |             |
+| [**runSearch**](#runsearch)         | **POST** /keyvaluepair/search       |             |
+| [**runUpdate**](#runupdate)         | **PUT** /keyvaluepair/{id}          |             |
 
 # **autoComplete**
+
 > Array<KeyValuePairAutoComplete> autoComplete(body)
 
-retrieve array of {_id, code, name}
+retrieve array of {\_id, code, name}
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration
-} from './api';
+import { KEYVALUEPAIRApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
@@ -34,19 +32,15 @@ const apiInstance = new KEYVALUEPAIRApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(
-    keyword,
-    body
-);
+const { status, data } = await apiInstance.autoComplete(keyword, body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-| **keyword** | [**string**] |  | defaults to undefined|
-
+| Name        | Type         | Description | Notes                 |
+| ----------- | ------------ | ----------- | --------------------- |
+| **body**    | **object**   | Data        |                       |
+| **keyword** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -58,47 +52,40 @@ const { status, data } = await apiInstance.autoComplete(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-> KeyValuePair runCreate(keyValuePair)
 
+> KeyValuePair runCreate(keyValuePair)
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration,
-    KeyValuePair
-} from './api';
+import { KEYVALUEPAIRApi, Configuration, KeyValuePair } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
 
 let keyValuePair: KeyValuePair; //Data
 
-const { status, data } = await apiInstance.runCreate(
-    keyValuePair
-);
+const { status, data } = await apiInstance.runCreate(keyValuePair);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **keyValuePair** | **KeyValuePair**| Data | |
-
+| Name             | Type             | Description | Notes |
+| ---------------- | ---------------- | ----------- | ----- |
+| **keyValuePair** | **KeyValuePair** | Data        |       |
 
 ### Return type
 
@@ -110,47 +97,41 @@ const { status, data } = await apiInstance.runCreate(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-> Array<KeyValuePair> runCreateMany(keyValuePair)
 
+> Array<KeyValuePair> runCreateMany(keyValuePair)
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration
-} from './api';
+import { KEYVALUEPAIRApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
 
 let keyValuePair: Array<KeyValuePair>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(
-    keyValuePair
-);
+const { status, data } = await apiInstance.runCreateMany(keyValuePair);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **keyValuePair** | **Array<KeyValuePair>**| Data | |
-
+| Name             | Type                    | Description | Notes |
+| ---------------- | ----------------------- | ----------- | ----- |
+| **keyValuePair** | **Array<KeyValuePair>** | Data        |       |
 
 ### Return type
 
@@ -162,20 +143,21 @@ const { status, data } = await apiInstance.runCreateMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
+
 > object runDefault()
 
 Run default behavior like say hello
@@ -183,10 +165,7 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration
-} from './api';
+import { KEYVALUEPAIRApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
@@ -195,8 +174,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -208,46 +187,40 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Sample 200 response |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Sample 200 response | -                |
+| **500**     | Internal error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-> KeyValuePair runDelete()
 
+> KeyValuePair runDelete()
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration
-} from './api';
+import { KEYVALUEPAIRApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runDelete(
-    id
-);
+const { status, data } = await apiInstance.runDelete(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -259,47 +232,41 @@ const { status, data } = await apiInstance.runDelete(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runFindOne**
-> KeyValuePair runFindOne()
 
+> KeyValuePair runFindOne()
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration
-} from './api';
+import { KEYVALUEPAIRApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runFindOne(
-    id
-);
+const { status, data } = await apiInstance.runFindOne(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -311,31 +278,27 @@ const { status, data } = await apiInstance.runFindOne(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Founds |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | Founds             | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatch**
-> runPatch(keyValuePair)
 
+> runPatch(keyValuePair)
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration,
-    KeyValuePair
-} from './api';
+import { KEYVALUEPAIRApi, Configuration, KeyValuePair } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
@@ -343,19 +306,15 @@ const apiInstance = new KEYVALUEPAIRApi(configuration);
 let id: string; // (default to undefined)
 let keyValuePair: KeyValuePair; //Data
 
-const { status, data } = await apiInstance.runPatch(
-    id,
-    keyValuePair
-);
+const { status, data } = await apiInstance.runPatch(id, keyValuePair);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **keyValuePair** | **KeyValuePair**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name             | Type             | Description | Notes                 |
+| ---------------- | ---------------- | ----------- | --------------------- |
+| **keyValuePair** | **KeyValuePair** | Data        |                       |
+| **id**           | [**string**]     |             | defaults to undefined |
 
 ### Return type
 
@@ -367,48 +326,41 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-> UpdateManyResponse runPatchMany(patchManyRequest)
 
+> UpdateManyResponse runPatchMany(patchManyRequest)
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration,
-    PatchManyRequest
-} from './api';
+import { KEYVALUEPAIRApi, Configuration, PatchManyRequest } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(
-    patchManyRequest
-);
+const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **patchManyRequest** | **PatchManyRequest**| Data | |
-
+| Name                 | Type                 | Description | Notes |
+| -------------------- | -------------------- | ----------- | ----- |
+| **patchManyRequest** | **PatchManyRequest** | Data        |       |
 
 ### Return type
 
@@ -420,47 +372,41 @@ const { status, data } = await apiInstance.runPatchMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-> Array<KeyValuePair> runSearch(body)
 
+> Array<KeyValuePair> runSearch(body)
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration
-} from './api';
+import { KEYVALUEPAIRApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(
-    body
-);
+const { status, data } = await apiInstance.runSearch(body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** | Data        |       |
 
 ### Return type
 
@@ -472,31 +418,27 @@ const { status, data } = await apiInstance.runSearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-> runUpdate(keyValuePair)
 
+> runUpdate(keyValuePair)
 
 ### Example
 
 ```typescript
-import {
-    KEYVALUEPAIRApi,
-    Configuration,
-    KeyValuePair
-} from './api';
+import { KEYVALUEPAIRApi, Configuration, KeyValuePair } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new KEYVALUEPAIRApi(configuration);
@@ -504,19 +446,15 @@ const apiInstance = new KEYVALUEPAIRApi(configuration);
 let id: string; // (default to undefined)
 let keyValuePair: KeyValuePair; //Data
 
-const { status, data } = await apiInstance.runUpdate(
-    id,
-    keyValuePair
-);
+const { status, data } = await apiInstance.runUpdate(id, keyValuePair);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **keyValuePair** | **KeyValuePair**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name             | Type             | Description | Notes                 |
+| ---------------- | ---------------- | ----------- | --------------------- |
+| **keyValuePair** | **KeyValuePair** | Data        |                       |
+| **id**           | [**string**]     |             | defaults to undefined |
 
 ### Return type
 
@@ -528,16 +466,15 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

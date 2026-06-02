@@ -1,23 +1,22 @@
 # SetupRoomSkipGroup
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reason** | **string** |  | [default to undefined]
-**count** | **number** |  | [default to undefined]
-**items** | [**Array&lt;SetupRoom&gt;**](SetupRoom.md) |  | [default to undefined]
+| Name       | Type                                       | Description | Notes                  |
+| ---------- | ------------------------------------------ | ----------- | ---------------------- |
+| **reason** | **string**                                 |             | [default to undefined] |
+| **count**  | **number**                                 |             | [default to undefined] |
+| **items**  | [**Array&lt;SetupRoom&gt;**](SetupRoom.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupRoomSkipGroup } from './api';
+import { SetupRoomSkipGroup } from "./api";
 
 const instance: SetupRoomSkipGroup = {
-    reason,
-    count,
-    items,
+  reason,
+  count,
+  items,
 };
 ```
 

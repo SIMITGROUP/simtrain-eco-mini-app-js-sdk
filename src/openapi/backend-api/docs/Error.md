@@ -1,23 +1,22 @@
 # ModelError
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **string** |  | [optional] [default to undefined]
-**message** | **string** |  | [optional] [default to undefined]
-**target** | **string** |  | [optional] [default to undefined]
+| Name        | Type       | Description | Notes                             |
+| ----------- | ---------- | ----------- | --------------------------------- |
+| **code**    | **string** |             | [optional] [default to undefined] |
+| **message** | **string** |             | [optional] [default to undefined] |
+| **target**  | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { ModelError } from './api';
+import { ModelError } from "./api";
 
 const instance: ModelError = {
-    code,
-    message,
-    target,
+  code,
+  message,
+  target,
 };
 ```
 

@@ -1,21 +1,20 @@
 # TeacherDocNoFormat
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TeacherDocNoFormat } from './api';
+import { TeacherDocNoFormat } from "./api";
 
 const instance: TeacherDocNoFormat = {
-    _id,
-    label,
+  _id,
+  label,
 };
 ```
 

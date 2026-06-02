@@ -1,21 +1,20 @@
 # CategorizedMiniAppDetail
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**upcomingMiniApps** | [**Array&lt;MiniAppDetail&gt;**](MiniAppDetail.md) |  | [default to undefined]
-**availableMiniApps** | [**Array&lt;MiniAppDetail&gt;**](MiniAppDetail.md) |  | [default to undefined]
+| Name                  | Type                                               | Description | Notes                  |
+| --------------------- | -------------------------------------------------- | ----------- | ---------------------- |
+| **upcomingMiniApps**  | [**Array&lt;MiniAppDetail&gt;**](MiniAppDetail.md) |             | [default to undefined] |
+| **availableMiniApps** | [**Array&lt;MiniAppDetail&gt;**](MiniAppDetail.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { CategorizedMiniAppDetail } from './api';
+import { CategorizedMiniAppDetail } from "./api";
 
 const instance: CategorizedMiniAppDetail = {
-    upcomingMiniApps,
-    availableMiniApps,
+  upcomingMiniApps,
+  availableMiniApps,
 };
 ```
 

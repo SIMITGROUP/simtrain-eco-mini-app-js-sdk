@@ -1,23 +1,22 @@
 # SetupLevelResult
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total** | **number** |  | [default to undefined]
-**created** | **number** |  | [default to undefined]
-**skipped** | [**Array&lt;SetupLevelSkipGroup&gt;**](SetupLevelSkipGroup.md) |  | [default to undefined]
+| Name        | Type                                                           | Description | Notes                  |
+| ----------- | -------------------------------------------------------------- | ----------- | ---------------------- |
+| **total**   | **number**                                                     |             | [default to undefined] |
+| **created** | **number**                                                     |             | [default to undefined] |
+| **skipped** | [**Array&lt;SetupLevelSkipGroup&gt;**](SetupLevelSkipGroup.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupLevelResult } from './api';
+import { SetupLevelResult } from "./api";
 
 const instance: SetupLevelResult = {
-    total,
-    created,
-    skipped,
+  total,
+  created,
+  skipped,
 };
 ```
 

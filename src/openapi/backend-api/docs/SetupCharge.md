@@ -1,25 +1,24 @@
 # SetupCharge
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**type** | **string** |  | [optional] [default to undefined]
-**price** | **number** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **name**  | **string** |             | [optional] [default to undefined] |
+| **type**  | **string** |             | [optional] [default to undefined] |
+| **price** | **number** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupCharge } from './api';
+import { SetupCharge } from "./api";
 
 const instance: SetupCharge = {
-    _id,
-    name,
-    type,
-    price,
+  _id,
+  name,
+  type,
+  price,
 };
 ```
 

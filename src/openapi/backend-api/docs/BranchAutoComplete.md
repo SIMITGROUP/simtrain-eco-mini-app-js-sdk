@@ -1,25 +1,24 @@
 # BranchAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**branchId** | **number** |  | [optional] [default to undefined]
+| Name         | Type       | Description | Notes                             |
+| ------------ | ---------- | ----------- | --------------------------------- |
+| **\_id**     | **string** |             | [default to '']                   |
+| **code**     | **string** |             | [default to '']                   |
+| **label**    | **string** |             | [default to '']                   |
+| **branchId** | **number** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { BranchAutoComplete } from './api';
+import { BranchAutoComplete } from "./api";
 
 const instance: BranchAutoComplete = {
-    _id,
-    code,
-    label,
-    branchId,
+  _id,
+  code,
+  label,
+  branchId,
 };
 ```
 

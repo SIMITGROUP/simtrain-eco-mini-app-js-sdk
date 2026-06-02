@@ -1,25 +1,24 @@
 # SubscriptionCheckoutUpgradePaidLicenseDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**licenseCode** | **string** |  | [default to undefined]
-**addOnStudentQty** | **number** |  | [optional] [default to undefined]
-**addOnBranchQty** | **number** |  | [optional] [default to undefined]
-**payment** | [**SubscriptionPaymentCreateCheckoutSessionDto**](SubscriptionPaymentCreateCheckoutSessionDto.md) |  | [default to undefined]
+| Name                | Type                                                                                              | Description | Notes                             |
+| ------------------- | ------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **licenseCode**     | **string**                                                                                        |             | [default to undefined]            |
+| **addOnStudentQty** | **number**                                                                                        |             | [optional] [default to undefined] |
+| **addOnBranchQty**  | **number**                                                                                        |             | [optional] [default to undefined] |
+| **payment**         | [**SubscriptionPaymentCreateCheckoutSessionDto**](SubscriptionPaymentCreateCheckoutSessionDto.md) |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { SubscriptionCheckoutUpgradePaidLicenseDto } from './api';
+import { SubscriptionCheckoutUpgradePaidLicenseDto } from "./api";
 
 const instance: SubscriptionCheckoutUpgradePaidLicenseDto = {
-    licenseCode,
-    addOnStudentQty,
-    addOnBranchQty,
-    payment,
+  licenseCode,
+  addOnStudentQty,
+  addOnBranchQty,
+  payment,
 };
 ```
 

@@ -1,21 +1,20 @@
 # PaymentNotified
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**sent** | **boolean** |  | [optional] [default to undefined]
-**date** | **string** |  | [optional] [default to undefined]
+| Name     | Type        | Description | Notes                             |
+| -------- | ----------- | ----------- | --------------------------------- |
+| **sent** | **boolean** |             | [optional] [default to undefined] |
+| **date** | **string**  |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { PaymentNotified } from './api';
+import { PaymentNotified } from "./api";
 
 const instance: PaymentNotified = {
-    sent,
-    date,
+  sent,
+  date,
 };
 ```
 

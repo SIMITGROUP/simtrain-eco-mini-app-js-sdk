@@ -1,32 +1,30 @@
 # AREAApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**autoComplete**](#autocomplete) | **POST** /area/autocomplete | |
-|[**runCreate**](#runcreate) | **POST** /area | |
-|[**runCreateMany**](#runcreatemany) | **POST** /area/bulk-create | |
-|[**runDefault**](#rundefault) | **GET** /area | |
-|[**runDelete**](#rundelete) | **DELETE** /area/{id} | |
-|[**runFindOne**](#runfindone) | **GET** /area/{id} | |
-|[**runPatch**](#runpatch) | **PATCH** /area/{id} | |
-|[**runPatchMany**](#runpatchmany) | **PATCH** /area/bulk-patch | |
-|[**runSearch**](#runsearch) | **POST** /area/search | |
-|[**runUpdate**](#runupdate) | **PUT** /area/{id} | |
+| Method                              | HTTP request                | Description |
+| ----------------------------------- | --------------------------- | ----------- |
+| [**autoComplete**](#autocomplete)   | **POST** /area/autocomplete |             |
+| [**runCreate**](#runcreate)         | **POST** /area              |             |
+| [**runCreateMany**](#runcreatemany) | **POST** /area/bulk-create  |             |
+| [**runDefault**](#rundefault)       | **GET** /area               |             |
+| [**runDelete**](#rundelete)         | **DELETE** /area/{id}       |             |
+| [**runFindOne**](#runfindone)       | **GET** /area/{id}          |             |
+| [**runPatch**](#runpatch)           | **PATCH** /area/{id}        |             |
+| [**runPatchMany**](#runpatchmany)   | **PATCH** /area/bulk-patch  |             |
+| [**runSearch**](#runsearch)         | **POST** /area/search       |             |
+| [**runUpdate**](#runupdate)         | **PUT** /area/{id}          |             |
 
 # **autoComplete**
+
 > Array<AreaAutoComplete> autoComplete(body)
 
-retrieve array of {_id, code, name}
+retrieve array of {\_id, code, name}
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration
-} from './api';
+import { AREAApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
@@ -34,19 +32,15 @@ const apiInstance = new AREAApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(
-    keyword,
-    body
-);
+const { status, data } = await apiInstance.autoComplete(keyword, body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-| **keyword** | [**string**] |  | defaults to undefined|
-
+| Name        | Type         | Description | Notes                 |
+| ----------- | ------------ | ----------- | --------------------- |
+| **body**    | **object**   | Data        |                       |
+| **keyword** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -58,47 +52,40 @@ const { status, data } = await apiInstance.autoComplete(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-> Area runCreate(area)
 
+> Area runCreate(area)
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration,
-    Area
-} from './api';
+import { AREAApi, Configuration, Area } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
 
 let area: Area; //Data
 
-const { status, data } = await apiInstance.runCreate(
-    area
-);
+const { status, data } = await apiInstance.runCreate(area);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **area** | **Area**| Data | |
-
+| Name     | Type     | Description | Notes |
+| -------- | -------- | ----------- | ----- |
+| **area** | **Area** | Data        |       |
 
 ### Return type
 
@@ -110,47 +97,41 @@ const { status, data } = await apiInstance.runCreate(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-> Array<Area> runCreateMany(area)
 
+> Array<Area> runCreateMany(area)
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration
-} from './api';
+import { AREAApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
 
 let area: Array<Area>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(
-    area
-);
+const { status, data } = await apiInstance.runCreateMany(area);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **area** | **Array<Area>**| Data | |
-
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **area** | **Array<Area>** | Data        |       |
 
 ### Return type
 
@@ -162,20 +143,21 @@ const { status, data } = await apiInstance.runCreateMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
+
 > object runDefault()
 
 Run default behavior like say hello
@@ -183,10 +165,7 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration
-} from './api';
+import { AREAApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
@@ -195,8 +174,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -208,46 +187,40 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Sample 200 response |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Sample 200 response | -                |
+| **500**     | Internal error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-> Area runDelete()
 
+> Area runDelete()
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration
-} from './api';
+import { AREAApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runDelete(
-    id
-);
+const { status, data } = await apiInstance.runDelete(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -259,47 +232,41 @@ const { status, data } = await apiInstance.runDelete(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runFindOne**
-> Area runFindOne()
 
+> Area runFindOne()
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration
-} from './api';
+import { AREAApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runFindOne(
-    id
-);
+const { status, data } = await apiInstance.runFindOne(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -311,31 +278,27 @@ const { status, data } = await apiInstance.runFindOne(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Founds |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | Founds             | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatch**
-> runPatch(area)
 
+> runPatch(area)
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration,
-    Area
-} from './api';
+import { AREAApi, Configuration, Area } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
@@ -343,19 +306,15 @@ const apiInstance = new AREAApi(configuration);
 let id: string; // (default to undefined)
 let area: Area; //Data
 
-const { status, data } = await apiInstance.runPatch(
-    id,
-    area
-);
+const { status, data } = await apiInstance.runPatch(id, area);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **area** | **Area**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name     | Type         | Description | Notes                 |
+| -------- | ------------ | ----------- | --------------------- |
+| **area** | **Area**     | Data        |                       |
+| **id**   | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -367,48 +326,41 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-> UpdateManyResponse runPatchMany(patchManyRequest)
 
+> UpdateManyResponse runPatchMany(patchManyRequest)
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration,
-    PatchManyRequest
-} from './api';
+import { AREAApi, Configuration, PatchManyRequest } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(
-    patchManyRequest
-);
+const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **patchManyRequest** | **PatchManyRequest**| Data | |
-
+| Name                 | Type                 | Description | Notes |
+| -------------------- | -------------------- | ----------- | ----- |
+| **patchManyRequest** | **PatchManyRequest** | Data        |       |
 
 ### Return type
 
@@ -420,47 +372,41 @@ const { status, data } = await apiInstance.runPatchMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-> Array<Area> runSearch(body)
 
+> Array<Area> runSearch(body)
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration
-} from './api';
+import { AREAApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(
-    body
-);
+const { status, data } = await apiInstance.runSearch(body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** | Data        |       |
 
 ### Return type
 
@@ -472,31 +418,27 @@ const { status, data } = await apiInstance.runSearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-> runUpdate(area)
 
+> runUpdate(area)
 
 ### Example
 
 ```typescript
-import {
-    AREAApi,
-    Configuration,
-    Area
-} from './api';
+import { AREAApi, Configuration, Area } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new AREAApi(configuration);
@@ -504,19 +446,15 @@ const apiInstance = new AREAApi(configuration);
 let id: string; // (default to undefined)
 let area: Area; //Data
 
-const { status, data } = await apiInstance.runUpdate(
-    id,
-    area
-);
+const { status, data } = await apiInstance.runUpdate(id, area);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **area** | **Area**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name     | Type         | Description | Notes                 |
+| -------- | ------------ | ----------- | --------------------- |
+| **area** | **Area**     | Data        |                       |
+| **id**   | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -528,16 +466,15 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

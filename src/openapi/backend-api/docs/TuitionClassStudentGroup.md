@@ -1,23 +1,22 @@
 # TuitionClassStudentGroup
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **code**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TuitionClassStudentGroup } from './api';
+import { TuitionClassStudentGroup } from "./api";
 
 const instance: TuitionClassStudentGroup = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

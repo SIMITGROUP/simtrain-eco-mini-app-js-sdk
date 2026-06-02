@@ -1,23 +1,22 @@
 # TeacherCommissionSettingSalaryByLevelLevel
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
+| Name     | Type       | Description | Notes                             |
+| -------- | ---------- | ----------- | --------------------------------- |
+| **\_id** | **string** |             | [optional] [default to undefined] |
+| **name** | **string** |             | [optional] [default to undefined] |
+| **code** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TeacherCommissionSettingSalaryByLevelLevel } from './api';
+import { TeacherCommissionSettingSalaryByLevelLevel } from "./api";
 
 const instance: TeacherCommissionSettingSalaryByLevelLevel = {
-    _id,
-    name,
-    code,
+  _id,
+  name,
+  code,
 };
 ```
 

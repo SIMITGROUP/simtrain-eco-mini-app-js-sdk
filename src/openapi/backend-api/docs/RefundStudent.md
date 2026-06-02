@@ -1,29 +1,28 @@
 # RefundStudent
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**agent** | [**RefundStudentAgent**](RefundStudentAgent.md) |  | [optional] [default to undefined]
-**level** | [**RefundStudentLevel**](RefundStudentLevel.md) |  | [optional] [default to undefined]
-**studentGroup** | [**RefundStudentStudentGroup**](RefundStudentStudentGroup.md) |  | [optional] [default to undefined]
+| Name             | Type                                                          | Description | Notes                             |
+| ---------------- | ------------------------------------------------------------- | ----------- | --------------------------------- |
+| **\_id**         | **string**                                                    |             | [default to undefined]            |
+| **label**        | **string**                                                    |             | [optional] [default to undefined] |
+| **code**         | **string**                                                    |             | [optional] [default to undefined] |
+| **agent**        | [**RefundStudentAgent**](RefundStudentAgent.md)               |             | [optional] [default to undefined] |
+| **level**        | [**RefundStudentLevel**](RefundStudentLevel.md)               |             | [optional] [default to undefined] |
+| **studentGroup** | [**RefundStudentStudentGroup**](RefundStudentStudentGroup.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RefundStudent } from './api';
+import { RefundStudent } from "./api";
 
 const instance: RefundStudent = {
-    _id,
-    label,
-    code,
-    agent,
-    level,
-    studentGroup,
+  _id,
+  label,
+  code,
+  agent,
+  level,
+  studentGroup,
 };
 ```
 

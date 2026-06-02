@@ -1,19 +1,18 @@
 # MiniAppDeveloperPortal
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**appId** | **string** |  | [default to undefined]
+| Name      | Type       | Description | Notes                  |
+| --------- | ---------- | ----------- | ---------------------- |
+| **appId** | **string** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { MiniAppDeveloperPortal } from './api';
+import { MiniAppDeveloperPortal } from "./api";
 
 const instance: MiniAppDeveloperPortal = {
-    appId,
+  appId,
 };
 ```
 

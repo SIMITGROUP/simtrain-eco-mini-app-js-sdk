@@ -1,25 +1,24 @@
 # PaymentInvoicesInvoice
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**invoiceDate** | **string** |  | [optional] [default to undefined]
+| Name            | Type       | Description | Notes                             |
+| --------------- | ---------- | ----------- | --------------------------------- |
+| **\_id**        | **string** |             | [optional] [default to undefined] |
+| **label**       | **string** |             | [optional] [default to undefined] |
+| **code**        | **string** |             | [optional] [default to undefined] |
+| **invoiceDate** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { PaymentInvoicesInvoice } from './api';
+import { PaymentInvoicesInvoice } from "./api";
 
 const instance: PaymentInvoicesInvoice = {
-    _id,
-    label,
-    code,
-    invoiceDate,
+  _id,
+  label,
+  code,
+  invoiceDate,
 };
 ```
 

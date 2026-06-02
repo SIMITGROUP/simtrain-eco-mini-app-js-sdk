@@ -1,37 +1,36 @@
 # AcademySessionClassGeneratorDetails
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fromTuitionClassId** | **string** |  | [optional] [default to undefined]
-**asProductId** | **string** |  | [optional] [default to undefined]
-**asTeacherId** | **string** |  | [optional] [default to undefined]
-**asRoomId** | **string** |  | [optional] [default to undefined]
-**active** | **boolean** |  | [optional] [default to undefined]
-**created** | **string** |  | [optional] [default to undefined]
-**updated** | **string** |  | [optional] [default to undefined]
-**createdBy** | **string** |  | [optional] [default to undefined]
-**updatedBy** | **string** |  | [optional] [default to undefined]
-**_id** | **string** |  | [optional] [default to undefined]
+| Name                   | Type        | Description | Notes                             |
+| ---------------------- | ----------- | ----------- | --------------------------------- |
+| **fromTuitionClassId** | **string**  |             | [optional] [default to undefined] |
+| **asProductId**        | **string**  |             | [optional] [default to undefined] |
+| **asTeacherId**        | **string**  |             | [optional] [default to undefined] |
+| **asRoomId**           | **string**  |             | [optional] [default to undefined] |
+| **active**             | **boolean** |             | [optional] [default to undefined] |
+| **created**            | **string**  |             | [optional] [default to undefined] |
+| **updated**            | **string**  |             | [optional] [default to undefined] |
+| **createdBy**          | **string**  |             | [optional] [default to undefined] |
+| **updatedBy**          | **string**  |             | [optional] [default to undefined] |
+| **\_id**               | **string**  |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { AcademySessionClassGeneratorDetails } from './api';
+import { AcademySessionClassGeneratorDetails } from "./api";
 
 const instance: AcademySessionClassGeneratorDetails = {
-    fromTuitionClassId,
-    asProductId,
-    asTeacherId,
-    asRoomId,
-    active,
-    created,
-    updated,
-    createdBy,
-    updatedBy,
-    _id,
+  fromTuitionClassId,
+  asProductId,
+  asTeacherId,
+  asRoomId,
+  active,
+  created,
+  updated,
+  createdBy,
+  updatedBy,
+  _id,
 };
 ```
 

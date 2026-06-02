@@ -1,21 +1,20 @@
 # InvoiceNotified
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**sent** | **boolean** |  | [optional] [default to undefined]
-**date** | **string** |  | [optional] [default to undefined]
+| Name     | Type        | Description | Notes                             |
+| -------- | ----------- | ----------- | --------------------------------- |
+| **sent** | **boolean** |             | [optional] [default to undefined] |
+| **date** | **string**  |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { InvoiceNotified } from './api';
+import { InvoiceNotified } from "./api";
 
 const instance: InvoiceNotified = {
-    sent,
-    date,
+  sent,
+  date,
 };
 ```
 

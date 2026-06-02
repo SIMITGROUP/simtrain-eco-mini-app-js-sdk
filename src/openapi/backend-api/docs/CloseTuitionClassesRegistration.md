@@ -1,19 +1,18 @@
 # CloseTuitionClassesRegistration
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tuitionClassIds** | **Array&lt;string&gt;** |  | [default to undefined]
+| Name                | Type                    | Description | Notes                  |
+| ------------------- | ----------------------- | ----------- | ---------------------- |
+| **tuitionClassIds** | **Array&lt;string&gt;** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { CloseTuitionClassesRegistration } from './api';
+import { CloseTuitionClassesRegistration } from "./api";
 
 const instance: CloseTuitionClassesRegistration = {
-    tuitionClassIds,
+  tuitionClassIds,
 };
 ```
 

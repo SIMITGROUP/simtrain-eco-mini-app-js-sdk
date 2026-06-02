@@ -1,23 +1,22 @@
 # SetupClassSkipGroup
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reason** | **string** |  | [default to undefined]
-**count** | **number** |  | [default to undefined]
-**items** | [**Array&lt;SetupClass&gt;**](SetupClass.md) |  | [default to undefined]
+| Name       | Type                                         | Description | Notes                  |
+| ---------- | -------------------------------------------- | ----------- | ---------------------- |
+| **reason** | **string**                                   |             | [default to undefined] |
+| **count**  | **number**                                   |             | [default to undefined] |
+| **items**  | [**Array&lt;SetupClass&gt;**](SetupClass.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupClassSkipGroup } from './api';
+import { SetupClassSkipGroup } from "./api";
 
 const instance: SetupClassSkipGroup = {
-    reason,
-    count,
-    items,
+  reason,
+  count,
+  items,
 };
 ```
 

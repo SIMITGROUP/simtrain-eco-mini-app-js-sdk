@@ -1,19 +1,18 @@
 # SubscriptionCheckoutRenewalDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payment** | [**SubscriptionPaymentCreateCheckoutSessionDto**](SubscriptionPaymentCreateCheckoutSessionDto.md) |  | [default to undefined]
+| Name        | Type                                                                                              | Description | Notes                  |
+| ----------- | ------------------------------------------------------------------------------------------------- | ----------- | ---------------------- |
+| **payment** | [**SubscriptionPaymentCreateCheckoutSessionDto**](SubscriptionPaymentCreateCheckoutSessionDto.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SubscriptionCheckoutRenewalDto } from './api';
+import { SubscriptionCheckoutRenewalDto } from "./api";
 
 const instance: SubscriptionCheckoutRenewalDto = {
-    payment,
+  payment,
 };
 ```
 

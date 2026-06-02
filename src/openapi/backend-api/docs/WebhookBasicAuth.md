@@ -1,21 +1,20 @@
 # WebhookBasicAuth
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**user** | **string** |  | [optional] [default to undefined]
-**password** | **string** |  | [optional] [default to undefined]
+| Name         | Type       | Description | Notes                             |
+| ------------ | ---------- | ----------- | --------------------------------- |
+| **user**     | **string** |             | [optional] [default to undefined] |
+| **password** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { WebhookBasicAuth } from './api';
+import { WebhookBasicAuth } from "./api";
 
 const instance: WebhookBasicAuth = {
-    user,
-    password,
+  user,
+  password,
 };
 ```
 

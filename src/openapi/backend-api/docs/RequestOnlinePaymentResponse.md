@@ -1,23 +1,22 @@
 # RequestOnlinePaymentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**onlinePayment** | [**OnlinePaymentData**](OnlinePaymentData.md) |  | [default to undefined]
-**student** | [**RequestOnlinePaymentStudent**](RequestOnlinePaymentStudent.md) |  | [default to undefined]
-**invoices** | [**Array&lt;RequestOnlinePaymentInvoice&gt;**](RequestOnlinePaymentInvoice.md) |  | [default to undefined]
+| Name              | Type                                                                           | Description | Notes                  |
+| ----------------- | ------------------------------------------------------------------------------ | ----------- | ---------------------- |
+| **onlinePayment** | [**OnlinePaymentData**](OnlinePaymentData.md)                                  |             | [default to undefined] |
+| **student**       | [**RequestOnlinePaymentStudent**](RequestOnlinePaymentStudent.md)              |             | [default to undefined] |
+| **invoices**      | [**Array&lt;RequestOnlinePaymentInvoice&gt;**](RequestOnlinePaymentInvoice.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RequestOnlinePaymentResponse } from './api';
+import { RequestOnlinePaymentResponse } from "./api";
 
 const instance: RequestOnlinePaymentResponse = {
-    onlinePayment,
-    student,
-    invoices,
+  onlinePayment,
+  student,
+  invoices,
 };
 ```
 

@@ -1,21 +1,20 @@
 # TuitionClassNearbyScheduleEntityQuerySpec
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tuitionClass** | **object** |  | [optional] [default to undefined]
-**schedule** | **object** |  | [optional] [default to undefined]
+| Name             | Type       | Description | Notes                             |
+| ---------------- | ---------- | ----------- | --------------------------------- |
+| **tuitionClass** | **object** |             | [optional] [default to undefined] |
+| **schedule**     | **object** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TuitionClassNearbyScheduleEntityQuerySpec } from './api';
+import { TuitionClassNearbyScheduleEntityQuerySpec } from "./api";
 
 const instance: TuitionClassNearbyScheduleEntityQuerySpec = {
-    tuitionClass,
-    schedule,
+  tuitionClass,
+  schedule,
 };
 ```
 

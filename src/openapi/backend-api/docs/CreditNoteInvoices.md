@@ -1,37 +1,36 @@
 # CreditNoteInvoices
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**balance** | **number** |  | [default to undefined]
-**knockOffAmt** | **number** |  | [default to undefined]
-**newBalance** | **number** |  | [default to undefined]
-**description** | **string** |  | [optional] [default to undefined]
-**created** | **string** |  | [optional] [default to undefined]
-**updated** | **string** |  | [optional] [default to undefined]
-**createdBy** | **string** |  | [optional] [default to undefined]
-**updatedBy** | **string** |  | [optional] [default to undefined]
-**_id** | **string** |  | [optional] [default to undefined]
-**invoice** | [**CreditNoteInvoicesInvoice**](CreditNoteInvoicesInvoice.md) |  | [default to undefined]
+| Name            | Type                                                          | Description | Notes                             |
+| --------------- | ------------------------------------------------------------- | ----------- | --------------------------------- |
+| **balance**     | **number**                                                    |             | [default to undefined]            |
+| **knockOffAmt** | **number**                                                    |             | [default to undefined]            |
+| **newBalance**  | **number**                                                    |             | [default to undefined]            |
+| **description** | **string**                                                    |             | [optional] [default to undefined] |
+| **created**     | **string**                                                    |             | [optional] [default to undefined] |
+| **updated**     | **string**                                                    |             | [optional] [default to undefined] |
+| **createdBy**   | **string**                                                    |             | [optional] [default to undefined] |
+| **updatedBy**   | **string**                                                    |             | [optional] [default to undefined] |
+| **\_id**        | **string**                                                    |             | [optional] [default to undefined] |
+| **invoice**     | [**CreditNoteInvoicesInvoice**](CreditNoteInvoicesInvoice.md) |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { CreditNoteInvoices } from './api';
+import { CreditNoteInvoices } from "./api";
 
 const instance: CreditNoteInvoices = {
-    balance,
-    knockOffAmt,
-    newBalance,
-    description,
-    created,
-    updated,
-    createdBy,
-    updatedBy,
-    _id,
-    invoice,
+  balance,
+  knockOffAmt,
+  newBalance,
+  description,
+  created,
+  updated,
+  createdBy,
+  updatedBy,
+  _id,
+  invoice,
 };
 ```
 

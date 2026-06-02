@@ -1,21 +1,20 @@
 # GenerateBulkInvoice
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**dateRange** | [**DateRangeFilter**](DateRangeFilter.md) |  | [optional] [default to undefined]
-**setting** | [**Array&lt;BillingData&gt;**](BillingData.md) |  | [optional] [default to undefined]
+| Name          | Type                                           | Description | Notes                             |
+| ------------- | ---------------------------------------------- | ----------- | --------------------------------- |
+| **dateRange** | [**DateRangeFilter**](DateRangeFilter.md)      |             | [optional] [default to undefined] |
+| **setting**   | [**Array&lt;BillingData&gt;**](BillingData.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { GenerateBulkInvoice } from './api';
+import { GenerateBulkInvoice } from "./api";
 
 const instance: GenerateBulkInvoice = {
-    dateRange,
-    setting,
+  dateRange,
+  setting,
 };
 ```
 

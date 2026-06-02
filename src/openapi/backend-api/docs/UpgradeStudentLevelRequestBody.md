@@ -1,19 +1,18 @@
 # UpgradeStudentLevelRequestBody
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**levelIds** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
+| Name         | Type                    | Description | Notes                             |
+| ------------ | ----------------------- | ----------- | --------------------------------- |
+| **levelIds** | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { UpgradeStudentLevelRequestBody } from './api';
+import { UpgradeStudentLevelRequestBody } from "./api";
 
 const instance: UpgradeStudentLevelRequestBody = {
-    levelIds,
+  levelIds,
 };
 ```
 

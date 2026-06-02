@@ -1,16 +1,17 @@
 # ACCOUNTINGApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**deleteJE**](#deleteje) | **POST** /accounting/{systemType}/{docType}/deleteJE | |
-|[**fixDuplicateIntegrateSystemEntries**](#fixduplicateintegratesystementries) | **POST** /accounting/fix-duplicate-entries | |
-|[**runCreateJEinAccounting**](#runcreatejeinaccounting) | **POST** /accounting/{systemType}/{docType}/createJE | |
-|[**runSearchDocuments**](#runsearchdocuments) | **GET** /accounting/{docType}/{dateFrom}/{dateTo} | |
-|[**voidJE**](#voidje) | **POST** /accounting/{systemType}/{docType}/voidJE | |
+| Method                                                                        | HTTP request                                         | Description |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------- | ----------- |
+| [**deleteJE**](#deleteje)                                                     | **POST** /accounting/{systemType}/{docType}/deleteJE |             |
+| [**fixDuplicateIntegrateSystemEntries**](#fixduplicateintegratesystementries) | **POST** /accounting/fix-duplicate-entries           |             |
+| [**runCreateJEinAccounting**](#runcreatejeinaccounting)                       | **POST** /accounting/{systemType}/{docType}/createJE |             |
+| [**runSearchDocuments**](#runsearchdocuments)                                 | **GET** /accounting/{docType}/{dateFrom}/{dateTo}    |             |
+| [**voidJE**](#voidje)                                                         | **POST** /accounting/{systemType}/{docType}/voidJE   |             |
 
 # **deleteJE**
+
 > FinalResponse deleteJE(requestBody)
 
 Delete JE record
@@ -18,10 +19,7 @@ Delete JE record
 ### Example
 
 ```typescript
-import {
-    ACCOUNTINGApi,
-    Configuration
-} from './api';
+import { ACCOUNTINGApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACCOUNTINGApi(configuration);
@@ -31,20 +29,19 @@ let docType: string; // (default to undefined)
 let requestBody: Array<string>; //Data
 
 const { status, data } = await apiInstance.deleteJE(
-    systemType,
-    docType,
-    requestBody
+  systemType,
+  docType,
+  requestBody
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **requestBody** | **Array<string>**| Data | |
-| **systemType** | [**string**] |  | defaults to undefined|
-| **docType** | [**string**] |  | defaults to undefined|
-
+| Name            | Type              | Description | Notes                 |
+| --------------- | ----------------- | ----------- | --------------------- |
+| **requestBody** | **Array<string>** | Data        |                       |
+| **systemType**  | [**string**]      |             | defaults to undefined |
+| **docType**     | [**string**]      |             | defaults to undefined |
 
 ### Return type
 
@@ -56,31 +53,31 @@ const { status, data } = await apiInstance.deleteJE(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | JE record deleted |  -  |
-|**404** | Record not found |  -  |
-|**500** | Fail to delete JE record |  -  |
+
+| Status code | Description              | Response headers |
+| ----------- | ------------------------ | ---------------- |
+| **200**     | JE record deleted        | -                |
+| **404**     | Record not found         | -                |
+| **500**     | Fail to delete JE record | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **fixDuplicateIntegrateSystemEntries**
-> fixDuplicateIntegrateSystemEntries(fixDuplicateIntegrateSystemEntriesRequest)
 
+> fixDuplicateIntegrateSystemEntries(fixDuplicateIntegrateSystemEntriesRequest)
 
 ### Example
 
 ```typescript
 import {
-    ACCOUNTINGApi,
-    Configuration,
-    FixDuplicateIntegrateSystemEntriesRequest
-} from './api';
+  ACCOUNTINGApi,
+  Configuration,
+  FixDuplicateIntegrateSystemEntriesRequest,
+} from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACCOUNTINGApi(configuration);
@@ -88,16 +85,15 @@ const apiInstance = new ACCOUNTINGApi(configuration);
 let fixDuplicateIntegrateSystemEntriesRequest: FixDuplicateIntegrateSystemEntriesRequest; //
 
 const { status, data } = await apiInstance.fixDuplicateIntegrateSystemEntries(
-    fixDuplicateIntegrateSystemEntriesRequest
+  fixDuplicateIntegrateSystemEntriesRequest
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **fixDuplicateIntegrateSystemEntriesRequest** | **FixDuplicateIntegrateSystemEntriesRequest**|  | |
-
+| Name                                          | Type                                          | Description | Notes |
+| --------------------------------------------- | --------------------------------------------- | ----------- | ----- |
+| **fixDuplicateIntegrateSystemEntriesRequest** | **FixDuplicateIntegrateSystemEntriesRequest** |             |       |
 
 ### Return type
 
@@ -109,18 +105,19 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | summary: fixed counts per doc type; voidedJEs: list voided; voidedInSimbiz: result from simbiz6 |  -  |
+
+| Status code | Description                                                                                     | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | summary: fixed counts per doc type; voidedJEs: list voided; voidedInSimbiz: result from simbiz6 | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateJEinAccounting**
+
 > FinalResponse runCreateJEinAccounting(requestBody)
 
 run create a Journal Entry record in accounting system
@@ -128,10 +125,7 @@ run create a Journal Entry record in accounting system
 ### Example
 
 ```typescript
-import {
-    ACCOUNTINGApi,
-    Configuration
-} from './api';
+import { ACCOUNTINGApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACCOUNTINGApi(configuration);
@@ -141,20 +135,19 @@ let docType: string; // (default to undefined)
 let requestBody: Array<string>; //document ids
 
 const { status, data } = await apiInstance.runCreateJEinAccounting(
-    systemType,
-    docType,
-    requestBody
+  systemType,
+  docType,
+  requestBody
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **requestBody** | **Array<string>**| document ids | |
-| **systemType** | [**string**] |  | defaults to undefined|
-| **docType** | [**string**] |  | defaults to undefined|
-
+| Name            | Type              | Description  | Notes                 |
+| --------------- | ----------------- | ------------ | --------------------- |
+| **requestBody** | **Array<string>** | document ids |                       |
+| **systemType**  | [**string**]      |              | defaults to undefined |
+| **docType**     | [**string**]      |              | defaults to undefined |
 
 ### Return type
 
@@ -166,30 +159,27 @@ const { status, data } = await apiInstance.runCreateJEinAccounting(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | Success create JE |  -  |
-|**400** | Invalid create JE |  -  |
-|**500** | Fail to create JE |  -  |
+
+| Status code | Description       | Response headers |
+| ----------- | ----------------- | ---------------- |
+| **201**     | Success create JE | -                |
+| **400**     | Invalid create JE | -                |
+| **500**     | Fail to create JE | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearchDocuments**
-> Array<BillDocumentType> runSearchDocuments()
 
+> Array<BillDocumentType> runSearchDocuments()
 
 ### Example
 
 ```typescript
-import {
-    ACCOUNTINGApi,
-    Configuration
-} from './api';
+import { ACCOUNTINGApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACCOUNTINGApi(configuration);
@@ -199,20 +189,19 @@ let dateTo: string; // (default to undefined)
 let docType: string; // (default to undefined)
 
 const { status, data } = await apiInstance.runSearchDocuments(
-    dateFrom,
-    dateTo,
-    docType
+  dateFrom,
+  dateTo,
+  docType
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **dateFrom** | [**string**] |  | defaults to undefined|
-| **dateTo** | [**string**] |  | defaults to undefined|
-| **docType** | [**string**] |  | defaults to undefined|
-
+| Name         | Type         | Description | Notes                 |
+| ------------ | ------------ | ----------- | --------------------- |
+| **dateFrom** | [**string**] |             | defaults to undefined |
+| **dateTo**   | [**string**] |             | defaults to undefined |
+| **docType**  | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -224,18 +213,19 @@ const { status, data } = await apiInstance.runSearchDocuments(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | get invoice/payment/credit note/refund by month |  -  |
+
+| Status code | Description                                     | Response headers |
+| ----------- | ----------------------------------------------- | ---------------- |
+| **200**     | get invoice/payment/credit note/refund by month | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **voidJE**
+
 > FinalResponse voidJE(voidJEFormat)
 
 Void JE record
@@ -243,11 +233,7 @@ Void JE record
 ### Example
 
 ```typescript
-import {
-    ACCOUNTINGApi,
-    Configuration,
-    VoidJEFormat
-} from './api';
+import { ACCOUNTINGApi, Configuration, VoidJEFormat } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACCOUNTINGApi(configuration);
@@ -257,20 +243,19 @@ let docType: string; // (default to undefined)
 let voidJEFormat: VoidJEFormat; //Data
 
 const { status, data } = await apiInstance.voidJE(
-    systemType,
-    docType,
-    voidJEFormat
+  systemType,
+  docType,
+  voidJEFormat
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **voidJEFormat** | **VoidJEFormat**| Data | |
-| **systemType** | [**string**] |  | defaults to undefined|
-| **docType** | [**string**] |  | defaults to undefined|
-
+| Name             | Type             | Description | Notes                 |
+| ---------------- | ---------------- | ----------- | --------------------- |
+| **voidJEFormat** | **VoidJEFormat** | Data        |                       |
+| **systemType**   | [**string**]     |             | defaults to undefined |
+| **docType**      | [**string**]     |             | defaults to undefined |
 
 ### Return type
 
@@ -282,16 +267,15 @@ const { status, data } = await apiInstance.voidJE(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | JE record void |  -  |
-|**404** | Record not found |  -  |
-|**500** | Fail to void JE record |  -  |
+
+| Status code | Description            | Response headers |
+| ----------- | ---------------------- | ---------------- |
+| **200**     | JE record void         | -                |
+| **404**     | Record not found       | -                |
+| **500**     | Fail to void JE record | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

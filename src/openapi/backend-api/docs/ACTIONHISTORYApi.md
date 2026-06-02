@@ -1,32 +1,30 @@
 # ACTIONHISTORYApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**autoComplete**](#autocomplete) | **POST** /actionhistory/autocomplete | |
-|[**runCreate**](#runcreate) | **POST** /actionhistory | |
-|[**runCreateMany**](#runcreatemany) | **POST** /actionhistory/bulk-create | |
-|[**runDefault**](#rundefault) | **GET** /actionhistory | |
-|[**runDelete**](#rundelete) | **DELETE** /actionhistory/{id} | |
-|[**runFindOne**](#runfindone) | **GET** /actionhistory/{id} | |
-|[**runPatch**](#runpatch) | **PATCH** /actionhistory/{id} | |
-|[**runPatchMany**](#runpatchmany) | **PATCH** /actionhistory/bulk-patch | |
-|[**runSearch**](#runsearch) | **POST** /actionhistory/search | |
-|[**runUpdate**](#runupdate) | **PUT** /actionhistory/{id} | |
+| Method                              | HTTP request                         | Description |
+| ----------------------------------- | ------------------------------------ | ----------- |
+| [**autoComplete**](#autocomplete)   | **POST** /actionhistory/autocomplete |             |
+| [**runCreate**](#runcreate)         | **POST** /actionhistory              |             |
+| [**runCreateMany**](#runcreatemany) | **POST** /actionhistory/bulk-create  |             |
+| [**runDefault**](#rundefault)       | **GET** /actionhistory               |             |
+| [**runDelete**](#rundelete)         | **DELETE** /actionhistory/{id}       |             |
+| [**runFindOne**](#runfindone)       | **GET** /actionhistory/{id}          |             |
+| [**runPatch**](#runpatch)           | **PATCH** /actionhistory/{id}        |             |
+| [**runPatchMany**](#runpatchmany)   | **PATCH** /actionhistory/bulk-patch  |             |
+| [**runSearch**](#runsearch)         | **POST** /actionhistory/search       |             |
+| [**runUpdate**](#runupdate)         | **PUT** /actionhistory/{id}          |             |
 
 # **autoComplete**
+
 > Array<ActionHistoryAutoComplete> autoComplete(body)
 
-retrieve array of {_id, code, name}
+retrieve array of {\_id, code, name}
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration
-} from './api';
+import { ACTIONHISTORYApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
@@ -34,19 +32,15 @@ const apiInstance = new ACTIONHISTORYApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(
-    keyword,
-    body
-);
+const { status, data } = await apiInstance.autoComplete(keyword, body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-| **keyword** | [**string**] |  | defaults to undefined|
-
+| Name        | Type         | Description | Notes                 |
+| ----------- | ------------ | ----------- | --------------------- |
+| **body**    | **object**   | Data        |                       |
+| **keyword** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -58,47 +52,40 @@ const { status, data } = await apiInstance.autoComplete(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-> ActionHistory runCreate(actionHistory)
 
+> ActionHistory runCreate(actionHistory)
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration,
-    ActionHistory
-} from './api';
+import { ACTIONHISTORYApi, Configuration, ActionHistory } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
 
 let actionHistory: ActionHistory; //Data
 
-const { status, data } = await apiInstance.runCreate(
-    actionHistory
-);
+const { status, data } = await apiInstance.runCreate(actionHistory);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **actionHistory** | **ActionHistory**| Data | |
-
+| Name              | Type              | Description | Notes |
+| ----------------- | ----------------- | ----------- | ----- |
+| **actionHistory** | **ActionHistory** | Data        |       |
 
 ### Return type
 
@@ -110,47 +97,41 @@ const { status, data } = await apiInstance.runCreate(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-> Array<ActionHistory> runCreateMany(actionHistory)
 
+> Array<ActionHistory> runCreateMany(actionHistory)
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration
-} from './api';
+import { ACTIONHISTORYApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
 
 let actionHistory: Array<ActionHistory>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(
-    actionHistory
-);
+const { status, data } = await apiInstance.runCreateMany(actionHistory);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **actionHistory** | **Array<ActionHistory>**| Data | |
-
+| Name              | Type                     | Description | Notes |
+| ----------------- | ------------------------ | ----------- | ----- |
+| **actionHistory** | **Array<ActionHistory>** | Data        |       |
 
 ### Return type
 
@@ -162,20 +143,21 @@ const { status, data } = await apiInstance.runCreateMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
+
 > object runDefault()
 
 Run default behavior like say hello
@@ -183,10 +165,7 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration
-} from './api';
+import { ACTIONHISTORYApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
@@ -195,8 +174,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -208,46 +187,40 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Sample 200 response |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Sample 200 response | -                |
+| **500**     | Internal error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-> ActionHistory runDelete()
 
+> ActionHistory runDelete()
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration
-} from './api';
+import { ACTIONHISTORYApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runDelete(
-    id
-);
+const { status, data } = await apiInstance.runDelete(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -259,47 +232,41 @@ const { status, data } = await apiInstance.runDelete(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runFindOne**
-> ActionHistory runFindOne()
 
+> ActionHistory runFindOne()
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration
-} from './api';
+import { ACTIONHISTORYApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runFindOne(
-    id
-);
+const { status, data } = await apiInstance.runFindOne(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -311,31 +278,27 @@ const { status, data } = await apiInstance.runFindOne(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Founds |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | Founds             | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatch**
-> runPatch(actionHistory)
 
+> runPatch(actionHistory)
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration,
-    ActionHistory
-} from './api';
+import { ACTIONHISTORYApi, Configuration, ActionHistory } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
@@ -343,19 +306,15 @@ const apiInstance = new ACTIONHISTORYApi(configuration);
 let id: string; // (default to undefined)
 let actionHistory: ActionHistory; //Data
 
-const { status, data } = await apiInstance.runPatch(
-    id,
-    actionHistory
-);
+const { status, data } = await apiInstance.runPatch(id, actionHistory);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **actionHistory** | **ActionHistory**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name              | Type              | Description | Notes                 |
+| ----------------- | ----------------- | ----------- | --------------------- |
+| **actionHistory** | **ActionHistory** | Data        |                       |
+| **id**            | [**string**]      |             | defaults to undefined |
 
 ### Return type
 
@@ -367,48 +326,41 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-> UpdateManyResponse runPatchMany(patchManyRequest)
 
+> UpdateManyResponse runPatchMany(patchManyRequest)
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration,
-    PatchManyRequest
-} from './api';
+import { ACTIONHISTORYApi, Configuration, PatchManyRequest } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(
-    patchManyRequest
-);
+const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **patchManyRequest** | **PatchManyRequest**| Data | |
-
+| Name                 | Type                 | Description | Notes |
+| -------------------- | -------------------- | ----------- | ----- |
+| **patchManyRequest** | **PatchManyRequest** | Data        |       |
 
 ### Return type
 
@@ -420,47 +372,41 @@ const { status, data } = await apiInstance.runPatchMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-> Array<ActionHistory> runSearch(body)
 
+> Array<ActionHistory> runSearch(body)
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration
-} from './api';
+import { ACTIONHISTORYApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(
-    body
-);
+const { status, data } = await apiInstance.runSearch(body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** | Data        |       |
 
 ### Return type
 
@@ -472,31 +418,27 @@ const { status, data } = await apiInstance.runSearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-> runUpdate(actionHistory)
 
+> runUpdate(actionHistory)
 
 ### Example
 
 ```typescript
-import {
-    ACTIONHISTORYApi,
-    Configuration,
-    ActionHistory
-} from './api';
+import { ACTIONHISTORYApi, Configuration, ActionHistory } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new ACTIONHISTORYApi(configuration);
@@ -504,19 +446,15 @@ const apiInstance = new ACTIONHISTORYApi(configuration);
 let id: string; // (default to undefined)
 let actionHistory: ActionHistory; //Data
 
-const { status, data } = await apiInstance.runUpdate(
-    id,
-    actionHistory
-);
+const { status, data } = await apiInstance.runUpdate(id, actionHistory);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **actionHistory** | **ActionHistory**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name              | Type              | Description | Notes                 |
+| ----------------- | ----------------- | ----------- | --------------------- |
+| **actionHistory** | **ActionHistory** | Data        |                       |
+| **id**            | [**string**]      |             | defaults to undefined |
 
 ### Return type
 
@@ -528,16 +466,15 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

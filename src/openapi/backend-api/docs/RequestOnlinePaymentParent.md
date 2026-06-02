@@ -1,21 +1,20 @@
 # RequestOnlinePaymentParent
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to undefined]
-**name** | **string** |  | [default to undefined]
+| Name     | Type       | Description | Notes                  |
+| -------- | ---------- | ----------- | ---------------------- |
+| **\_id** | **string** |             | [default to undefined] |
+| **name** | **string** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RequestOnlinePaymentParent } from './api';
+import { RequestOnlinePaymentParent } from "./api";
 
 const instance: RequestOnlinePaymentParent = {
-    _id,
-    name,
+  _id,
+  name,
 };
 ```
 

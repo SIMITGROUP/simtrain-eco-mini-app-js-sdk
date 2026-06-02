@@ -1,21 +1,20 @@
 # CloneClassGenerateResult
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**classes** | [**Array&lt;TuitionClass&gt;**](TuitionClass.md) |  | [default to undefined]
-**enrollments** | [**Array&lt;Enrollment&gt;**](Enrollment.md) |  | [default to undefined]
+| Name            | Type                                             | Description | Notes                  |
+| --------------- | ------------------------------------------------ | ----------- | ---------------------- |
+| **classes**     | [**Array&lt;TuitionClass&gt;**](TuitionClass.md) |             | [default to undefined] |
+| **enrollments** | [**Array&lt;Enrollment&gt;**](Enrollment.md)     |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { CloneClassGenerateResult } from './api';
+import { CloneClassGenerateResult } from "./api";
 
 const instance: CloneClassGenerateResult = {
-    classes,
-    enrollments,
+  classes,
+  enrollments,
 };
 ```
 

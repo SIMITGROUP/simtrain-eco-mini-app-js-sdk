@@ -1,21 +1,20 @@
 # InstalledMiniAppDetail
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**permissions** | [**MiniAppDetailPermission**](MiniAppDetailPermission.md) |  | [default to undefined]
-**installedMiniApps** | [**Array&lt;MiniAppDetail&gt;**](MiniAppDetail.md) |  | [default to undefined]
+| Name                  | Type                                                      | Description | Notes                  |
+| --------------------- | --------------------------------------------------------- | ----------- | ---------------------- |
+| **permissions**       | [**MiniAppDetailPermission**](MiniAppDetailPermission.md) |             | [default to undefined] |
+| **installedMiniApps** | [**Array&lt;MiniAppDetail&gt;**](MiniAppDetail.md)        |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { InstalledMiniAppDetail } from './api';
+import { InstalledMiniAppDetail } from "./api";
 
 const instance: InstalledMiniAppDetail = {
-    permissions,
-    installedMiniApps,
+  permissions,
+  installedMiniApps,
 };
 ```
 

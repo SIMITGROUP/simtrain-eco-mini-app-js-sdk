@@ -1,23 +1,22 @@
 # AnnouncementTargetsLevelsPerson
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **code**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { AnnouncementTargetsLevelsPerson } from './api';
+import { AnnouncementTargetsLevelsPerson } from "./api";
 
 const instance: AnnouncementTargetsLevelsPerson = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 
