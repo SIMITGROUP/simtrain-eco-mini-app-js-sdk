@@ -1,14 +1,15 @@
 # MerchantConfigApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**deleteMerchantConfig**](#deletemerchantconfig) | **DELETE** /onlinepayment/merchant-config | |
-|[**getMerchantConfigStatus**](#getmerchantconfigstatus) | **GET** /onlinepayment/merchant-config | |
-|[**upsertMerchantConfig**](#upsertmerchantconfig) | **PUT** /onlinepayment/merchant-config | |
+| Method                                                  | HTTP request                              | Description |
+| ------------------------------------------------------- | ----------------------------------------- | ----------- |
+| [**deleteMerchantConfig**](#deletemerchantconfig)       | **DELETE** /onlinepayment/merchant-config |             |
+| [**getMerchantConfigStatus**](#getmerchantconfigstatus) | **GET** /onlinepayment/merchant-config    |             |
+| [**upsertMerchantConfig**](#upsertmerchantconfig)       | **PUT** /onlinepayment/merchant-config    |             |
 
 # **deleteMerchantConfig**
+
 > OnlinePaymentMerchantConfigResponse deleteMerchantConfig()
 
 Remove payment gateway config and clear the active PaymentMethod online payment flag
@@ -16,10 +17,7 @@ Remove payment gateway config and clear the active PaymentMethod online payment 
 ### Example
 
 ```typescript
-import {
-    MerchantConfigApi,
-    Configuration
-} from './api';
+import { MerchantConfigApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new MerchantConfigApi(configuration);
@@ -28,8 +26,8 @@ const { status, data } = await apiInstance.deleteMerchantConfig();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -41,18 +39,19 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** |  |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     |             | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getMerchantConfigStatus**
+
 > OnlinePaymentMerchantConfigResponse getMerchantConfigStatus()
 
 Get current payment gateway config status and the active PaymentMethod
@@ -60,10 +59,7 @@ Get current payment gateway config status and the active PaymentMethod
 ### Example
 
 ```typescript
-import {
-    MerchantConfigApi,
-    Configuration
-} from './api';
+import { MerchantConfigApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new MerchantConfigApi(configuration);
@@ -72,8 +68,8 @@ const { status, data } = await apiInstance.getMerchantConfigStatus();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -85,18 +81,19 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** |  |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     |             | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upsertMerchantConfig**
+
 > OnlinePaymentMerchantConfigResponse upsertMerchantConfig(onlinePaymentSetMerchantConfigBody)
 
 Set payment gateway provider and credentials, and mark the given PaymentMethod as the active online payment method
@@ -105,10 +102,10 @@ Set payment gateway provider and credentials, and mark the given PaymentMethod a
 
 ```typescript
 import {
-    MerchantConfigApi,
-    Configuration,
-    OnlinePaymentSetMerchantConfigBody
-} from './api';
+  MerchantConfigApi,
+  Configuration,
+  OnlinePaymentSetMerchantConfigBody,
+} from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new MerchantConfigApi(configuration);
@@ -116,16 +113,15 @@ const apiInstance = new MerchantConfigApi(configuration);
 let onlinePaymentSetMerchantConfigBody: OnlinePaymentSetMerchantConfigBody; //
 
 const { status, data } = await apiInstance.upsertMerchantConfig(
-    onlinePaymentSetMerchantConfigBody
+  onlinePaymentSetMerchantConfigBody
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **onlinePaymentSetMerchantConfigBody** | **OnlinePaymentSetMerchantConfigBody**|  | |
-
+| Name                                   | Type                                   | Description | Notes |
+| -------------------------------------- | -------------------------------------- | ----------- | ----- |
+| **onlinePaymentSetMerchantConfigBody** | **OnlinePaymentSetMerchantConfigBody** |             |       |
 
 ### Return type
 
@@ -137,14 +133,13 @@ const { status, data } = await apiInstance.upsertMerchantConfig(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** |  |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     |             | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

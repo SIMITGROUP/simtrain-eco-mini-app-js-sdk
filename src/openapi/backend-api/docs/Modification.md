@@ -1,23 +1,22 @@
 # Modification
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**action** | **string** |  | [default to undefined]
-**_new** | [**NewProductEnrollment**](NewProductEnrollment.md) |  | [optional] [default to undefined]
-**deleteEnrolId** | **string** |  | [optional] [default to undefined]
+| Name              | Type                                                | Description | Notes                             |
+| ----------------- | --------------------------------------------------- | ----------- | --------------------------------- |
+| **action**        | **string**                                          |             | [default to undefined]            |
+| **\_new**         | [**NewProductEnrollment**](NewProductEnrollment.md) |             | [optional] [default to undefined] |
+| **deleteEnrolId** | **string**                                          |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { Modification } from './api';
+import { Modification } from "./api";
 
 const instance: Modification = {
-    action,
-    _new,
-    deleteEnrolId,
+  action,
+  _new,
+  deleteEnrolId,
 };
 ```
 

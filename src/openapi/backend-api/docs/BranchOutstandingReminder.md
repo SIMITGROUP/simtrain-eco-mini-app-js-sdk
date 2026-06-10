@@ -1,21 +1,20 @@
 # BranchOutstandingReminder
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**enable** | **boolean** |  | [optional] [default to undefined]
-**cron** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
+| Name       | Type                    | Description | Notes                             |
+| ---------- | ----------------------- | ----------- | --------------------------------- |
+| **enable** | **boolean**             |             | [optional] [default to undefined] |
+| **cron**   | **Array&lt;string&gt;** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { BranchOutstandingReminder } from './api';
+import { BranchOutstandingReminder } from "./api";
 
 const instance: BranchOutstandingReminder = {
-    enable,
-    cron,
+  enable,
+  cron,
 };
 ```
 

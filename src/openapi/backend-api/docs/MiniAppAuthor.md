@@ -1,25 +1,24 @@
 # MiniAppAuthor
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**uid** | **string** |  | [default to undefined]
-**name** | **string** |  | [default to undefined]
-**email** | **string** |  | [default to undefined]
-**team** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **uid**   | **string** |             | [default to undefined]            |
+| **name**  | **string** |             | [default to undefined]            |
+| **email** | **string** |             | [default to undefined]            |
+| **team**  | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { MiniAppAuthor } from './api';
+import { MiniAppAuthor } from "./api";
 
 const instance: MiniAppAuthor = {
-    uid,
-    name,
-    email,
-    team,
+  uid,
+  name,
+  email,
+  team,
 };
 ```
 

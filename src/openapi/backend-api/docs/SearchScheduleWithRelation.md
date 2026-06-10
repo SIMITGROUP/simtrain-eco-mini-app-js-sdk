@@ -1,19 +1,18 @@
 # SearchScheduleWithRelation
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tuitionClass** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |  | [optional] [default to undefined]
+| Name             | Type                                                            | Description | Notes                             |
+| ---------------- | --------------------------------------------------------------- | ----------- | --------------------------------- |
+| **tuitionClass** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SearchScheduleWithRelation } from './api';
+import { SearchScheduleWithRelation } from "./api";
 
 const instance: SearchScheduleWithRelation = {
-    tuitionClass,
+  tuitionClass,
 };
 ```
 

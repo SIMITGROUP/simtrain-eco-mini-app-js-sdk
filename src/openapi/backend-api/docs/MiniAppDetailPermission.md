@@ -1,25 +1,24 @@
 # MiniAppDetailPermission
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**hasMiniAppFeature** | **boolean** |  | [default to false]
-**canInstall** | **boolean** |  | [default to false]
-**canUninstall** | **boolean** |  | [default to false]
-**canUpdateSetting** | **boolean** |  | [default to false]
+| Name                  | Type        | Description | Notes              |
+| --------------------- | ----------- | ----------- | ------------------ |
+| **hasMiniAppFeature** | **boolean** |             | [default to false] |
+| **canInstall**        | **boolean** |             | [default to false] |
+| **canUninstall**      | **boolean** |             | [default to false] |
+| **canUpdateSetting**  | **boolean** |             | [default to false] |
 
 ## Example
 
 ```typescript
-import { MiniAppDetailPermission } from './api';
+import { MiniAppDetailPermission } from "./api";
 
 const instance: MiniAppDetailPermission = {
-    hasMiniAppFeature,
-    canInstall,
-    canUninstall,
-    canUpdateSetting,
+  hasMiniAppFeature,
+  canInstall,
+  canUninstall,
+  canUpdateSetting,
 };
 ```
 

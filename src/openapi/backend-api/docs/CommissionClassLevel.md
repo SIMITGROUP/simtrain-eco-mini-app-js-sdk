@@ -1,23 +1,22 @@
 # CommissionClassLevel
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
+| Name     | Type       | Description | Notes                             |
+| -------- | ---------- | ----------- | --------------------------------- |
+| **\_id** | **string** |             | [optional] [default to undefined] |
+| **name** | **string** |             | [optional] [default to undefined] |
+| **code** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { CommissionClassLevel } from './api';
+import { CommissionClassLevel } from "./api";
 
 const instance: CommissionClassLevel = {
-    _id,
-    name,
-    code,
+  _id,
+  name,
+  code,
 };
 ```
 

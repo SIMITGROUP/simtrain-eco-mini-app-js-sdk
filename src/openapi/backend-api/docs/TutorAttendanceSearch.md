@@ -1,35 +1,34 @@
 # TutorAttendanceSearch
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to undefined]
-**studentCode** | **string** |  | [default to undefined]
-**studentName** | **string** |  | [default to undefined]
-**studentOutstanding** | **string** |  | [default to undefined]
-**tuitionClassId** | **string** |  | [default to undefined]
-**tuitionClassCode** | **string** |  | [default to undefined]
-**tuitionClassLabel** | **string** |  | [default to undefined]
-**enrollmentId** | **string** |  | [default to undefined]
-**enrollmenttransaction** | **Array&lt;object&gt;** |  | [default to undefined]
+| Name                      | Type                    | Description | Notes                  |
+| ------------------------- | ----------------------- | ----------- | ---------------------- |
+| **\_id**                  | **string**              |             | [default to undefined] |
+| **studentCode**           | **string**              |             | [default to undefined] |
+| **studentName**           | **string**              |             | [default to undefined] |
+| **studentOutstanding**    | **string**              |             | [default to undefined] |
+| **tuitionClassId**        | **string**              |             | [default to undefined] |
+| **tuitionClassCode**      | **string**              |             | [default to undefined] |
+| **tuitionClassLabel**     | **string**              |             | [default to undefined] |
+| **enrollmentId**          | **string**              |             | [default to undefined] |
+| **enrollmenttransaction** | **Array&lt;object&gt;** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TutorAttendanceSearch } from './api';
+import { TutorAttendanceSearch } from "./api";
 
 const instance: TutorAttendanceSearch = {
-    _id,
-    studentCode,
-    studentName,
-    studentOutstanding,
-    tuitionClassId,
-    tuitionClassCode,
-    tuitionClassLabel,
-    enrollmentId,
-    enrollmenttransaction,
+  _id,
+  studentCode,
+  studentName,
+  studentOutstanding,
+  tuitionClassId,
+  tuitionClassCode,
+  tuitionClassLabel,
+  enrollmentId,
+  enrollmenttransaction,
 };
 ```
 

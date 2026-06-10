@@ -1,23 +1,22 @@
 # MicroFrontendAssetsResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**FrontendAsset**](FrontendAsset.md) |  | [optional] [default to undefined]
-**error** | **string** |  | [optional] [default to undefined]
-**implementationDate** | **string** |  | [optional] [default to undefined]
+| Name                   | Type                                  | Description | Notes                             |
+| ---------------------- | ------------------------------------- | ----------- | --------------------------------- |
+| **data**               | [**FrontendAsset**](FrontendAsset.md) |             | [optional] [default to undefined] |
+| **error**              | **string**                            |             | [optional] [default to undefined] |
+| **implementationDate** | **string**                            |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { MicroFrontendAssetsResponse } from './api';
+import { MicroFrontendAssetsResponse } from "./api";
 
 const instance: MicroFrontendAssetsResponse = {
-    data,
-    error,
-    implementationDate,
+  data,
+  error,
+  implementationDate,
 };
 ```
 

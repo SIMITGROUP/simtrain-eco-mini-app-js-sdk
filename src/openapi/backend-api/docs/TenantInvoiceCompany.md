@@ -1,43 +1,42 @@
 # TenantInvoiceCompany
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**companyName** | **string** |  | [default to undefined]
-**regNo** | **string** |  | [optional] [default to undefined]
-**taxID** | **string** |  | [optional] [default to undefined]
-**tinNo** | **string** |  | [optional] [default to undefined]
-**street1** | **string** |  | [optional] [default to undefined]
-**street2** | **string** |  | [optional] [default to undefined]
-**postcode** | **string** |  | [optional] [default to undefined]
-**city** | **string** |  | [optional] [default to undefined]
-**region** | **string** |  | [optional] [default to undefined]
-**country** | **string** |  | [optional] [default to undefined]
-**billUserEmail** | **string** |  | [optional] [default to undefined]
-**tel** | **string** |  | [optional] [default to undefined]
-**requestEInvoice** | **boolean** |  | [optional] [default to undefined]
+| Name                | Type        | Description | Notes                             |
+| ------------------- | ----------- | ----------- | --------------------------------- |
+| **companyName**     | **string**  |             | [default to undefined]            |
+| **regNo**           | **string**  |             | [optional] [default to undefined] |
+| **taxID**           | **string**  |             | [optional] [default to undefined] |
+| **tinNo**           | **string**  |             | [optional] [default to undefined] |
+| **street1**         | **string**  |             | [optional] [default to undefined] |
+| **street2**         | **string**  |             | [optional] [default to undefined] |
+| **postcode**        | **string**  |             | [optional] [default to undefined] |
+| **city**            | **string**  |             | [optional] [default to undefined] |
+| **region**          | **string**  |             | [optional] [default to undefined] |
+| **country**         | **string**  |             | [optional] [default to undefined] |
+| **billUserEmail**   | **string**  |             | [optional] [default to undefined] |
+| **tel**             | **string**  |             | [optional] [default to undefined] |
+| **requestEInvoice** | **boolean** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TenantInvoiceCompany } from './api';
+import { TenantInvoiceCompany } from "./api";
 
 const instance: TenantInvoiceCompany = {
-    companyName,
-    regNo,
-    taxID,
-    tinNo,
-    street1,
-    street2,
-    postcode,
-    city,
-    region,
-    country,
-    billUserEmail,
-    tel,
-    requestEInvoice,
+  companyName,
+  regNo,
+  taxID,
+  tinNo,
+  street1,
+  street2,
+  postcode,
+  city,
+  region,
+  country,
+  billUserEmail,
+  tel,
+  requestEInvoice,
 };
 ```
 

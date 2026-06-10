@@ -1,29 +1,28 @@
 # RewardAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**rewardDate** | **string** |  | [default to undefined]
-**student** | [**RewardStudent**](RewardStudent.md) |  | [default to undefined]
-**rewardAmount** | **number** |  | [optional] [default to undefined]
+| Name             | Type                                  | Description | Notes                             |
+| ---------------- | ------------------------------------- | ----------- | --------------------------------- |
+| **\_id**         | **string**                            |             | [default to '']                   |
+| **code**         | **string**                            |             | [default to '']                   |
+| **label**        | **string**                            |             | [default to '']                   |
+| **rewardDate**   | **string**                            |             | [default to undefined]            |
+| **student**      | [**RewardStudent**](RewardStudent.md) |             | [default to undefined]            |
+| **rewardAmount** | **number**                            |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RewardAutoComplete } from './api';
+import { RewardAutoComplete } from "./api";
 
 const instance: RewardAutoComplete = {
-    _id,
-    code,
-    label,
-    rewardDate,
-    student,
-    rewardAmount,
+  _id,
+  code,
+  label,
+  rewardDate,
+  student,
+  rewardAmount,
 };
 ```
 

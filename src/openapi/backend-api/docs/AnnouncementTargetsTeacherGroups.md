@@ -1,29 +1,28 @@
 # AnnouncementTargetsTeacherGroups
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**created** | **string** |  | [optional] [default to undefined]
-**updated** | **string** |  | [optional] [default to undefined]
-**createdBy** | **string** |  | [optional] [default to undefined]
-**updatedBy** | **string** |  | [optional] [default to undefined]
-**_id** | **string** |  | [optional] [default to undefined]
-**person** | [**AnnouncementTargetsTeacherGroupsPerson**](AnnouncementTargetsTeacherGroupsPerson.md) |  | [optional] [default to undefined]
+| Name          | Type                                                                                    | Description | Notes                             |
+| ------------- | --------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **created**   | **string**                                                                              |             | [optional] [default to undefined] |
+| **updated**   | **string**                                                                              |             | [optional] [default to undefined] |
+| **createdBy** | **string**                                                                              |             | [optional] [default to undefined] |
+| **updatedBy** | **string**                                                                              |             | [optional] [default to undefined] |
+| **\_id**      | **string**                                                                              |             | [optional] [default to undefined] |
+| **person**    | [**AnnouncementTargetsTeacherGroupsPerson**](AnnouncementTargetsTeacherGroupsPerson.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { AnnouncementTargetsTeacherGroups } from './api';
+import { AnnouncementTargetsTeacherGroups } from "./api";
 
 const instance: AnnouncementTargetsTeacherGroups = {
-    created,
-    updated,
-    createdBy,
-    updatedBy,
-    _id,
-    person,
+  created,
+  updated,
+  createdBy,
+  updatedBy,
+  _id,
+  person,
 };
 ```
 

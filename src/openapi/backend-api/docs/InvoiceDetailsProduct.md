@@ -1,29 +1,28 @@
 # InvoiceDetailsProduct
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
-**billingMethod** | **string** |  | [optional] [default to undefined]
-**defaultPrice** | **number** |  | [optional] [default to undefined]
-**category** | [**InvoiceDetailsProductCategory**](InvoiceDetailsProductCategory.md) |  | [optional] [default to undefined]
+| Name              | Type                                                                  | Description | Notes                             |
+| ----------------- | --------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **\_id**          | **string**                                                            |             | [optional] [default to undefined] |
+| **code**          | **string**                                                            |             | [optional] [default to undefined] |
+| **label**         | **string**                                                            |             | [optional] [default to undefined] |
+| **billingMethod** | **string**                                                            |             | [optional] [default to undefined] |
+| **defaultPrice**  | **number**                                                            |             | [optional] [default to undefined] |
+| **category**      | [**InvoiceDetailsProductCategory**](InvoiceDetailsProductCategory.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { InvoiceDetailsProduct } from './api';
+import { InvoiceDetailsProduct } from "./api";
 
 const instance: InvoiceDetailsProduct = {
-    _id,
-    code,
-    label,
-    billingMethod,
-    defaultPrice,
-    category,
+  _id,
+  code,
+  label,
+  billingMethod,
+  defaultPrice,
+  category,
 };
 ```
 

@@ -1,21 +1,20 @@
 # TenantSubscriptionConfigOneTimeDiscountUpgrade
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **number** |  | [optional] [default to undefined]
-**description** | **string** |  | [optional] [default to undefined]
+| Name            | Type       | Description | Notes                             |
+| --------------- | ---------- | ----------- | --------------------------------- |
+| **amount**      | **number** |             | [optional] [default to undefined] |
+| **description** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TenantSubscriptionConfigOneTimeDiscountUpgrade } from './api';
+import { TenantSubscriptionConfigOneTimeDiscountUpgrade } from "./api";
 
 const instance: TenantSubscriptionConfigOneTimeDiscountUpgrade = {
-    amount,
-    description,
+  amount,
+  description,
 };
 ```
 

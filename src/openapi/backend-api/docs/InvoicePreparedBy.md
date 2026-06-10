@@ -1,23 +1,22 @@
 # InvoicePreparedBy
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**fullName** | **string** |  | [optional] [default to undefined]
-**uid** | **string** |  | [optional] [default to undefined]
+| Name         | Type       | Description | Notes                             |
+| ------------ | ---------- | ----------- | --------------------------------- |
+| **\_id**     | **string** |             | [optional] [default to undefined] |
+| **fullName** | **string** |             | [optional] [default to undefined] |
+| **uid**      | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { InvoicePreparedBy } from './api';
+import { InvoicePreparedBy } from "./api";
 
 const instance: InvoicePreparedBy = {
-    _id,
-    fullName,
-    uid,
+  _id,
+  fullName,
+  uid,
 };
 ```
 

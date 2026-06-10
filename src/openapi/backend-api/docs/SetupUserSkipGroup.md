@@ -1,23 +1,22 @@
 # SetupUserSkipGroup
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reason** | **string** |  | [default to undefined]
-**count** | **number** |  | [default to undefined]
-**items** | [**Array&lt;SetupTeam&gt;**](SetupTeam.md) |  | [default to undefined]
+| Name       | Type                                       | Description | Notes                  |
+| ---------- | ------------------------------------------ | ----------- | ---------------------- |
+| **reason** | **string**                                 |             | [default to undefined] |
+| **count**  | **number**                                 |             | [default to undefined] |
+| **items**  | [**Array&lt;SetupTeam&gt;**](SetupTeam.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupUserSkipGroup } from './api';
+import { SetupUserSkipGroup } from "./api";
 
 const instance: SetupUserSkipGroup = {
-    reason,
-    count,
-    items,
+  reason,
+  count,
+  items,
 };
 ```
 

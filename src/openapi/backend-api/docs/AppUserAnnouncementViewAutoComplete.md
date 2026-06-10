@@ -1,23 +1,22 @@
 # AppUserAnnouncementViewAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
+| Name      | Type       | Description | Notes           |
+| --------- | ---------- | ----------- | --------------- |
+| **\_id**  | **string** |             | [default to ''] |
+| **code**  | **string** |             | [default to ''] |
+| **label** | **string** |             | [default to ''] |
 
 ## Example
 
 ```typescript
-import { AppUserAnnouncementViewAutoComplete } from './api';
+import { AppUserAnnouncementViewAutoComplete } from "./api";
 
 const instance: AppUserAnnouncementViewAutoComplete = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

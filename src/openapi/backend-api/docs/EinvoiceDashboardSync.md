@@ -1,23 +1,22 @@
 # EinvoiceDashboardSync
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**document_type** | **string** |  | [default to undefined]
-**document_id** | **string** |  | [default to undefined]
-**document_date** | **string** |  | [optional] [default to undefined]
+| Name              | Type       | Description | Notes                             |
+| ----------------- | ---------- | ----------- | --------------------------------- |
+| **document_type** | **string** |             | [default to undefined]            |
+| **document_id**   | **string** |             | [default to undefined]            |
+| **document_date** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { EinvoiceDashboardSync } from './api';
+import { EinvoiceDashboardSync } from "./api";
 
 const instance: EinvoiceDashboardSync = {
-    document_type,
-    document_id,
-    document_date,
+  document_type,
+  document_id,
+  document_date,
 };
 ```
 

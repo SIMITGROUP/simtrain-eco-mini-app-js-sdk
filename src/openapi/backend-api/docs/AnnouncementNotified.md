@@ -1,21 +1,20 @@
 # AnnouncementNotified
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**sent** | **boolean** |  | [optional] [default to undefined]
-**date** | **string** |  | [optional] [default to undefined]
+| Name     | Type        | Description | Notes                             |
+| -------- | ----------- | ----------- | --------------------------------- |
+| **sent** | **boolean** |             | [optional] [default to undefined] |
+| **date** | **string**  |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { AnnouncementNotified } from './api';
+import { AnnouncementNotified } from "./api";
 
 const instance: AnnouncementNotified = {
-    sent,
-    date,
+  sent,
+  date,
 };
 ```
 

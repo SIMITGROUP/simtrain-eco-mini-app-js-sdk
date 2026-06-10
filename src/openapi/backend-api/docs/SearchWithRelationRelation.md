@@ -1,23 +1,22 @@
 # SearchWithRelationRelation
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**filter** | **object** | Mongo filter for relation | [optional] [default to undefined]
-**projection** | **object** | Mongo projection for relation | [optional] [default to undefined]
-**sort** | **object** | Mongo sort for relation | [optional] [default to undefined]
+| Name           | Type       | Description                   | Notes                             |
+| -------------- | ---------- | ----------------------------- | --------------------------------- |
+| **filter**     | **object** | Mongo filter for relation     | [optional] [default to undefined] |
+| **projection** | **object** | Mongo projection for relation | [optional] [default to undefined] |
+| **sort**       | **object** | Mongo sort for relation       | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SearchWithRelationRelation } from './api';
+import { SearchWithRelationRelation } from "./api";
 
 const instance: SearchWithRelationRelation = {
-    filter,
-    projection,
-    sort,
+  filter,
+  projection,
+  sort,
 };
 ```
 

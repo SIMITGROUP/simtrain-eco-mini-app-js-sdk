@@ -1,27 +1,26 @@
 # TeacherAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**branches** | [**Array&lt;TeacherBranches&gt;**](TeacherBranches.md) |  | [default to undefined]
-**alternateName** | **string** |  | [optional] [default to undefined]
+| Name              | Type                                                   | Description | Notes                             |
+| ----------------- | ------------------------------------------------------ | ----------- | --------------------------------- |
+| **\_id**          | **string**                                             |             | [default to '']                   |
+| **code**          | **string**                                             |             | [default to '']                   |
+| **label**         | **string**                                             |             | [default to '']                   |
+| **branches**      | [**Array&lt;TeacherBranches&gt;**](TeacherBranches.md) |             | [default to undefined]            |
+| **alternateName** | **string**                                             |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TeacherAutoComplete } from './api';
+import { TeacherAutoComplete } from "./api";
 
 const instance: TeacherAutoComplete = {
-    _id,
-    code,
-    label,
-    branches,
-    alternateName,
+  _id,
+  code,
+  label,
+  branches,
+  alternateName,
 };
 ```
 

@@ -1,27 +1,26 @@
 # UpdateManyResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**acknowledged** | **boolean** |  | [default to undefined]
-**matchedCount** | **number** |  | [default to undefined]
-**modifiedCount** | **number** |  | [default to undefined]
-**upsertedCount** | **number** |  | [default to undefined]
-**upsertedId** | **string** |  | [default to undefined]
+| Name              | Type        | Description | Notes                  |
+| ----------------- | ----------- | ----------- | ---------------------- |
+| **acknowledged**  | **boolean** |             | [default to undefined] |
+| **matchedCount**  | **number**  |             | [default to undefined] |
+| **modifiedCount** | **number**  |             | [default to undefined] |
+| **upsertedCount** | **number**  |             | [default to undefined] |
+| **upsertedId**    | **string**  |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { UpdateManyResponse } from './api';
+import { UpdateManyResponse } from "./api";
 
 const instance: UpdateManyResponse = {
-    acknowledged,
-    matchedCount,
-    modifiedCount,
-    upsertedCount,
-    upsertedId,
+  acknowledged,
+  matchedCount,
+  modifiedCount,
+  upsertedCount,
+  upsertedId,
 };
 ```
 

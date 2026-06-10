@@ -1,25 +1,24 @@
 # OnlinePaymentFilter
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**dateFrom** | **string** |  | [default to undefined]
-**dateTo** | **string** |  | [default to undefined]
-**status** | **string** |  | [optional] [default to 'new']
-**studentIdArr** | **Array&lt;string&gt;** | Array of student IDs | [optional] [default to undefined]
+| Name             | Type                    | Description          | Notes                             |
+| ---------------- | ----------------------- | -------------------- | --------------------------------- |
+| **dateFrom**     | **string**              |                      | [default to undefined]            |
+| **dateTo**       | **string**              |                      | [default to undefined]            |
+| **status**       | **string**              |                      | [optional] [default to 'new']     |
+| **studentIdArr** | **Array&lt;string&gt;** | Array of student IDs | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { OnlinePaymentFilter } from './api';
+import { OnlinePaymentFilter } from "./api";
 
 const instance: OnlinePaymentFilter = {
-    dateFrom,
-    dateTo,
-    status,
-    studentIdArr,
+  dateFrom,
+  dateTo,
+  status,
+  studentIdArr,
 };
 ```
 

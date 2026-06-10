@@ -1,19 +1,18 @@
 # RunGetStudentEnrollBySearchRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | **string** |  | [optional] [default to undefined]
+| Name     | Type       | Description | Notes                             |
+| -------- | ---------- | ----------- | --------------------------------- |
+| **data** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RunGetStudentEnrollBySearchRequest } from './api';
+import { RunGetStudentEnrollBySearchRequest } from "./api";
 
 const instance: RunGetStudentEnrollBySearchRequest = {
-    data,
+  data,
 };
 ```
 

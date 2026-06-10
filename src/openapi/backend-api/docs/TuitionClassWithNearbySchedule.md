@@ -1,27 +1,26 @@
 # TuitionClassWithNearbySchedule
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to undefined]
-**tutorId** | **string** |  | [default to undefined]
-**productId** | **string** |  | [default to undefined]
-**studentGroupId** | **string** |  | [default to undefined]
-**nearbySchedules** | [**Array&lt;TuitionClassNearbySchedule&gt;**](TuitionClassNearbySchedule.md) |  | [default to undefined]
+| Name                | Type                                                                         | Description | Notes                  |
+| ------------------- | ---------------------------------------------------------------------------- | ----------- | ---------------------- |
+| **\_id**            | **string**                                                                   |             | [default to undefined] |
+| **tutorId**         | **string**                                                                   |             | [default to undefined] |
+| **productId**       | **string**                                                                   |             | [default to undefined] |
+| **studentGroupId**  | **string**                                                                   |             | [default to undefined] |
+| **nearbySchedules** | [**Array&lt;TuitionClassNearbySchedule&gt;**](TuitionClassNearbySchedule.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TuitionClassWithNearbySchedule } from './api';
+import { TuitionClassWithNearbySchedule } from "./api";
 
 const instance: TuitionClassWithNearbySchedule = {
-    _id,
-    tutorId,
-    productId,
-    studentGroupId,
-    nearbySchedules,
+  _id,
+  tutorId,
+  productId,
+  studentGroupId,
+  nearbySchedules,
 };
 ```
 

@@ -1,21 +1,20 @@
 # MiniAppIntegrationCustomPageSetting
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**note** | **string** |  | [optional] [default to undefined]
-**jsonSchema** | **object** |  | [default to undefined]
+| Name           | Type       | Description | Notes                             |
+| -------------- | ---------- | ----------- | --------------------------------- |
+| **note**       | **string** |             | [optional] [default to undefined] |
+| **jsonSchema** | **object** |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { MiniAppIntegrationCustomPageSetting } from './api';
+import { MiniAppIntegrationCustomPageSetting } from "./api";
 
 const instance: MiniAppIntegrationCustomPageSetting = {
-    note,
-    jsonSchema,
+  note,
+  jsonSchema,
 };
 ```
 

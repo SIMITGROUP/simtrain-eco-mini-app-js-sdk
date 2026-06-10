@@ -1,19 +1,18 @@
 # PaymentServiceDirectdebitinstructionRequestData
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**requestAt** | **string** |  | [optional] [default to undefined]
+| Name          | Type       | Description | Notes                             |
+| ------------- | ---------- | ----------- | --------------------------------- |
+| **requestAt** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { PaymentServiceDirectdebitinstructionRequestData } from './api';
+import { PaymentServiceDirectdebitinstructionRequestData } from "./api";
 
 const instance: PaymentServiceDirectdebitinstructionRequestData = {
-    requestAt,
+  requestAt,
 };
 ```
 

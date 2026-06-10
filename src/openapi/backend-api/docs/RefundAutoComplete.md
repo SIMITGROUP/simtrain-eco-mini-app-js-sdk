@@ -1,31 +1,30 @@
 # RefundAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**refundDate** | **string** |  | [default to undefined]
-**student** | [**RefundStudent**](RefundStudent.md) |  | [default to undefined]
-**agent** | [**RefundAgent**](RefundAgent.md) |  | [optional] [default to undefined]
-**refundTotal** | **number** |  | [default to undefined]
+| Name            | Type                                  | Description | Notes                             |
+| --------------- | ------------------------------------- | ----------- | --------------------------------- |
+| **\_id**        | **string**                            |             | [default to '']                   |
+| **code**        | **string**                            |             | [default to '']                   |
+| **label**       | **string**                            |             | [default to '']                   |
+| **refundDate**  | **string**                            |             | [default to undefined]            |
+| **student**     | [**RefundStudent**](RefundStudent.md) |             | [default to undefined]            |
+| **agent**       | [**RefundAgent**](RefundAgent.md)     |             | [optional] [default to undefined] |
+| **refundTotal** | **number**                            |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { RefundAutoComplete } from './api';
+import { RefundAutoComplete } from "./api";
 
 const instance: RefundAutoComplete = {
-    _id,
-    code,
-    label,
-    refundDate,
-    student,
-    agent,
-    refundTotal,
+  _id,
+  code,
+  label,
+  refundDate,
+  student,
+  agent,
+  refundTotal,
 };
 ```
 

@@ -1,25 +1,24 @@
 # TeacherCommissionSetting
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**defaultHourlyAmount** | **number** |  | [optional] [default to undefined]
-**commissionPercentage** | **number** |  | [optional] [default to undefined]
-**salaryMode** | **string** |  | [optional] [default to undefined]
-**salaryByLevel** | [**Array&lt;TeacherCommissionSettingSalaryByLevel&gt;**](TeacherCommissionSettingSalaryByLevel.md) |  | [optional] [default to undefined]
+| Name                     | Type                                                                                               | Description | Notes                             |
+| ------------------------ | -------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **defaultHourlyAmount**  | **number**                                                                                         |             | [optional] [default to undefined] |
+| **commissionPercentage** | **number**                                                                                         |             | [optional] [default to undefined] |
+| **salaryMode**           | **string**                                                                                         |             | [optional] [default to undefined] |
+| **salaryByLevel**        | [**Array&lt;TeacherCommissionSettingSalaryByLevel&gt;**](TeacherCommissionSettingSalaryByLevel.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TeacherCommissionSetting } from './api';
+import { TeacherCommissionSetting } from "./api";
 
 const instance: TeacherCommissionSetting = {
-    defaultHourlyAmount,
-    commissionPercentage,
-    salaryMode,
-    salaryByLevel,
+  defaultHourlyAmount,
+  commissionPercentage,
+  salaryMode,
+  salaryByLevel,
 };
 ```
 

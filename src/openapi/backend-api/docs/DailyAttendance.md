@@ -1,29 +1,28 @@
 # DailyAttendance
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**day** | **string** |  | [default to '']
-**previous** | **string** |  | [default to '']
-**current** | **string** |  | [default to '']
-**absent** | **number** |  | [default to 0]
-**attendanceRate** | **number** |  | [default to 0]
-**attendanceRatePrevious** | **number** |  | [default to 0]
+| Name                       | Type       | Description | Notes           |
+| -------------------------- | ---------- | ----------- | --------------- |
+| **day**                    | **string** |             | [default to ''] |
+| **previous**               | **string** |             | [default to ''] |
+| **current**                | **string** |             | [default to ''] |
+| **absent**                 | **number** |             | [default to 0]  |
+| **attendanceRate**         | **number** |             | [default to 0]  |
+| **attendanceRatePrevious** | **number** |             | [default to 0]  |
 
 ## Example
 
 ```typescript
-import { DailyAttendance } from './api';
+import { DailyAttendance } from "./api";
 
 const instance: DailyAttendance = {
-    day,
-    previous,
-    current,
-    absent,
-    attendanceRate,
-    attendanceRatePrevious,
+  day,
+  previous,
+  current,
+  absent,
+  attendanceRate,
+  attendanceRatePrevious,
 };
 ```
 

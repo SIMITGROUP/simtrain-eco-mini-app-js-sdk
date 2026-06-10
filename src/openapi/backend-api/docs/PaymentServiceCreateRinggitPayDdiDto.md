@@ -1,21 +1,20 @@
 # PaymentServiceCreateRinggitPayDdiDto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**debitAmount** | **number** |  | [default to undefined]
-**debitDate** | **string** |  | [default to undefined]
+| Name            | Type       | Description | Notes                  |
+| --------------- | ---------- | ----------- | ---------------------- |
+| **debitAmount** | **number** |             | [default to undefined] |
+| **debitDate**   | **string** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { PaymentServiceCreateRinggitPayDdiDto } from './api';
+import { PaymentServiceCreateRinggitPayDdiDto } from "./api";
 
 const instance: PaymentServiceCreateRinggitPayDdiDto = {
-    debitAmount,
-    debitDate,
+  debitAmount,
+  debitDate,
 };
 ```
 

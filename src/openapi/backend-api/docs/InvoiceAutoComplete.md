@@ -1,31 +1,30 @@
 # InvoiceAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**invoiceDate** | **string** |  | [default to undefined]
-**student** | [**InvoiceStudent**](InvoiceStudent.md) |  | [default to undefined]
-**agent** | [**InvoiceAgent**](InvoiceAgent.md) |  | [optional] [default to undefined]
-**invoiceTotal** | **number** |  | [default to undefined]
+| Name             | Type                                    | Description | Notes                             |
+| ---------------- | --------------------------------------- | ----------- | --------------------------------- |
+| **\_id**         | **string**                              |             | [default to '']                   |
+| **code**         | **string**                              |             | [default to '']                   |
+| **label**        | **string**                              |             | [default to '']                   |
+| **invoiceDate**  | **string**                              |             | [default to undefined]            |
+| **student**      | [**InvoiceStudent**](InvoiceStudent.md) |             | [default to undefined]            |
+| **agent**        | [**InvoiceAgent**](InvoiceAgent.md)     |             | [optional] [default to undefined] |
+| **invoiceTotal** | **number**                              |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { InvoiceAutoComplete } from './api';
+import { InvoiceAutoComplete } from "./api";
 
 const instance: InvoiceAutoComplete = {
-    _id,
-    code,
-    label,
-    invoiceDate,
-    student,
-    agent,
-    invoiceTotal,
+  _id,
+  code,
+  label,
+  invoiceDate,
+  student,
+  agent,
+  invoiceTotal,
 };
 ```
 

@@ -1,21 +1,20 @@
 # RefundNotified
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**sent** | **boolean** |  | [optional] [default to undefined]
-**date** | **string** |  | [optional] [default to undefined]
+| Name     | Type        | Description | Notes                             |
+| -------- | ----------- | ----------- | --------------------------------- |
+| **sent** | **boolean** |             | [optional] [default to undefined] |
+| **date** | **string**  |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RefundNotified } from './api';
+import { RefundNotified } from "./api";
 
 const instance: RefundNotified = {
-    sent,
-    date,
+  sent,
+  date,
 };
 ```
 

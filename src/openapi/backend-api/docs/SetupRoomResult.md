@@ -1,23 +1,22 @@
 # SetupRoomResult
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total** | **number** |  | [default to undefined]
-**created** | **number** |  | [default to undefined]
-**skipped** | [**Array&lt;SetupRoomSkipGroup&gt;**](SetupRoomSkipGroup.md) |  | [default to undefined]
+| Name        | Type                                                         | Description | Notes                  |
+| ----------- | ------------------------------------------------------------ | ----------- | ---------------------- |
+| **total**   | **number**                                                   |             | [default to undefined] |
+| **created** | **number**                                                   |             | [default to undefined] |
+| **skipped** | [**Array&lt;SetupRoomSkipGroup&gt;**](SetupRoomSkipGroup.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupRoomResult } from './api';
+import { SetupRoomResult } from "./api";
 
 const instance: SetupRoomResult = {
-    total,
-    created,
-    skipped,
+  total,
+  created,
+  skipped,
 };
 ```
 

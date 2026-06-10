@@ -1,36 +1,34 @@
 # BRANCHApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**autoComplete**](#autocomplete) | **POST** /branch/autocomplete | |
-|[**runCreate**](#runcreate) | **POST** /branch | |
-|[**runCreateMany**](#runcreatemany) | **POST** /branch/bulk-create | |
-|[**runDefault**](#rundefault) | **GET** /branch | |
-|[**runDelete**](#rundelete) | **DELETE** /branch/{id} | |
-|[**runFindOne**](#runfindone) | **GET** /branch/{id} | |
-|[**runGetBranchOutstandingSetting**](#rungetbranchoutstandingsetting) | **GET** /branch-api/{id}/getOutstandingSetting | |
-|[**runGetPhoto**](#rungetphoto) | **GET** /branch-api/{id}/photo | |
-|[**runPatch**](#runpatch) | **PATCH** /branch/{id} | |
-|[**runPatchMany**](#runpatchmany) | **PATCH** /branch/bulk-patch | |
-|[**runSaveBranchOutstandingSetting**](#runsavebranchoutstandingsetting) | **POST** /branch-api/{id}/saveOutstandingSetting | |
-|[**runSearch**](#runsearch) | **POST** /branch/search | |
-|[**runUpdate**](#runupdate) | **PUT** /branch/{id} | |
-|[**runUploadPhoto**](#runuploadphoto) | **POST** /branch-api/{id}/photo | |
+| Method                                                                  | HTTP request                                     | Description |
+| ----------------------------------------------------------------------- | ------------------------------------------------ | ----------- |
+| [**autoComplete**](#autocomplete)                                       | **POST** /branch/autocomplete                    |             |
+| [**runCreate**](#runcreate)                                             | **POST** /branch                                 |             |
+| [**runCreateMany**](#runcreatemany)                                     | **POST** /branch/bulk-create                     |             |
+| [**runDefault**](#rundefault)                                           | **GET** /branch                                  |             |
+| [**runDelete**](#rundelete)                                             | **DELETE** /branch/{id}                          |             |
+| [**runFindOne**](#runfindone)                                           | **GET** /branch/{id}                             |             |
+| [**runGetBranchOutstandingSetting**](#rungetbranchoutstandingsetting)   | **GET** /branch-api/{id}/getOutstandingSetting   |             |
+| [**runGetPhoto**](#rungetphoto)                                         | **GET** /branch-api/{id}/photo                   |             |
+| [**runPatch**](#runpatch)                                               | **PATCH** /branch/{id}                           |             |
+| [**runPatchMany**](#runpatchmany)                                       | **PATCH** /branch/bulk-patch                     |             |
+| [**runSaveBranchOutstandingSetting**](#runsavebranchoutstandingsetting) | **POST** /branch-api/{id}/saveOutstandingSetting |             |
+| [**runSearch**](#runsearch)                                             | **POST** /branch/search                          |             |
+| [**runUpdate**](#runupdate)                                             | **PUT** /branch/{id}                             |             |
+| [**runUploadPhoto**](#runuploadphoto)                                   | **POST** /branch-api/{id}/photo                  |             |
 
 # **autoComplete**
+
 > Array<BranchAutoComplete> autoComplete(body)
 
-retrieve array of {_id, code, name}
+retrieve array of {\_id, code, name}
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
@@ -38,19 +36,15 @@ const apiInstance = new BRANCHApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(
-    keyword,
-    body
-);
+const { status, data } = await apiInstance.autoComplete(keyword, body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-| **keyword** | [**string**] |  | defaults to undefined|
-
+| Name        | Type         | Description | Notes                 |
+| ----------- | ------------ | ----------- | --------------------- |
+| **body**    | **object**   | Data        |                       |
+| **keyword** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -62,47 +56,40 @@ const { status, data } = await apiInstance.autoComplete(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-> Branch runCreate(branch)
 
+> Branch runCreate(branch)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration,
-    Branch
-} from './api';
+import { BRANCHApi, Configuration, Branch } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let branch: Branch; //Data
 
-const { status, data } = await apiInstance.runCreate(
-    branch
-);
+const { status, data } = await apiInstance.runCreate(branch);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **branch** | **Branch**| Data | |
-
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **branch** | **Branch** | Data        |       |
 
 ### Return type
 
@@ -114,47 +101,41 @@ const { status, data } = await apiInstance.runCreate(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-> Array<Branch> runCreateMany(branch)
 
+> Array<Branch> runCreateMany(branch)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let branch: Array<Branch>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(
-    branch
-);
+const { status, data } = await apiInstance.runCreateMany(branch);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **branch** | **Array<Branch>**| Data | |
-
+| Name       | Type              | Description | Notes |
+| ---------- | ----------------- | ----------- | ----- |
+| **branch** | **Array<Branch>** | Data        |       |
 
 ### Return type
 
@@ -166,20 +147,21 @@ const { status, data } = await apiInstance.runCreateMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
+
 > object runDefault()
 
 Run default behavior like say hello
@@ -187,10 +169,7 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
@@ -199,8 +178,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -212,46 +191,40 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Sample 200 response |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Sample 200 response | -                |
+| **500**     | Internal error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-> Branch runDelete()
 
+> Branch runDelete()
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runDelete(
-    id
-);
+const { status, data } = await apiInstance.runDelete(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -263,47 +236,41 @@ const { status, data } = await apiInstance.runDelete(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runFindOne**
-> Branch runFindOne()
 
+> Branch runFindOne()
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runFindOne(
-    id
-);
+const { status, data } = await apiInstance.runFindOne(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -315,47 +282,41 @@ const { status, data } = await apiInstance.runFindOne(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Founds |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | Founds             | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetBranchOutstandingSetting**
-> OutstandingSetting runGetBranchOutstandingSetting()
 
+> OutstandingSetting runGetBranchOutstandingSetting()
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runGetBranchOutstandingSetting(
-    id
-);
+const { status, data } = await apiInstance.runGetBranchOutstandingSetting(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -367,45 +328,39 @@ const { status, data } = await apiInstance.runGetBranchOutstandingSetting(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Get branch outstanding reminder settings |  -  |
+
+| Status code | Description                              | Response headers |
+| ----------- | ---------------------------------------- | ---------------- |
+| **200**     | Get branch outstanding reminder settings | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetPhoto**
-> File runGetPhoto()
 
+> File runGetPhoto()
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runGetPhoto(
-    id
-);
+const { status, data } = await apiInstance.runGetPhoto(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -417,29 +372,25 @@ const { status, data } = await apiInstance.runGetPhoto(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: image/png
-
+- **Content-Type**: Not defined
+- **Accept**: image/png
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Get Branch photo |  -  |
+
+| Status code | Description      | Response headers |
+| ----------- | ---------------- | ---------------- |
+| **200**     | Get Branch photo | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatch**
-> runPatch(branch)
 
+> runPatch(branch)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration,
-    Branch
-} from './api';
+import { BRANCHApi, Configuration, Branch } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
@@ -447,19 +398,15 @@ const apiInstance = new BRANCHApi(configuration);
 let id: string; // (default to undefined)
 let branch: Branch; //Data
 
-const { status, data } = await apiInstance.runPatch(
-    id,
-    branch
-);
+const { status, data } = await apiInstance.runPatch(id, branch);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **branch** | **Branch**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name       | Type         | Description | Notes                 |
+| ---------- | ------------ | ----------- | --------------------- |
+| **branch** | **Branch**   | Data        |                       |
+| **id**     | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -471,48 +418,41 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-> UpdateManyResponse runPatchMany(patchManyRequest)
 
+> UpdateManyResponse runPatchMany(patchManyRequest)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration,
-    PatchManyRequest
-} from './api';
+import { BRANCHApi, Configuration, PatchManyRequest } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(
-    patchManyRequest
-);
+const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **patchManyRequest** | **PatchManyRequest**| Data | |
-
+| Name                 | Type                 | Description | Notes |
+| -------------------- | -------------------- | ----------- | ----- |
+| **patchManyRequest** | **PatchManyRequest** | Data        |       |
 
 ### Return type
 
@@ -524,31 +464,27 @@ const { status, data } = await apiInstance.runPatchMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSaveBranchOutstandingSetting**
-> string runSaveBranchOutstandingSetting(outstandingSettingResponse)
 
+> string runSaveBranchOutstandingSetting(outstandingSettingResponse)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration,
-    OutstandingSettingResponse
-} from './api';
+import { BRANCHApi, Configuration, OutstandingSettingResponse } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
@@ -557,18 +493,17 @@ let id: string; // (default to undefined)
 let outstandingSettingResponse: OutstandingSettingResponse; //Request Body
 
 const { status, data } = await apiInstance.runSaveBranchOutstandingSetting(
-    id,
-    outstandingSettingResponse
+  id,
+  outstandingSettingResponse
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **outstandingSettingResponse** | **OutstandingSettingResponse**| Request Body | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name                           | Type                           | Description  | Notes                 |
+| ------------------------------ | ------------------------------ | ------------ | --------------------- |
+| **outstandingSettingResponse** | **OutstandingSettingResponse** | Request Body |                       |
+| **id**                         | [**string**]                   |              | defaults to undefined |
 
 ### Return type
 
@@ -580,45 +515,39 @@ const { status, data } = await apiInstance.runSaveBranchOutstandingSetting(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Save branch outstanding reminder settings |  -  |
+
+| Status code | Description                               | Response headers |
+| ----------- | ----------------------------------------- | ---------------- |
+| **200**     | Save branch outstanding reminder settings | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-> Array<Branch> runSearch(body)
 
+> Array<Branch> runSearch(body)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration
-} from './api';
+import { BRANCHApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(
-    body
-);
+const { status, data } = await apiInstance.runSearch(body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** | Data        |       |
 
 ### Return type
 
@@ -630,31 +559,27 @@ const { status, data } = await apiInstance.runSearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-> runUpdate(branch)
 
+> runUpdate(branch)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration,
-    Branch
-} from './api';
+import { BRANCHApi, Configuration, Branch } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
@@ -662,19 +587,15 @@ const apiInstance = new BRANCHApi(configuration);
 let id: string; // (default to undefined)
 let branch: Branch; //Data
 
-const { status, data } = await apiInstance.runUpdate(
-    id,
-    branch
-);
+const { status, data } = await apiInstance.runUpdate(id, branch);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **branch** | **Branch**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name       | Type         | Description | Notes                 |
+| ---------- | ------------ | ----------- | --------------------- |
+| **branch** | **Branch**   | Data        |                       |
+| **id**     | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -686,31 +607,27 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUploadPhoto**
-> string runUploadPhoto(uploadPhoto)
 
+> string runUploadPhoto(uploadPhoto)
 
 ### Example
 
 ```typescript
-import {
-    BRANCHApi,
-    Configuration,
-    UploadPhoto
-} from './api';
+import { BRANCHApi, Configuration, UploadPhoto } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new BRANCHApi(configuration);
@@ -718,19 +635,15 @@ const apiInstance = new BRANCHApi(configuration);
 let id: string; // (default to undefined)
 let uploadPhoto: UploadPhoto; //Request Body
 
-const { status, data } = await apiInstance.runUploadPhoto(
-    id,
-    uploadPhoto
-);
+const { status, data } = await apiInstance.runUploadPhoto(id, uploadPhoto);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **uploadPhoto** | **UploadPhoto**| Request Body | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name            | Type            | Description  | Notes                 |
+| --------------- | --------------- | ------------ | --------------------- |
+| **uploadPhoto** | **UploadPhoto** | Request Body |                       |
+| **id**          | [**string**]    |              | defaults to undefined |
 
 ### Return type
 
@@ -742,14 +655,13 @@ const { status, data } = await apiInstance.runUploadPhoto(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Upload Branch photo |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Upload Branch photo | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

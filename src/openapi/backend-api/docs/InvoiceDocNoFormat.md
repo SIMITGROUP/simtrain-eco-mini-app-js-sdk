@@ -1,21 +1,20 @@
 # InvoiceDocNoFormat
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { InvoiceDocNoFormat } from './api';
+import { InvoiceDocNoFormat } from "./api";
 
 const instance: InvoiceDocNoFormat = {
-    _id,
-    label,
+  _id,
+  label,
 };
 ```
 

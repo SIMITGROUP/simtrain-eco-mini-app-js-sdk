@@ -1,21 +1,20 @@
 # TenantInvoiceDocNoFormat
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TenantInvoiceDocNoFormat } from './api';
+import { TenantInvoiceDocNoFormat } from "./api";
 
 const instance: TenantInvoiceDocNoFormat = {
-    _id,
-    label,
+  _id,
+  label,
 };
 ```
 

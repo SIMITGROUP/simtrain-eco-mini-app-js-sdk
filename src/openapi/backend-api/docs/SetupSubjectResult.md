@@ -1,23 +1,22 @@
 # SetupSubjectResult
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total** | **number** |  | [default to undefined]
-**created** | **number** |  | [default to undefined]
-**skipped** | [**Array&lt;SetupSubjectSkipGroup&gt;**](SetupSubjectSkipGroup.md) |  | [default to undefined]
+| Name        | Type                                                               | Description | Notes                  |
+| ----------- | ------------------------------------------------------------------ | ----------- | ---------------------- |
+| **total**   | **number**                                                         |             | [default to undefined] |
+| **created** | **number**                                                         |             | [default to undefined] |
+| **skipped** | [**Array&lt;SetupSubjectSkipGroup&gt;**](SetupSubjectSkipGroup.md) |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SetupSubjectResult } from './api';
+import { SetupSubjectResult } from "./api";
 
 const instance: SetupSubjectResult = {
-    total,
-    created,
-    skipped,
+  total,
+  created,
+  skipped,
 };
 ```
 

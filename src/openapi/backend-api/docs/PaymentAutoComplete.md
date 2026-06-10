@@ -1,31 +1,30 @@
 # PaymentAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**paymentDate** | **string** |  | [default to undefined]
-**student** | [**PaymentStudent**](PaymentStudent.md) |  | [default to undefined]
-**agent** | [**PaymentAgent**](PaymentAgent.md) |  | [optional] [default to undefined]
-**paymentTotal** | **number** |  | [default to undefined]
+| Name             | Type                                    | Description | Notes                             |
+| ---------------- | --------------------------------------- | ----------- | --------------------------------- |
+| **\_id**         | **string**                              |             | [default to '']                   |
+| **code**         | **string**                              |             | [default to '']                   |
+| **label**        | **string**                              |             | [default to '']                   |
+| **paymentDate**  | **string**                              |             | [default to undefined]            |
+| **student**      | [**PaymentStudent**](PaymentStudent.md) |             | [default to undefined]            |
+| **agent**        | [**PaymentAgent**](PaymentAgent.md)     |             | [optional] [default to undefined] |
+| **paymentTotal** | **number**                              |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { PaymentAutoComplete } from './api';
+import { PaymentAutoComplete } from "./api";
 
 const instance: PaymentAutoComplete = {
-    _id,
-    code,
-    label,
-    paymentDate,
-    student,
-    agent,
-    paymentTotal,
+  _id,
+  code,
+  label,
+  paymentDate,
+  student,
+  agent,
+  paymentTotal,
 };
 ```
 

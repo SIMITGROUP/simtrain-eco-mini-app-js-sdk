@@ -1,55 +1,54 @@
 # ParentWithRelation
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**created** | **string** |  | [optional] [default to undefined]
-**updated** | **string** |  | [optional] [default to undefined]
-**createdBy** | **string** |  | [optional] [default to undefined]
-**updatedBy** | **string** |  | [optional] [default to undefined]
-**tenantId** | **number** |  | [optional] [default to undefined]
-**orgId** | **number** |  | [optional] [default to undefined]
-**branchId** | **number** |  | [optional] [default to undefined]
-**occupation** | **string** |  | [optional] [default to undefined]
-**parentName** | **string** |  | [default to undefined]
-**email** | **string** |  | [default to undefined]
-**mobileNo** | **string** |  | [default to undefined]
-**identityNo** | **string** |  | [optional] [default to undefined]
-**tinNo** | **string** |  | [optional] [default to undefined]
-**gender** | **string** |  | [optional] [default to undefined]
-**active** | **boolean** |  | [optional] [default to undefined]
-**description** | **string** |  | [optional] [default to undefined]
-**more** | **object** |  | [optional] [default to undefined]
-**_student** | [**Array&lt;Student&gt;**](Student.md) |  | [optional] [default to undefined]
+| Name            | Type                                   | Description | Notes                             |
+| --------------- | -------------------------------------- | ----------- | --------------------------------- |
+| **\_id**        | **string**                             |             | [optional] [default to undefined] |
+| **created**     | **string**                             |             | [optional] [default to undefined] |
+| **updated**     | **string**                             |             | [optional] [default to undefined] |
+| **createdBy**   | **string**                             |             | [optional] [default to undefined] |
+| **updatedBy**   | **string**                             |             | [optional] [default to undefined] |
+| **tenantId**    | **number**                             |             | [optional] [default to undefined] |
+| **orgId**       | **number**                             |             | [optional] [default to undefined] |
+| **branchId**    | **number**                             |             | [optional] [default to undefined] |
+| **occupation**  | **string**                             |             | [optional] [default to undefined] |
+| **parentName**  | **string**                             |             | [default to undefined]            |
+| **email**       | **string**                             |             | [default to undefined]            |
+| **mobileNo**    | **string**                             |             | [default to undefined]            |
+| **identityNo**  | **string**                             |             | [optional] [default to undefined] |
+| **tinNo**       | **string**                             |             | [optional] [default to undefined] |
+| **gender**      | **string**                             |             | [optional] [default to undefined] |
+| **active**      | **boolean**                            |             | [optional] [default to undefined] |
+| **description** | **string**                             |             | [optional] [default to undefined] |
+| **more**        | **object**                             |             | [optional] [default to undefined] |
+| **\_student**   | [**Array&lt;Student&gt;**](Student.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { ParentWithRelation } from './api';
+import { ParentWithRelation } from "./api";
 
 const instance: ParentWithRelation = {
-    _id,
-    created,
-    updated,
-    createdBy,
-    updatedBy,
-    tenantId,
-    orgId,
-    branchId,
-    occupation,
-    parentName,
-    email,
-    mobileNo,
-    identityNo,
-    tinNo,
-    gender,
-    active,
-    description,
-    more,
-    _student,
+  _id,
+  created,
+  updated,
+  createdBy,
+  updatedBy,
+  tenantId,
+  orgId,
+  branchId,
+  occupation,
+  parentName,
+  email,
+  mobileNo,
+  identityNo,
+  tinNo,
+  gender,
+  active,
+  description,
+  more,
+  _student,
 };
 ```
 

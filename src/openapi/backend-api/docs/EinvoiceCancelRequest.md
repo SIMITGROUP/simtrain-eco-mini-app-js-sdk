@@ -1,23 +1,22 @@
 # EinvoiceCancelRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **string** |  | [default to undefined]
-**documentType** | **string** |  | [default to undefined]
-**reason** | **string** |  | [default to undefined]
+| Name             | Type       | Description | Notes                  |
+| ---------------- | ---------- | ----------- | ---------------------- |
+| **id**           | **string** |             | [default to undefined] |
+| **documentType** | **string** |             | [default to undefined] |
+| **reason**       | **string** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { EinvoiceCancelRequest } from './api';
+import { EinvoiceCancelRequest } from "./api";
 
 const instance: EinvoiceCancelRequest = {
-    id,
-    documentType,
-    reason,
+  id,
+  documentType,
+  reason,
 };
 ```
 

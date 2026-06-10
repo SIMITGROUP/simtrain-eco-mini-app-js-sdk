@@ -1,23 +1,22 @@
 # RegTenant
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**tenantName** | **string** |  | [default to '']
-**timeZone** | **string** |  | [default to '']
-**utcOffset** | **number** |  | [default to undefined]
+| Name           | Type       | Description | Notes                  |
+| -------------- | ---------- | ----------- | ---------------------- |
+| **tenantName** | **string** |             | [default to '']        |
+| **timeZone**   | **string** |             | [default to '']        |
+| **utcOffset**  | **number** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { RegTenant } from './api';
+import { RegTenant } from "./api";
 
 const instance: RegTenant = {
-    tenantName,
-    timeZone,
-    utcOffset,
+  tenantName,
+  timeZone,
+  utcOffset,
 };
 ```
 

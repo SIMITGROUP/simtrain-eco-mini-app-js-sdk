@@ -1,31 +1,30 @@
 # MobileAppUserTokens
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**messagingToken** | **string** |  | [optional] [default to undefined]
-**appType** | **string** |  | [optional] [default to undefined]
-**created** | **string** |  | [optional] [default to undefined]
-**updated** | **string** |  | [optional] [default to undefined]
-**createdBy** | **string** |  | [optional] [default to undefined]
-**updatedBy** | **string** |  | [optional] [default to undefined]
-**_id** | **string** |  | [optional] [default to undefined]
+| Name               | Type       | Description | Notes                             |
+| ------------------ | ---------- | ----------- | --------------------------------- |
+| **messagingToken** | **string** |             | [optional] [default to undefined] |
+| **appType**        | **string** |             | [optional] [default to undefined] |
+| **created**        | **string** |             | [optional] [default to undefined] |
+| **updated**        | **string** |             | [optional] [default to undefined] |
+| **createdBy**      | **string** |             | [optional] [default to undefined] |
+| **updatedBy**      | **string** |             | [optional] [default to undefined] |
+| **\_id**           | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { MobileAppUserTokens } from './api';
+import { MobileAppUserTokens } from "./api";
 
 const instance: MobileAppUserTokens = {
-    messagingToken,
-    appType,
-    created,
-    updated,
-    createdBy,
-    updatedBy,
-    _id,
+  messagingToken,
+  appType,
+  created,
+  updated,
+  createdBy,
+  updatedBy,
+  _id,
 };
 ```
 

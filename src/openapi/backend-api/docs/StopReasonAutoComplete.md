@@ -1,23 +1,22 @@
 # StopReasonAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
+| Name      | Type       | Description | Notes           |
+| --------- | ---------- | ----------- | --------------- |
+| **\_id**  | **string** |             | [default to ''] |
+| **code**  | **string** |             | [default to ''] |
+| **label** | **string** |             | [default to ''] |
 
 ## Example
 
 ```typescript
-import { StopReasonAutoComplete } from './api';
+import { StopReasonAutoComplete } from "./api";
 
 const instance: StopReasonAutoComplete = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

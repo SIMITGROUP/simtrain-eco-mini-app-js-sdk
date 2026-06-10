@@ -1,21 +1,20 @@
 # UploadPhoto
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**filename** | **string** |  | [optional] [default to undefined]
-**base64Image** | **string** |  | [default to undefined]
+| Name            | Type       | Description | Notes                             |
+| --------------- | ---------- | ----------- | --------------------------------- |
+| **filename**    | **string** |             | [optional] [default to undefined] |
+| **base64Image** | **string** |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { UploadPhoto } from './api';
+import { UploadPhoto } from "./api";
 
 const instance: UploadPhoto = {
-    filename,
-    base64Image,
+  filename,
+  base64Image,
 };
 ```
 

@@ -1,25 +1,24 @@
 # CategoryAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**categoryType** | **string** |  | [optional] [default to undefined]
+| Name             | Type       | Description | Notes                             |
+| ---------------- | ---------- | ----------- | --------------------------------- |
+| **\_id**         | **string** |             | [default to '']                   |
+| **code**         | **string** |             | [default to '']                   |
+| **label**        | **string** |             | [default to '']                   |
+| **categoryType** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { CategoryAutoComplete } from './api';
+import { CategoryAutoComplete } from "./api";
 
 const instance: CategoryAutoComplete = {
-    _id,
-    code,
-    label,
-    categoryType,
+  _id,
+  code,
+  label,
+  categoryType,
 };
 ```
 

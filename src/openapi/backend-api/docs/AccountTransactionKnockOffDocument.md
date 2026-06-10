@@ -1,23 +1,22 @@
 # AccountTransactionKnockOffDocument
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **code**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { AccountTransactionKnockOffDocument } from './api';
+import { AccountTransactionKnockOffDocument } from "./api";
 
 const instance: AccountTransactionKnockOffDocument = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

@@ -1,23 +1,22 @@
 # PunchCardTeacher
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **code**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { PunchCardTeacher } from './api';
+import { PunchCardTeacher } from "./api";
 
 const instance: PunchCardTeacher = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

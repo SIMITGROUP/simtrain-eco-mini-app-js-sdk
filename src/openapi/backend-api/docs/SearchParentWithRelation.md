@@ -1,19 +1,18 @@
 # SearchParentWithRelation
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**student** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |  | [optional] [default to undefined]
+| Name        | Type                                                            | Description | Notes                             |
+| ----------- | --------------------------------------------------------------- | ----------- | --------------------------------- |
+| **student** | [**SearchWithRelationRelation**](SearchWithRelationRelation.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SearchParentWithRelation } from './api';
+import { SearchParentWithRelation } from "./api";
 
 const instance: SearchParentWithRelation = {
-    student,
+  student,
 };
 ```
 

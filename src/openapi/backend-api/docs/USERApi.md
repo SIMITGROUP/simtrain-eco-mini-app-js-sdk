@@ -1,36 +1,34 @@
 # USERApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**autoComplete**](#autocomplete) | **POST** /user/autocomplete | |
-|[**runCreate**](#runcreate) | **POST** /user | |
-|[**runCreateMany**](#runcreatemany) | **POST** /user/bulk-create | |
-|[**runDefault**](#rundefault) | **GET** /user | |
-|[**runDelete**](#rundelete) | **DELETE** /user/{id} | |
-|[**runFindOne**](#runfindone) | **GET** /user/{id} | |
-|[**runGetPermission**](#rungetpermission) | **GET** /user-api/{id}/permission | |
-|[**runGetPhoto**](#rungetphoto) | **GET** /user-api/{id}/photo | |
-|[**runPatch**](#runpatch) | **PATCH** /user/{id} | |
-|[**runPatchMany**](#runpatchmany) | **PATCH** /user/bulk-patch | |
-|[**runSearch**](#runsearch) | **POST** /user/search | |
-|[**runUpdate**](#runupdate) | **PUT** /user/{id} | |
-|[**runUpdatePermission**](#runupdatepermission) | **PUT** /user-api/{id}/permission | |
-|[**runUploadPhoto**](#runuploadphoto) | **POST** /user-api/{id}/photo | |
+| Method                                          | HTTP request                      | Description |
+| ----------------------------------------------- | --------------------------------- | ----------- |
+| [**autoComplete**](#autocomplete)               | **POST** /user/autocomplete       |             |
+| [**runCreate**](#runcreate)                     | **POST** /user                    |             |
+| [**runCreateMany**](#runcreatemany)             | **POST** /user/bulk-create        |             |
+| [**runDefault**](#rundefault)                   | **GET** /user                     |             |
+| [**runDelete**](#rundelete)                     | **DELETE** /user/{id}             |             |
+| [**runFindOne**](#runfindone)                   | **GET** /user/{id}                |             |
+| [**runGetPermission**](#rungetpermission)       | **GET** /user-api/{id}/permission |             |
+| [**runGetPhoto**](#rungetphoto)                 | **GET** /user-api/{id}/photo      |             |
+| [**runPatch**](#runpatch)                       | **PATCH** /user/{id}              |             |
+| [**runPatchMany**](#runpatchmany)               | **PATCH** /user/bulk-patch        |             |
+| [**runSearch**](#runsearch)                     | **POST** /user/search             |             |
+| [**runUpdate**](#runupdate)                     | **PUT** /user/{id}                |             |
+| [**runUpdatePermission**](#runupdatepermission) | **PUT** /user-api/{id}/permission |             |
+| [**runUploadPhoto**](#runuploadphoto)           | **POST** /user-api/{id}/photo     |             |
 
 # **autoComplete**
+
 > Array<UserAutoComplete> autoComplete(body)
 
-retrieve array of {_id, code, name}
+retrieve array of {\_id, code, name}
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
@@ -38,19 +36,15 @@ const apiInstance = new USERApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(
-    keyword,
-    body
-);
+const { status, data } = await apiInstance.autoComplete(keyword, body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-| **keyword** | [**string**] |  | defaults to undefined|
-
+| Name        | Type         | Description | Notes                 |
+| ----------- | ------------ | ----------- | --------------------- |
+| **body**    | **object**   | Data        |                       |
+| **keyword** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -62,47 +56,40 @@ const { status, data } = await apiInstance.autoComplete(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-> User runCreate(user)
 
+> User runCreate(user)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration,
-    User
-} from './api';
+import { USERApi, Configuration, User } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let user: User; //Data
 
-const { status, data } = await apiInstance.runCreate(
-    user
-);
+const { status, data } = await apiInstance.runCreate(user);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **user** | **User**| Data | |
-
+| Name     | Type     | Description | Notes |
+| -------- | -------- | ----------- | ----- |
+| **user** | **User** | Data        |       |
 
 ### Return type
 
@@ -114,47 +101,41 @@ const { status, data } = await apiInstance.runCreate(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-> Array<User> runCreateMany(user)
 
+> Array<User> runCreateMany(user)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let user: Array<User>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(
-    user
-);
+const { status, data } = await apiInstance.runCreateMany(user);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **user** | **Array<User>**| Data | |
-
+| Name     | Type            | Description | Notes |
+| -------- | --------------- | ----------- | ----- |
+| **user** | **Array<User>** | Data        |       |
 
 ### Return type
 
@@ -166,20 +147,21 @@ const { status, data } = await apiInstance.runCreateMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
+
 > object runDefault()
 
 Run default behavior like say hello
@@ -187,10 +169,7 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
@@ -199,8 +178,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -212,46 +191,40 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Sample 200 response |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Sample 200 response | -                |
+| **500**     | Internal error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-> User runDelete()
 
+> User runDelete()
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runDelete(
-    id
-);
+const { status, data } = await apiInstance.runDelete(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -263,47 +236,41 @@ const { status, data } = await apiInstance.runDelete(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runFindOne**
-> User runFindOne()
 
+> User runFindOne()
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runFindOne(
-    id
-);
+const { status, data } = await apiInstance.runFindOne(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -315,47 +282,41 @@ const { status, data } = await apiInstance.runFindOne(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Founds |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | Founds             | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetPermission**
-> Array<UserPermission> runGetPermission()
 
+> Array<UserPermission> runGetPermission()
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runGetPermission(
-    id
-);
+const { status, data } = await apiInstance.runGetPermission(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -367,45 +328,39 @@ const { status, data } = await apiInstance.runGetPermission(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Get user permission |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Get user permission | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetPhoto**
-> File runGetPhoto()
 
+> File runGetPhoto()
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runGetPhoto(
-    id
-);
+const { status, data } = await apiInstance.runGetPhoto(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -417,29 +372,25 @@ const { status, data } = await apiInstance.runGetPhoto(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: image/png
-
+- **Content-Type**: Not defined
+- **Accept**: image/png
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Get User photo |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Get User photo | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatch**
-> runPatch(user)
 
+> runPatch(user)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration,
-    User
-} from './api';
+import { USERApi, Configuration, User } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
@@ -447,19 +398,15 @@ const apiInstance = new USERApi(configuration);
 let id: string; // (default to undefined)
 let user: User; //Data
 
-const { status, data } = await apiInstance.runPatch(
-    id,
-    user
-);
+const { status, data } = await apiInstance.runPatch(id, user);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **user** | **User**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name     | Type         | Description | Notes                 |
+| -------- | ------------ | ----------- | --------------------- |
+| **user** | **User**     | Data        |                       |
+| **id**   | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -471,48 +418,41 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-> UpdateManyResponse runPatchMany(patchManyRequest)
 
+> UpdateManyResponse runPatchMany(patchManyRequest)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration,
-    PatchManyRequest
-} from './api';
+import { USERApi, Configuration, PatchManyRequest } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(
-    patchManyRequest
-);
+const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **patchManyRequest** | **PatchManyRequest**| Data | |
-
+| Name                 | Type                 | Description | Notes |
+| -------------------- | -------------------- | ----------- | ----- |
+| **patchManyRequest** | **PatchManyRequest** | Data        |       |
 
 ### Return type
 
@@ -524,47 +464,41 @@ const { status, data } = await apiInstance.runPatchMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-> Array<User> runSearch(body)
 
+> Array<User> runSearch(body)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(
-    body
-);
+const { status, data } = await apiInstance.runSearch(body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** | Data        |       |
 
 ### Return type
 
@@ -576,31 +510,27 @@ const { status, data } = await apiInstance.runSearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-> runUpdate(user)
 
+> runUpdate(user)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration,
-    User
-} from './api';
+import { USERApi, Configuration, User } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
@@ -608,19 +538,15 @@ const apiInstance = new USERApi(configuration);
 let id: string; // (default to undefined)
 let user: User; //Data
 
-const { status, data } = await apiInstance.runUpdate(
-    id,
-    user
-);
+const { status, data } = await apiInstance.runUpdate(id, user);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **user** | **User**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name     | Type         | Description | Notes                 |
+| -------- | ------------ | ----------- | --------------------- |
+| **user** | **User**     | Data        |                       |
+| **id**   | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -632,30 +558,27 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdatePermission**
-> string runUpdatePermission(userPermission)
 
+> string runUpdatePermission(userPermission)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration
-} from './api';
+import { USERApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
@@ -664,18 +587,17 @@ let id: string; // (default to undefined)
 let userPermission: Array<UserPermission>; //Request Body
 
 const { status, data } = await apiInstance.runUpdatePermission(
-    id,
-    userPermission
+  id,
+  userPermission
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **userPermission** | **Array<UserPermission>**| Request Body | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name               | Type                      | Description  | Notes                 |
+| ------------------ | ------------------------- | ------------ | --------------------- |
+| **userPermission** | **Array<UserPermission>** | Request Body |                       |
+| **id**             | [**string**]              |              | defaults to undefined |
 
 ### Return type
 
@@ -687,29 +609,25 @@ const { status, data } = await apiInstance.runUpdatePermission(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | set user permission |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | set user permission | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUploadPhoto**
-> string runUploadPhoto(uploadPhoto)
 
+> string runUploadPhoto(uploadPhoto)
 
 ### Example
 
 ```typescript
-import {
-    USERApi,
-    Configuration,
-    UploadPhoto
-} from './api';
+import { USERApi, Configuration, UploadPhoto } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new USERApi(configuration);
@@ -717,19 +635,15 @@ const apiInstance = new USERApi(configuration);
 let id: string; // (default to undefined)
 let uploadPhoto: UploadPhoto; //Request Body
 
-const { status, data } = await apiInstance.runUploadPhoto(
-    id,
-    uploadPhoto
-);
+const { status, data } = await apiInstance.runUploadPhoto(id, uploadPhoto);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **uploadPhoto** | **UploadPhoto**| Request Body | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name            | Type            | Description  | Notes                 |
+| --------------- | --------------- | ------------ | --------------------- |
+| **uploadPhoto** | **UploadPhoto** | Request Body |                       |
+| **id**          | [**string**]    |              | defaults to undefined |
 
 ### Return type
 
@@ -741,14 +655,13 @@ const { status, data } = await apiInstance.runUploadPhoto(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Upload User photo |  -  |
+
+| Status code | Description       | Response headers |
+| ----------- | ----------------- | ---------------- |
+| **200**     | Upload User photo | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

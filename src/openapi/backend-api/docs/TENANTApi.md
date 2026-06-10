@@ -1,36 +1,34 @@
 # TENANTApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**autoComplete**](#autocomplete) | **POST** /tenant/autocomplete | |
-|[**runCreate**](#runcreate) | **POST** /tenant | |
-|[**runCreateMany**](#runcreatemany) | **POST** /tenant/bulk-create | |
-|[**runDefault**](#rundefault) | **GET** /tenant | |
-|[**runDelete**](#rundelete) | **DELETE** /tenant/{id} | |
-|[**runFindOne**](#runfindone) | **GET** /tenant/{id} | |
-|[**runGetOutstandingSetting**](#rungetoutstandingsetting) | **GET** /tenant-api/{id}/getOutstandingSetting | |
-|[**runGetResourceUsage**](#rungetresourceusage) | **GET** /tenant-api/resource-usages | |
-|[**runPatch**](#runpatch) | **PATCH** /tenant/{id} | |
-|[**runPatchMany**](#runpatchmany) | **PATCH** /tenant/bulk-patch | |
-|[**runSaveBillingData**](#runsavebillingdata) | **POST** /tenant-api/save-billing-data | |
-|[**runSaveOutstandingSetting**](#runsaveoutstandingsetting) | **POST** /tenant-api/{id}/saveOutstandingSetting | |
-|[**runSearch**](#runsearch) | **POST** /tenant/search | |
-|[**runUpdate**](#runupdate) | **PUT** /tenant/{id} | |
+| Method                                                      | HTTP request                                     | Description |
+| ----------------------------------------------------------- | ------------------------------------------------ | ----------- |
+| [**autoComplete**](#autocomplete)                           | **POST** /tenant/autocomplete                    |             |
+| [**runCreate**](#runcreate)                                 | **POST** /tenant                                 |             |
+| [**runCreateMany**](#runcreatemany)                         | **POST** /tenant/bulk-create                     |             |
+| [**runDefault**](#rundefault)                               | **GET** /tenant                                  |             |
+| [**runDelete**](#rundelete)                                 | **DELETE** /tenant/{id}                          |             |
+| [**runFindOne**](#runfindone)                               | **GET** /tenant/{id}                             |             |
+| [**runGetOutstandingSetting**](#rungetoutstandingsetting)   | **GET** /tenant-api/{id}/getOutstandingSetting   |             |
+| [**runGetResourceUsage**](#rungetresourceusage)             | **GET** /tenant-api/resource-usages              |             |
+| [**runPatch**](#runpatch)                                   | **PATCH** /tenant/{id}                           |             |
+| [**runPatchMany**](#runpatchmany)                           | **PATCH** /tenant/bulk-patch                     |             |
+| [**runSaveBillingData**](#runsavebillingdata)               | **POST** /tenant-api/save-billing-data           |             |
+| [**runSaveOutstandingSetting**](#runsaveoutstandingsetting) | **POST** /tenant-api/{id}/saveOutstandingSetting |             |
+| [**runSearch**](#runsearch)                                 | **POST** /tenant/search                          |             |
+| [**runUpdate**](#runupdate)                                 | **PUT** /tenant/{id}                             |             |
 
 # **autoComplete**
+
 > Array<TenantAutoComplete> autoComplete(body)
 
-retrieve array of {_id, code, name}
+retrieve array of {\_id, code, name}
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
@@ -38,19 +36,15 @@ const apiInstance = new TENANTApi(configuration);
 let keyword: string; // (default to undefined)
 let body: object; //Data
 
-const { status, data } = await apiInstance.autoComplete(
-    keyword,
-    body
-);
+const { status, data } = await apiInstance.autoComplete(keyword, body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-| **keyword** | [**string**] |  | defaults to undefined|
-
+| Name        | Type         | Description | Notes                 |
+| ----------- | ------------ | ----------- | --------------------- |
+| **body**    | **object**   | Data        |                       |
+| **keyword** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -62,47 +56,40 @@ const { status, data } = await apiInstance.autoComplete(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreate**
-> Tenant runCreate(tenant)
 
+> Tenant runCreate(tenant)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration,
-    Tenant
-} from './api';
+import { TENANTApi, Configuration, Tenant } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let tenant: Tenant; //Data
 
-const { status, data } = await apiInstance.runCreate(
-    tenant
-);
+const { status, data } = await apiInstance.runCreate(tenant);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tenant** | **Tenant**| Data | |
-
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **tenant** | **Tenant** | Data        |       |
 
 ### Return type
 
@@ -114,47 +101,41 @@ const { status, data } = await apiInstance.runCreate(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runCreateMany**
-> Array<Tenant> runCreateMany(tenant)
 
+> Array<Tenant> runCreateMany(tenant)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let tenant: Array<Tenant>; //Data
 
-const { status, data } = await apiInstance.runCreateMany(
-    tenant
-);
+const { status, data } = await apiInstance.runCreateMany(tenant);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tenant** | **Array<Tenant>**| Data | |
-
+| Name       | Type              | Description | Notes |
+| ---------- | ----------------- | ----------- | ----- |
+| **tenant** | **Array<Tenant>** | Data        |       |
 
 ### Return type
 
@@ -166,20 +147,21 @@ const { status, data } = await apiInstance.runCreateMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**201** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **201**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDefault**
+
 > object runDefault()
 
 Run default behavior like say hello
@@ -187,10 +169,7 @@ Run default behavior like say hello
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
@@ -199,8 +178,8 @@ const { status, data } = await apiInstance.runDefault();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -212,46 +191,40 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Sample 200 response |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description         | Response headers |
+| ----------- | ------------------- | ---------------- |
+| **200**     | Sample 200 response | -                |
+| **500**     | Internal error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runDelete**
-> Tenant runDelete()
 
+> Tenant runDelete()
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runDelete(
-    id
-);
+const { status, data } = await apiInstance.runDelete(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -263,47 +236,41 @@ const { status, data } = await apiInstance.runDelete(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runFindOne**
-> Tenant runFindOne()
 
+> Tenant runFindOne()
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runFindOne(
-    id
-);
+const { status, data } = await apiInstance.runFindOne(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -315,47 +282,41 @@ const { status, data } = await apiInstance.runFindOne(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Founds |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | Founds             | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetOutstandingSetting**
-> OutstandingSetting runGetOutstandingSetting()
 
+> OutstandingSetting runGetOutstandingSetting()
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let id: string; // (default to undefined)
 
-const { status, data } = await apiInstance.runGetOutstandingSetting(
-    id
-);
+const { status, data } = await apiInstance.runGetOutstandingSetting(id);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name   | Type         | Description | Notes                 |
+| ------ | ------------ | ----------- | --------------------- |
+| **id** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -367,28 +328,25 @@ const { status, data } = await apiInstance.runGetOutstandingSetting(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Get outstanding invoice |  -  |
+
+| Status code | Description             | Response headers |
+| ----------- | ----------------------- | ---------------- |
+| **200**     | Get outstanding invoice | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetResourceUsage**
-> TenantResourceUsage runGetResourceUsage()
 
+> TenantResourceUsage runGetResourceUsage()
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
@@ -397,8 +355,8 @@ const { status, data } = await apiInstance.runGetResourceUsage();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -410,29 +368,25 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Get resource usage info |  -  |
+
+| Status code | Description             | Response headers |
+| ----------- | ----------------------- | ---------------- |
+| **200**     | Get resource usage info | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatch**
-> runPatch(tenant)
 
+> runPatch(tenant)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration,
-    Tenant
-} from './api';
+import { TENANTApi, Configuration, Tenant } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
@@ -440,19 +394,15 @@ const apiInstance = new TENANTApi(configuration);
 let id: string; // (default to undefined)
 let tenant: Tenant; //Data
 
-const { status, data } = await apiInstance.runPatch(
-    id,
-    tenant
-);
+const { status, data } = await apiInstance.runPatch(id, tenant);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tenant** | **Tenant**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name       | Type         | Description | Notes                 |
+| ---------- | ------------ | ----------- | --------------------- |
+| **tenant** | **Tenant**   | Data        |                       |
+| **id**     | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -464,48 +414,41 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runPatchMany**
-> UpdateManyResponse runPatchMany(patchManyRequest)
 
+> UpdateManyResponse runPatchMany(patchManyRequest)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration,
-    PatchManyRequest
-} from './api';
+import { TENANTApi, Configuration, PatchManyRequest } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let patchManyRequest: PatchManyRequest; //Data
 
-const { status, data } = await apiInstance.runPatchMany(
-    patchManyRequest
-);
+const { status, data } = await apiInstance.runPatchMany(patchManyRequest);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **patchManyRequest** | **PatchManyRequest**| Data | |
-
+| Name                 | Type                 | Description | Notes |
+| -------------------- | -------------------- | ----------- | ----- |
+| **patchManyRequest** | **PatchManyRequest** | Data        |       |
 
 ### Return type
 
@@ -517,48 +460,41 @@ const { status, data } = await apiInstance.runPatchMany(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSaveBillingData**
-> TenantCompany runSaveBillingData(tenantCompany)
 
+> TenantCompany runSaveBillingData(tenantCompany)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration,
-    TenantCompany
-} from './api';
+import { TENANTApi, Configuration, TenantCompany } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let tenantCompany: TenantCompany; //Request Body
 
-const { status, data } = await apiInstance.runSaveBillingData(
-    tenantCompany
-);
+const { status, data } = await apiInstance.runSaveBillingData(tenantCompany);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tenantCompany** | **TenantCompany**| Request Body | |
-
+| Name              | Type              | Description  | Notes |
+| ----------------- | ----------------- | ------------ | ----- |
+| **tenantCompany** | **TenantCompany** | Request Body |       |
 
 ### Return type
 
@@ -570,29 +506,25 @@ const { status, data } = await apiInstance.runSaveBillingData(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Save company billing data |  -  |
+
+| Status code | Description               | Response headers |
+| ----------- | ------------------------- | ---------------- |
+| **200**     | Save company billing data | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSaveOutstandingSetting**
-> string runSaveOutstandingSetting(outstandingSettingResponse)
 
+> string runSaveOutstandingSetting(outstandingSettingResponse)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration,
-    OutstandingSettingResponse
-} from './api';
+import { TENANTApi, Configuration, OutstandingSettingResponse } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
@@ -601,18 +533,17 @@ let id: string; // (default to undefined)
 let outstandingSettingResponse: OutstandingSettingResponse; //Request Body
 
 const { status, data } = await apiInstance.runSaveOutstandingSetting(
-    id,
-    outstandingSettingResponse
+  id,
+  outstandingSettingResponse
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **outstandingSettingResponse** | **OutstandingSettingResponse**| Request Body | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name                           | Type                           | Description  | Notes                 |
+| ------------------------------ | ------------------------------ | ------------ | --------------------- |
+| **outstandingSettingResponse** | **OutstandingSettingResponse** | Request Body |                       |
+| **id**                         | [**string**]                   |              | defaults to undefined |
 
 ### Return type
 
@@ -624,45 +555,39 @@ const { status, data } = await apiInstance.runSaveOutstandingSetting(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Save outstanding setting |  -  |
+
+| Status code | Description              | Response headers |
+| ----------- | ------------------------ | ---------------- |
+| **200**     | Save outstanding setting | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runSearch**
-> Array<Tenant> runSearch(body)
 
+> Array<Tenant> runSearch(body)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration
-} from './api';
+import { TENANTApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
 
 let body: object; //Data
 
-const { status, data } = await apiInstance.runSearch(
-    body
-);
+const { status, data } = await apiInstance.runSearch(body);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **body** | **object**| Data | |
-
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **body** | **object** | Data        |       |
 
 ### Return type
 
@@ -674,31 +599,27 @@ const { status, data } = await apiInstance.runSearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**400** | bad request |  -  |
-|**500** | internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | success        | -                |
+| **400**     | bad request    | -                |
+| **500**     | internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdate**
-> runUpdate(tenant)
 
+> runUpdate(tenant)
 
 ### Example
 
 ```typescript
-import {
-    TENANTApi,
-    Configuration,
-    Tenant
-} from './api';
+import { TENANTApi, Configuration, Tenant } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TENANTApi(configuration);
@@ -706,19 +627,15 @@ const apiInstance = new TENANTApi(configuration);
 let id: string; // (default to undefined)
 let tenant: Tenant; //Data
 
-const { status, data } = await apiInstance.runUpdate(
-    id,
-    tenant
-);
+const { status, data } = await apiInstance.runUpdate(id, tenant);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tenant** | **Tenant**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name       | Type         | Description | Notes                 |
+| ---------- | ------------ | ----------- | --------------------- |
+| **tenant** | **Tenant**   | Data        |                       |
+| **id**     | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -730,16 +647,15 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
+- **Content-Type**: application/json
+- **Accept**: Not defined
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -1,25 +1,24 @@
 # EnrollmentStudent
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
-**level** | [**EnrollmentStudentLevel**](EnrollmentStudentLevel.md) |  | [optional] [default to undefined]
+| Name      | Type                                                    | Description | Notes                             |
+| --------- | ------------------------------------------------------- | ----------- | --------------------------------- |
+| **\_id**  | **string**                                              |             | [default to undefined]            |
+| **code**  | **string**                                              |             | [optional] [default to undefined] |
+| **label** | **string**                                              |             | [optional] [default to undefined] |
+| **level** | [**EnrollmentStudentLevel**](EnrollmentStudentLevel.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { EnrollmentStudent } from './api';
+import { EnrollmentStudent } from "./api";
 
 const instance: EnrollmentStudent = {
-    _id,
-    code,
-    label,
-    level,
+  _id,
+  code,
+  label,
+  level,
 };
 ```
 

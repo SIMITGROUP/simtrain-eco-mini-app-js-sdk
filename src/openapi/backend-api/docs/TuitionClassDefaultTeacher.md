@@ -1,23 +1,22 @@
 # TuitionClassDefaultTeacher
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
+| Name      | Type       | Description | Notes                             |
+| --------- | ---------- | ----------- | --------------------------------- |
+| **\_id**  | **string** |             | [optional] [default to undefined] |
+| **code**  | **string** |             | [optional] [default to undefined] |
+| **label** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TuitionClassDefaultTeacher } from './api';
+import { TuitionClassDefaultTeacher } from "./api";
 
 const instance: TuitionClassDefaultTeacher = {
-    _id,
-    code,
-    label,
+  _id,
+  code,
+  label,
 };
 ```
 

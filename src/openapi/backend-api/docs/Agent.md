@@ -1,51 +1,50 @@
 # Agent
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**created** | **string** |  | [optional] [default to undefined]
-**updated** | **string** |  | [optional] [default to undefined]
-**createdBy** | **string** |  | [optional] [default to undefined]
-**updatedBy** | **string** |  | [optional] [default to undefined]
-**tenantId** | **number** |  | [optional] [default to undefined]
-**orgId** | **number** |  | [optional] [default to undefined]
-**branchId** | **number** |  | [optional] [default to undefined]
-**agentCode** | **string** |  | [default to undefined]
-**agentName** | **string** |  | [default to undefined]
-**ic** | **string** |  | [optional] [default to undefined]
-**dob** | **string** |  | [default to undefined]
-**email** | **string** |  | [default to undefined]
-**mobileNo** | **string** |  | [default to undefined]
-**active** | **boolean** |  | [optional] [default to undefined]
-**description** | **string** |  | [optional] [default to undefined]
-**more** | **object** |  | [optional] [default to undefined]
+| Name            | Type        | Description | Notes                             |
+| --------------- | ----------- | ----------- | --------------------------------- |
+| **\_id**        | **string**  |             | [optional] [default to undefined] |
+| **created**     | **string**  |             | [optional] [default to undefined] |
+| **updated**     | **string**  |             | [optional] [default to undefined] |
+| **createdBy**   | **string**  |             | [optional] [default to undefined] |
+| **updatedBy**   | **string**  |             | [optional] [default to undefined] |
+| **tenantId**    | **number**  |             | [optional] [default to undefined] |
+| **orgId**       | **number**  |             | [optional] [default to undefined] |
+| **branchId**    | **number**  |             | [optional] [default to undefined] |
+| **agentCode**   | **string**  |             | [default to undefined]            |
+| **agentName**   | **string**  |             | [default to undefined]            |
+| **ic**          | **string**  |             | [optional] [default to undefined] |
+| **dob**         | **string**  |             | [default to undefined]            |
+| **email**       | **string**  |             | [default to undefined]            |
+| **mobileNo**    | **string**  |             | [default to undefined]            |
+| **active**      | **boolean** |             | [optional] [default to undefined] |
+| **description** | **string**  |             | [optional] [default to undefined] |
+| **more**        | **object**  |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { Agent } from './api';
+import { Agent } from "./api";
 
 const instance: Agent = {
-    _id,
-    created,
-    updated,
-    createdBy,
-    updatedBy,
-    tenantId,
-    orgId,
-    branchId,
-    agentCode,
-    agentName,
-    ic,
-    dob,
-    email,
-    mobileNo,
-    active,
-    description,
-    more,
+  _id,
+  created,
+  updated,
+  createdBy,
+  updatedBy,
+  tenantId,
+  orgId,
+  branchId,
+  agentCode,
+  agentName,
+  ic,
+  dob,
+  email,
+  mobileNo,
+  active,
+  description,
+  more,
 };
 ```
 

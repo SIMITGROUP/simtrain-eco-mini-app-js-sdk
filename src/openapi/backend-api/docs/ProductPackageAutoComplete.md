@@ -1,31 +1,30 @@
 # ProductPackageAutoComplete
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to '']
-**code** | **string** |  | [default to '']
-**label** | **string** |  | [default to '']
-**packageType** | **string** |  | [default to undefined]
-**level** | [**ProductPackageLevel**](ProductPackageLevel.md) |  | [default to undefined]
-**amount** | **number** |  | [default to undefined]
-**products** | [**Array&lt;ProductPackageProducts&gt;**](ProductPackageProducts.md) |  | [optional] [default to undefined]
+| Name            | Type                                                                 | Description | Notes                             |
+| --------------- | -------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **\_id**        | **string**                                                           |             | [default to '']                   |
+| **code**        | **string**                                                           |             | [default to '']                   |
+| **label**       | **string**                                                           |             | [default to '']                   |
+| **packageType** | **string**                                                           |             | [default to undefined]            |
+| **level**       | [**ProductPackageLevel**](ProductPackageLevel.md)                    |             | [default to undefined]            |
+| **amount**      | **number**                                                           |             | [default to undefined]            |
+| **products**    | [**Array&lt;ProductPackageProducts&gt;**](ProductPackageProducts.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { ProductPackageAutoComplete } from './api';
+import { ProductPackageAutoComplete } from "./api";
 
 const instance: ProductPackageAutoComplete = {
-    _id,
-    code,
-    label,
-    packageType,
-    level,
-    amount,
-    products,
+  _id,
+  code,
+  label,
+  packageType,
+  level,
+  amount,
+  products,
 };
 ```
 

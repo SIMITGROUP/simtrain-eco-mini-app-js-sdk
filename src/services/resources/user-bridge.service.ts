@@ -8,6 +8,7 @@
 import { MiniAppApiListParam } from "../../types/bridge.type";
 import { MiniAppBridgeService } from "../bridge.service";
 import * as Schema from "../../openapi/backend-api";
+import * as CustomSchema from "../../types/resources";
 import {
   CreateResource,
   PatchResource,
@@ -24,7 +25,10 @@ export class MiniAppUserBridgeService {
   }
 
   async current() {
-    return this.bridge.callApi(this.resourceName, "current");
+    return this.bridge.callApi<CustomSchema.CurrentUser>(
+      this.resourceName,
+      "current"
+    );
   }
 
   async list(params?: MiniAppApiListParam | undefined) {

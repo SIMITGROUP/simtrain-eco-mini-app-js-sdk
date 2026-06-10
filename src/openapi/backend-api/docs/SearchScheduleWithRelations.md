@@ -1,21 +1,20 @@
 # SearchScheduleWithRelations
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**root** | [**SearchWithRelationRoot**](SearchWithRelationRoot.md) |  | [default to undefined]
-**relations** | [**SearchScheduleWithRelation**](SearchScheduleWithRelation.md) |  | [optional] [default to undefined]
+| Name          | Type                                                            | Description | Notes                             |
+| ------------- | --------------------------------------------------------------- | ----------- | --------------------------------- |
+| **root**      | [**SearchWithRelationRoot**](SearchWithRelationRoot.md)         |             | [default to undefined]            |
+| **relations** | [**SearchScheduleWithRelation**](SearchScheduleWithRelation.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { SearchScheduleWithRelations } from './api';
+import { SearchScheduleWithRelations } from "./api";
 
 const instance: SearchScheduleWithRelations = {
-    root,
-    relations,
+  root,
+  relations,
 };
 ```
 

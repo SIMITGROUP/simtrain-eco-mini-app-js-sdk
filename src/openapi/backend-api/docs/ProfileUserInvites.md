@@ -1,25 +1,24 @@
 # ProfileUserInvites
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [default to undefined]
-**created** | **string** |  | [default to undefined]
-**tenantId** | **number** |  | [default to undefined]
-**tenantName** | **string** |  | [default to undefined]
+| Name           | Type       | Description | Notes                  |
+| -------------- | ---------- | ----------- | ---------------------- |
+| **\_id**       | **string** |             | [default to undefined] |
+| **created**    | **string** |             | [default to undefined] |
+| **tenantId**   | **number** |             | [default to undefined] |
+| **tenantName** | **string** |             | [default to undefined] |
 
 ## Example
 
 ```typescript
-import { ProfileUserInvites } from './api';
+import { ProfileUserInvites } from "./api";
 
 const instance: ProfileUserInvites = {
-    _id,
-    created,
-    tenantId,
-    tenantName,
+  _id,
+  created,
+  tenantId,
+  tenantName,
 };
 ```
 

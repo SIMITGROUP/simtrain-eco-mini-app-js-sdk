@@ -1,29 +1,28 @@
 # EnrollmentTuitionClass
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
-**productId** | **string** |  | [optional] [default to undefined]
-**startDate** | **string** |  | [optional] [default to undefined]
-**endDate** | **string** |  | [optional] [default to undefined]
+| Name          | Type       | Description | Notes                             |
+| ------------- | ---------- | ----------- | --------------------------------- |
+| **\_id**      | **string** |             | [optional] [default to undefined] |
+| **code**      | **string** |             | [optional] [default to undefined] |
+| **label**     | **string** |             | [optional] [default to undefined] |
+| **productId** | **string** |             | [optional] [default to undefined] |
+| **startDate** | **string** |             | [optional] [default to undefined] |
+| **endDate**   | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { EnrollmentTuitionClass } from './api';
+import { EnrollmentTuitionClass } from "./api";
 
 const instance: EnrollmentTuitionClass = {
-    _id,
-    code,
-    label,
-    productId,
-    startDate,
-    endDate,
+  _id,
+  code,
+  label,
+  productId,
+  startDate,
+  endDate,
 };
 ```
 

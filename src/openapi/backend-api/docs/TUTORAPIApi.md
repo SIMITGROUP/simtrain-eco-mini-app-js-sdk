@@ -1,18 +1,19 @@
 # TUTORAPIApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to _http://localhost_
 
-|Method | HTTP request | Description|
-|------------- | ------------- | -------------|
-|[**getTutorAttendance**](#gettutorattendance) | **GET** /tutorapi/attendance/{scheduleId} | |
-|[**getTutorBranches**](#gettutorbranches) | **GET** /tutorapi/tutor-branches | |
-|[**runGetStudentEnrollBySearch**](#rungetstudentenrollbysearch) | **POST** /tutorapi/getStudentEnrollBySearch | |
-|[**runUpdateAttendance**](#runupdateattendance) | **PUT** /tutorapi/attendance/{id} | |
-|[**runUpdateAttendanceRemark**](#runupdateattendanceremark) | **PUT** /tutorapi/attendanceRemark/{id} | |
-|[**runUpdateScheduleLessonPlan**](#runupdateschedulelessonplan) | **PUT** /tutorapi/scheduleLessonPlan/{id} | |
-|[**searchStudent**](#searchstudent) | **POST** /tutorapi/searchStudent | |
+| Method                                                          | HTTP request                                | Description |
+| --------------------------------------------------------------- | ------------------------------------------- | ----------- |
+| [**getTutorAttendance**](#gettutorattendance)                   | **GET** /tutorapi/attendance/{scheduleId}   |             |
+| [**getTutorBranches**](#gettutorbranches)                       | **GET** /tutorapi/tutor-branches            |             |
+| [**runGetStudentEnrollBySearch**](#rungetstudentenrollbysearch) | **POST** /tutorapi/getStudentEnrollBySearch |             |
+| [**runUpdateAttendance**](#runupdateattendance)                 | **PUT** /tutorapi/attendance/{id}           |             |
+| [**runUpdateAttendanceRemark**](#runupdateattendanceremark)     | **PUT** /tutorapi/attendanceRemark/{id}     |             |
+| [**runUpdateScheduleLessonPlan**](#runupdateschedulelessonplan) | **PUT** /tutorapi/scheduleLessonPlan/{id}   |             |
+| [**searchStudent**](#searchstudent)                             | **POST** /tutorapi/searchStudent            |             |
 
 # **getTutorAttendance**
+
 > Array<TutorScheduleAttendance> getTutorAttendance()
 
 get attendance detail by scheduleId
@@ -20,27 +21,21 @@ get attendance detail by scheduleId
 ### Example
 
 ```typescript
-import {
-    TUTORAPIApi,
-    Configuration
-} from './api';
+import { TUTORAPIApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
 
 let scheduleId: string; // (default to undefined)
 
-const { status, data } = await apiInstance.getTutorAttendance(
-    scheduleId
-);
+const { status, data } = await apiInstance.getTutorAttendance(scheduleId);
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **scheduleId** | [**string**] |  | defaults to undefined|
-
+| Name           | Type         | Description | Notes                 |
+| -------------- | ------------ | ----------- | --------------------- |
+| **scheduleId** | [**string**] |             | defaults to undefined |
 
 ### Return type
 
@@ -52,19 +47,20 @@ const { status, data } = await apiInstance.getTutorAttendance(
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getTutorBranches**
+
 > Array<UserBranch> getTutorBranches()
 
 design for tutor, list branch by parent email
@@ -72,10 +68,7 @@ design for tutor, list branch by parent email
 ### Example
 
 ```typescript
-import {
-    TUTORAPIApi,
-    Configuration
-} from './api';
+import { TUTORAPIApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
@@ -84,8 +77,8 @@ const { status, data } = await apiInstance.getTutorBranches();
 ```
 
 ### Parameters
-This endpoint does not have any parameters.
 
+This endpoint does not have any parameters.
 
 ### Return type
 
@@ -97,30 +90,30 @@ This endpoint does not have any parameters.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | Found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | Found          | -                |
+| **500**     | Internal error | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runGetStudentEnrollBySearch**
-> Array<TutorAttendanceSearch> runGetStudentEnrollBySearch(runGetStudentEnrollBySearchRequest)
 
+> Array<TutorAttendanceSearch> runGetStudentEnrollBySearch(runGetStudentEnrollBySearchRequest)
 
 ### Example
 
 ```typescript
 import {
-    TUTORAPIApi,
-    Configuration,
-    RunGetStudentEnrollBySearchRequest
-} from './api';
+  TUTORAPIApi,
+  Configuration,
+  RunGetStudentEnrollBySearchRequest,
+} from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
@@ -128,16 +121,15 @@ const apiInstance = new TUTORAPIApi(configuration);
 let runGetStudentEnrollBySearchRequest: RunGetStudentEnrollBySearchRequest; //Request Body
 
 const { status, data } = await apiInstance.runGetStudentEnrollBySearch(
-    runGetStudentEnrollBySearchRequest
+  runGetStudentEnrollBySearchRequest
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **runGetStudentEnrollBySearchRequest** | **RunGetStudentEnrollBySearchRequest**| Request Body | |
-
+| Name                                   | Type                                   | Description  | Notes |
+| -------------------------------------- | -------------------------------------- | ------------ | ----- |
+| **runGetStudentEnrollBySearchRequest** | **RunGetStudentEnrollBySearchRequest** | Request Body |       |
 
 ### Return type
 
@@ -149,28 +141,25 @@ const { status, data } = await apiInstance.runGetStudentEnrollBySearch(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | get student enrollment by search |  -  |
+
+| Status code | Description                      | Response headers |
+| ----------- | -------------------------------- | ---------------- |
+| **200**     | get student enrollment by search | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdateAttendance**
-> string runUpdateAttendance(tutorAttendanceUpdate)
 
+> string runUpdateAttendance(tutorAttendanceUpdate)
 
 ### Example
 
 ```typescript
-import {
-    TUTORAPIApi,
-    Configuration
-} from './api';
+import { TUTORAPIApi, Configuration } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
@@ -179,18 +168,17 @@ let id: string; // (default to undefined)
 let tutorAttendanceUpdate: Array<TutorAttendanceUpdate>; //Data
 
 const { status, data } = await apiInstance.runUpdateAttendance(
-    id,
-    tutorAttendanceUpdate
+  id,
+  tutorAttendanceUpdate
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tutorAttendanceUpdate** | **Array<TutorAttendanceUpdate>**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name                      | Type                             | Description | Notes                 |
+| ------------------------- | -------------------------------- | ----------- | --------------------- |
+| **tutorAttendanceUpdate** | **Array<TutorAttendanceUpdate>** | Data        |                       |
+| **id**                    | [**string**]                     |             | defaults to undefined |
 
 ### Return type
 
@@ -202,31 +190,27 @@ const { status, data } = await apiInstance.runUpdateAttendance(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdateAttendanceRemark**
-> string runUpdateAttendanceRemark(tutorAttendanceRemarkUpdate)
 
+> string runUpdateAttendanceRemark(tutorAttendanceRemarkUpdate)
 
 ### Example
 
 ```typescript
-import {
-    TUTORAPIApi,
-    Configuration,
-    TutorAttendanceRemarkUpdate
-} from './api';
+import { TUTORAPIApi, Configuration, TutorAttendanceRemarkUpdate } from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
@@ -235,18 +219,17 @@ let id: string; // (default to undefined)
 let tutorAttendanceRemarkUpdate: TutorAttendanceRemarkUpdate; //Data
 
 const { status, data } = await apiInstance.runUpdateAttendanceRemark(
-    id,
-    tutorAttendanceRemarkUpdate
+  id,
+  tutorAttendanceRemarkUpdate
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tutorAttendanceRemarkUpdate** | **TutorAttendanceRemarkUpdate**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name                            | Type                            | Description | Notes                 |
+| ------------------------------- | ------------------------------- | ----------- | --------------------- |
+| **tutorAttendanceRemarkUpdate** | **TutorAttendanceRemarkUpdate** | Data        |                       |
+| **id**                          | [**string**]                    |             | defaults to undefined |
 
 ### Return type
 
@@ -258,31 +241,31 @@ const { status, data } = await apiInstance.runUpdateAttendanceRemark(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **runUpdateScheduleLessonPlan**
-> string runUpdateScheduleLessonPlan(tutorScheduleLessonPlanUpdate)
 
+> string runUpdateScheduleLessonPlan(tutorScheduleLessonPlanUpdate)
 
 ### Example
 
 ```typescript
 import {
-    TUTORAPIApi,
-    Configuration,
-    TutorScheduleLessonPlanUpdate
-} from './api';
+  TUTORAPIApi,
+  Configuration,
+  TutorScheduleLessonPlanUpdate,
+} from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
@@ -291,18 +274,17 @@ let id: string; // (default to undefined)
 let tutorScheduleLessonPlanUpdate: TutorScheduleLessonPlanUpdate; //Data
 
 const { status, data } = await apiInstance.runUpdateScheduleLessonPlan(
-    id,
-    tutorScheduleLessonPlanUpdate
+  id,
+  tutorScheduleLessonPlanUpdate
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **tutorScheduleLessonPlanUpdate** | **TutorScheduleLessonPlanUpdate**| Data | |
-| **id** | [**string**] |  | defaults to undefined|
-
+| Name                              | Type                              | Description | Notes                 |
+| --------------------------------- | --------------------------------- | ----------- | --------------------- |
+| **tutorScheduleLessonPlanUpdate** | **TutorScheduleLessonPlanUpdate** | Data        |                       |
+| **id**                            | [**string**]                      |             | defaults to undefined |
 
 ### Return type
 
@@ -314,31 +296,31 @@ const { status, data } = await apiInstance.runUpdateScheduleLessonPlan(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | success |  -  |
-|**404** | Document not found |  -  |
-|**500** | Internal error |  -  |
+
+| Status code | Description        | Response headers |
+| ----------- | ------------------ | ---------------- |
+| **200**     | success            | -                |
+| **404**     | Document not found | -                |
+| **500**     | Internal error     | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **searchStudent**
-> SearchStudent searchStudent(runGetStudentEnrollBySearchRequest)
 
+> SearchStudent searchStudent(runGetStudentEnrollBySearchRequest)
 
 ### Example
 
 ```typescript
 import {
-    TUTORAPIApi,
-    Configuration,
-    RunGetStudentEnrollBySearchRequest
-} from './api';
+  TUTORAPIApi,
+  Configuration,
+  RunGetStudentEnrollBySearchRequest,
+} from "./api";
 
 const configuration = new Configuration();
 const apiInstance = new TUTORAPIApi(configuration);
@@ -346,16 +328,15 @@ const apiInstance = new TUTORAPIApi(configuration);
 let runGetStudentEnrollBySearchRequest: RunGetStudentEnrollBySearchRequest; //Request Body
 
 const { status, data } = await apiInstance.searchStudent(
-    runGetStudentEnrollBySearchRequest
+  runGetStudentEnrollBySearchRequest
 );
 ```
 
 ### Parameters
 
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **runGetStudentEnrollBySearchRequest** | **RunGetStudentEnrollBySearchRequest**| Request Body | |
-
+| Name                                   | Type                                   | Description  | Notes |
+| -------------------------------------- | -------------------------------------- | ------------ | ----- |
+| **runGetStudentEnrollBySearchRequest** | **RunGetStudentEnrollBySearchRequest** | Request Body |       |
 
 ### Return type
 
@@ -367,14 +348,13 @@ const { status, data } = await apiInstance.searchStudent(
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | search student |  -  |
+
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | search student | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

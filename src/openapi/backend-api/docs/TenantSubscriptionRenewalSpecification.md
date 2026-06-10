@@ -1,23 +1,22 @@
 # TenantSubscriptionRenewalSpecification
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**license** | **string** |  | [optional] [default to undefined]
-**billingCycle** | **string** |  | [optional] [default to undefined]
-**addOns** | [**TenantSubscriptionRenewalSpecificationAddOns**](TenantSubscriptionRenewalSpecificationAddOns.md) |  | [optional] [default to undefined]
+| Name             | Type                                                                                                | Description | Notes                             |
+| ---------------- | --------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
+| **license**      | **string**                                                                                          |             | [optional] [default to undefined] |
+| **billingCycle** | **string**                                                                                          |             | [optional] [default to undefined] |
+| **addOns**       | [**TenantSubscriptionRenewalSpecificationAddOns**](TenantSubscriptionRenewalSpecificationAddOns.md) |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TenantSubscriptionRenewalSpecification } from './api';
+import { TenantSubscriptionRenewalSpecification } from "./api";
 
 const instance: TenantSubscriptionRenewalSpecification = {
-    license,
-    billingCycle,
-    addOns,
+  license,
+  billingCycle,
+  addOns,
 };
 ```
 

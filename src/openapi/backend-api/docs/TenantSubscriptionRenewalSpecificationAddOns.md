@@ -1,21 +1,20 @@
 # TenantSubscriptionRenewalSpecificationAddOns
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**students** | **number** |  | [optional] [default to undefined]
-**branches** | **number** |  | [optional] [default to undefined]
+| Name         | Type       | Description | Notes                             |
+| ------------ | ---------- | ----------- | --------------------------------- |
+| **students** | **number** |             | [optional] [default to undefined] |
+| **branches** | **number** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { TenantSubscriptionRenewalSpecificationAddOns } from './api';
+import { TenantSubscriptionRenewalSpecificationAddOns } from "./api";
 
 const instance: TenantSubscriptionRenewalSpecificationAddOns = {
-    students,
-    branches,
+  students,
+  branches,
 };
 ```
 

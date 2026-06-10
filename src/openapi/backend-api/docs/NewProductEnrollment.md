@@ -1,37 +1,36 @@
 # NewProductEnrollment
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**product** | [**EnrollmentProduct**](EnrollmentProduct.md) |  | [default to undefined]
-**_package** | [**ForeignKey**](ForeignKey.md) |  | [optional] [default to undefined]
-**tuitionClass** | [**EnrollmentTuitionClass**](EnrollmentTuitionClass.md) |  | [optional] [default to undefined]
-**fee** | **number** |  | [default to 0]
-**discount** | **number** |  | [optional] [default to 0]
-**lessonsPerTerm** | **number** |  | [default to 0]
-**categoryType** | **string** |  | [default to undefined]
-**startDate** | **string** |  | [default to undefined]
-**endDate** | **string** |  | [default to undefined]
-**description** | **string** |  | [default to undefined]
+| Name               | Type                                                    | Description | Notes                             |
+| ------------------ | ------------------------------------------------------- | ----------- | --------------------------------- |
+| **product**        | [**EnrollmentProduct**](EnrollmentProduct.md)           |             | [default to undefined]            |
+| **\_package**      | [**ForeignKey**](ForeignKey.md)                         |             | [optional] [default to undefined] |
+| **tuitionClass**   | [**EnrollmentTuitionClass**](EnrollmentTuitionClass.md) |             | [optional] [default to undefined] |
+| **fee**            | **number**                                              |             | [default to 0]                    |
+| **discount**       | **number**                                              |             | [optional] [default to 0]         |
+| **lessonsPerTerm** | **number**                                              |             | [default to 0]                    |
+| **categoryType**   | **string**                                              |             | [default to undefined]            |
+| **startDate**      | **string**                                              |             | [default to undefined]            |
+| **endDate**        | **string**                                              |             | [default to undefined]            |
+| **description**    | **string**                                              |             | [default to undefined]            |
 
 ## Example
 
 ```typescript
-import { NewProductEnrollment } from './api';
+import { NewProductEnrollment } from "./api";
 
 const instance: NewProductEnrollment = {
-    product,
-    _package,
-    tuitionClass,
-    fee,
-    discount,
-    lessonsPerTerm,
-    categoryType,
-    startDate,
-    endDate,
-    description,
+  product,
+  _package,
+  tuitionClass,
+  fee,
+  discount,
+  lessonsPerTerm,
+  categoryType,
+  startDate,
+  endDate,
+  description,
 };
 ```
 

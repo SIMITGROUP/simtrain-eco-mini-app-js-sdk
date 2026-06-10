@@ -1,21 +1,20 @@
 # CustomFieldForm
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**jsonSchema** | **object** |  | [optional] [default to undefined]
-**uiSchema** | **object** |  | [optional] [default to undefined]
+| Name           | Type       | Description | Notes                             |
+| -------------- | ---------- | ----------- | --------------------------------- |
+| **jsonSchema** | **object** |             | [optional] [default to undefined] |
+| **uiSchema**   | **object** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { CustomFieldForm } from './api';
+import { CustomFieldForm } from "./api";
 
 const instance: CustomFieldForm = {
-    jsonSchema,
-    uiSchema,
+  jsonSchema,
+  uiSchema,
 };
 ```
 

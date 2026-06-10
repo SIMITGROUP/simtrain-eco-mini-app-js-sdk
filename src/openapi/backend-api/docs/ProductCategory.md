@@ -1,25 +1,24 @@
 # ProductCategory
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_id** | **string** |  | [optional] [default to undefined]
-**code** | **string** |  | [optional] [default to undefined]
-**label** | **string** |  | [optional] [default to undefined]
-**categoryType** | **string** |  | [optional] [default to undefined]
+| Name             | Type       | Description | Notes                             |
+| ---------------- | ---------- | ----------- | --------------------------------- |
+| **\_id**         | **string** |             | [optional] [default to undefined] |
+| **code**         | **string** |             | [optional] [default to undefined] |
+| **label**        | **string** |             | [optional] [default to undefined] |
+| **categoryType** | **string** |             | [optional] [default to undefined] |
 
 ## Example
 
 ```typescript
-import { ProductCategory } from './api';
+import { ProductCategory } from "./api";
 
 const instance: ProductCategory = {
-    _id,
-    code,
-    label,
-    categoryType,
+  _id,
+  code,
+  label,
+  categoryType,
 };
 ```
 
