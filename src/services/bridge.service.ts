@@ -9,6 +9,8 @@ import { MINI_APP_BRIDGE_MESSAGES } from "../constants/common.constant";
 import {
   MiniAppBridgeMessageApi,
   MiniAppBridgeMessageApiResponse,
+  MiniAppBridgeMessageAuthToken,
+  MiniAppBridgeMessageAuthTokenResponse,
   MiniAppBridgeMessageOpenOnScreenResourceForm,
 } from "../types/bridge.type";
 import {
@@ -25,23 +27,29 @@ export class MiniAppBridgeService {
   constructor() {
     if (typeof window !== "undefined") {
       window.addEventListener("message", event => {
-        const message: MiniAppBridgeMessageApiResponse<any> = event.data;
+        const message:
+          | MiniAppBridgeMessageApiResponse<any>
+          | MiniAppBridgeMessageAuthTokenResponse = event.data;
 
-        if (
-          message.type === MINI_APP_BRIDGE_MESSAGES.API_RESPONSE &&
-          message.requestId
-        ) {
-          const handler = this.pendingRequests[message.requestId];
-          if (!handler) return;
+        const isApiResponse =
+          message.type === MINI_APP_BRIDGE_MESSAGES.API_RESPONSE;
+        const isAuthResponse =
+          message.type === MINI_APP_BRIDGE_MESSAGES.AUTH_TOKEN_RESPONSE;
+        if ((!isApiResponse && !isAuthResponse) || !message.requestId) return;
 
-          if (message.success) {
-            handler.resolve(message.data);
-          } else {
-            handler.reject(message.error);
-          }
+        const handler = this.pendingRequests[message.requestId];
+        if (!handler) return;
 
-          delete this.pendingRequests[message.requestId];
+        if (message.success) {
+          handler.resolve(
+            isAuthResponse
+              ? (message as MiniAppBridgeMessageAuthTokenResponse).token
+              : (message as MiniAppBridgeMessageApiResponse<any>).data,
+          );
+        } else {
+          handler.reject(message.error);
         }
+        delete this.pendingRequests[message.requestId];
       });
     }
   }
@@ -67,6 +75,22 @@ export class MiniAppBridgeService {
     };
 
     const promise = new Promise<TResponse>((resolve, reject) => {
+      this.pendingRequests[requestId] = { resolve, reject };
+    });
+
+    window.parent.postMessage(requestMessage, "*");
+    return promise;
+  }
+
+  async getAuthToken(): Promise<string> {
+    const requestId = crypto.randomUUID();
+
+    const requestMessage: MiniAppBridgeMessageAuthToken = {
+      type: MINI_APP_BRIDGE_MESSAGES.AUTH_TOKEN,
+      requestId,
+    };
+
+    const promise = new Promise<string>((resolve, reject) => {
       this.pendingRequests[requestId] = { resolve, reject };
     });
 

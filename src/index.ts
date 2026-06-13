@@ -45,6 +45,10 @@ export class SimtrainEcoMiniAppJsSdk extends MiniAppBridgeResourceAccessor {
     },
   };
 
+  public auth = {
+    getToken: (): Promise<string> => this.bridge.getAuthToken(),
+  };
+
   constructor() {
     super();
     // console.log("Hello from SimtrainEcoMiniAppJsSdk !!!");
