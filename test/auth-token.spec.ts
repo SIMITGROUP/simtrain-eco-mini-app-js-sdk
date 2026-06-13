@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { MINI_APP_BRIDGE_MESSAGES } from "../src/constants/common.constant";
 import { MiniAppBridgeService } from "../src/services/bridge.service";
 
