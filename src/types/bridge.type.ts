@@ -20,7 +20,8 @@ export type MiniAppBridgeMessage<TAction> =
   | MiniAppBridgeMessageNavigateCurrentMiniApp
   | MiniAppBridgeMessageOpenOnScreenResourceForm
   | MiniAppBridgeMessageApi<TAction>
-  | MiniAppBridgeMessageInitResponse;
+  | MiniAppBridgeMessageInitResponse
+  | MiniAppBridgeMessageAuthToken;
 
 export type MiniAppBridgeMessageNavigate = {
   type: typeof MINI_APP_BRIDGE_MESSAGES.NAVIGATE;
@@ -81,6 +82,19 @@ export type MiniAppBridgeMessageApiResponse<TData> = {
 
 export type MiniAppBridgeMessageInitResponse = {
   type: typeof MINI_APP_BRIDGE_MESSAGES.INIT_RESPONSE;
+};
+
+export type MiniAppBridgeMessageAuthToken = {
+  type: typeof MINI_APP_BRIDGE_MESSAGES.AUTH_TOKEN;
+  requestId: string;
+};
+
+export type MiniAppBridgeMessageAuthTokenResponse = {
+  type: typeof MINI_APP_BRIDGE_MESSAGES.AUTH_TOKEN_RESPONSE;
+  requestId: string;
+  success: boolean;
+  token?: string;
+  error?: unknown;
 };
 
 export type MiniAppApiListParam = {
