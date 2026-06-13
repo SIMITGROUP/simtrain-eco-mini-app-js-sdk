@@ -62,7 +62,7 @@ async function verifySimtrainToken(token: string) {
     issuer: ISSUER,
     audience: APP_ID, // REQUIRED — rejects tokens minted for a different app
   });
-  // decoded = { sub: <userId>, org, branch, iss, aud, iat, exp }
+  // decoded = { sub: <userId>, tenant, org, branch, email, name, iss, aud, iat, exp }
   return decoded;
 }
 ```
