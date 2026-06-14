@@ -62,7 +62,10 @@ async function verifySimtrainToken(token: string) {
     issuer: ISSUER,
     audience: APP_ID, // REQUIRED — rejects tokens minted for a different app
   });
-  // decoded = { sub: <userId>, tenant, org, branch, email, name, iss, aud, iat, exp }
+  // decoded = { sub: <userId>, tenant, org, branch, email, name,
+  //             groups: string[], group, iss, aud, iat, exp }
+  //   groups = all roles the user has (e.g. ["admin","teacher"])
+  //   group  = the role they're currently acting as (may be "")
   return decoded;
 }
 ```
